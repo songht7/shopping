@@ -1,0 +1,24 @@
+		
+     <footer>
+     		<select name="Language" id="Language">
+     			<option selected="" >- <%=langs['language'][lang] %> -</option>
+     			<option value="1"  data-lg="en">English</option>
+     			<option value="2" data-lg="zh">中文</option>
+     		</select>
+        <ul>
+         <% footerMenu.forEach(function(m,k){ %>
+         <% if(m['multi']){%>
+          <li><%= m['multi'][lang] %>
+            <ul>
+              <% m['sublevel'].forEach(function(sm,key){ %>
+              <li><%= sm[lang] %></li>
+              <% }) %>
+            </ul>
+          </li>
+         <% }else{ %>
+          <li><%= m[lang] %></li>
+         <% }}) %>
+         </ul>
+     </footer>
+  </body>
+</html>
