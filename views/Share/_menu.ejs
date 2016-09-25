@@ -1,7 +1,7 @@
 <header>
 	<div class="inner clearfix">
 		<div id="LeftMenu">
-			<a href="javascript:;" id="MenuBtn"><span>left memu</span></a>
+			<a href="javascript:;" id="MenuBtn" class="active"><span>left memu</span></a>
 		</div>
 		<a href="/" id="Logo"><span>360 shopping channel</span></a>
 		<div class="searchBox">
@@ -24,6 +24,9 @@
 			 		<% }else{ %>
 						<a href="#" class="mLink"><%= m[lgkey] %></a>
 			 		<% }%>
+					<% if(m[0]=="tp_cart"){%>
+			 		<span class="cartConut" data-val="0">0</span>
+					<% } %>
 			 		<span class="mCut">|</span>
 				</li>
 		 <% }}) %>
