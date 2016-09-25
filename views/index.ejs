@@ -1,20 +1,7 @@
 <% include Share/_header.ejs %>
-
+<% include Share/_menu.ejs %>
     <h1><%= title %></h1>
-    <p>Welcome to <%=langs['web_title'][lang] %> </p>
-    <ul>
-     <% menu.forEach(function(m,k){ %>
-     <% if(m['multi']){%>
-			<li><%= m['multi'][lang] %>
-        <ul>
-          <% m['sublevel'].forEach(function(sm,key){ %>
-          <li><%= sm[lang] %></li>
-          <% }) %>
-        </ul>
-      </li>
-     <% }else{ %>
-			<li><%= m[lang] %></li>
-     <% }}) %>
-     </ul>
+    <p>Welcome to <%=langs['web_title'][lgkey] %> </p>
+    
 
 <% include Share/_footer.ejs %>

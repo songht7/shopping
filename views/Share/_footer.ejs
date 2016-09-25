@@ -1,22 +1,22 @@
 		
      <footer>
      		<select name="Language" id="Language">
-     			<option selected="" >- <%=langs['language'][lang] %> -</option>
+     			<option selected="" >- <%=langs['language'][lgkey] %> -</option>
      			<option value="1"  data-lg="en">English</option>
      			<option value="2" data-lg="zh">中文</option>
      		</select>
         <ul>
          <% footerMenu.forEach(function(m,k){ %>
          <% if(m['multi']){%>
-          <li><%= m['multi'][lang] %>
+          <li><%= m['multi'][lgkey] %>
             <ul>
               <% m['sublevel'].forEach(function(sm,key){ %>
-              <li><%= sm[lang] %></li>
+              <li><%= sm[lgkey] %></li>
               <% }) %>
             </ul>
           </li>
          <% }else{ %>
-          <li><%= m[lang] %></li>
+          <li><%= m[lgkey] %></li>
          <% }}) %>
          </ul>
      </footer>

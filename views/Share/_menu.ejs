@@ -1,0 +1,32 @@
+<header>
+	<div class="inner clearfix">
+		<div id="LeftMenu">
+			<a href="javascript:;" id="MenuBtn"><span>left memu</span></a>
+		</div>
+		<a href="/" id="Logo"><span>360 shopping channel</span></a>
+		<div class="searchBox">
+				<div class="iptBlock">
+					<input type="text" value="" class="iptSearch" placeholder="Search you want...">
+				</div>
+				<a href="javascript:;" class="btns searchBtn"><span>Search</span></a>
+		</div>
+		<ul id="Menu" class=" clearfix">
+		 <% menu.forEach(function(m,k){ %>
+		 <% if(k>2){%>
+				<li>
+					<% if(m['multi']){%>
+						<a href="#" class="mLink"><%= m['multi'][lgkey] %></a>
+				    <ul class="subMenu">
+				      <% m['sublevel'].forEach(function(sm,key){ %>
+				      <li><a href=""><%= sm[lgkey] %></a></li>
+				      <% }) %>
+				    </ul>
+			 		<% }else{ %>
+						<a href="#" class="mLink"><%= m[lgkey] %></a>
+			 		<% }%>
+			 		<span class="mCut">|</span>
+				</li>
+		 <% }}) %>
+		</ul>
+	</div>
+</header>

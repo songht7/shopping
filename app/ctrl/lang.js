@@ -15,9 +15,10 @@ exports.Setlang = function(req, res, next) {
 exports.CheckLang = function(req, res, next) {
 	var cks=req.cookies;
 	if(cks.lang==undefined){
-		langkey=1;
+		lgkey=1;lgType="en";
 	}else{
-		langkey=cks.lang.key;
+		lgkey=cks.lang.key;lgType=cks.lang.type;
 	}
-	next(langkey);
+	var lang={"type":lgType,"key":lgkey};
+	next(lang);
 }

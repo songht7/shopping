@@ -1,8 +1,58 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@charset "utf-8";
+@font-face { 
+  font-family: 'PTSerif';
+  src: url('./font/pt-serif/PTF55F.ttf') format('truetype');
 }
+@font-face { 
+  font-family: 'PTSerif_Italic';
+  src: url('./font/pt-serif/PTF56F.ttf') format('truetype');
+}
+@font-face { 
+  font-family: 'PTSerif_Bold';
+  src: url('./font/pt-serif/PTF75F.ttf') format('truetype');
+}
+@font-face { 
+  font-family: 'PTSerif_Bold_Italic';
+  src: url('./font/pt-serif/PTF76F.ttf') format('truetype');
+}
+@font-face { 
+  font-family: 'Helvetica';
+  src: url('./font/helvetica/HelveticaNeueLTPro-Roman.ttf') format('truetype');
+}
+@font-face { 
+  font-family: 'Helvetica-Bold';
+  src: url('./font/helvetica/HelveticaNeueLTPro-Bd.ttf') format('truetype');
+}
+body {background: #3B3F47; color: #5C5C5C;font-family:"PTSerif",Arial,"Microsoft YaHei","微软雅黑","宋体"; font-size: 14px; line-height: 18px; margin: 0; padding: 0}
+h1, h2, h3, h4, h5, h6, p, form { margin: 0; padding: 0; font-weight: normal; font-size: 14px; }
+ul, li, menu, ol, dd, dl, dt { list-style: none outside none; margin: 0; padding: 0; }
+img, a { border: medium none; color: #5C5C5C; text-decoration: none; }
+em,i { font-style: normal; }
+table td {border-collapse: collapse;padding:0;margin:0}
+input[type=submit], input[type=button], button {cursor:pointer}
+.clearn, .clear { clear: both; height: 0; }
+.clearfix:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.hidden,.hide { display: none !important; visibility: hidden !important; }
+.text { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.sbSeo{position: absolute;top: -5000px;}
+.f_left{float:left}
+.hided{display: none}
 
-a {
-  color: #00B7FF;
-}
+.inner{width: 1245px;margin: 0 auto}
+
+header{background: #2C2C3C;padding: 10px 0;}
+#LeftMenu{float: left;width: 50px;position: relative;}
+	#MenuBtn{display: block;text-indent: -999999px;background: url("../imags/menu.png") no-repeat 50% 50%;width:16px;height: 16px; }
+#Logo{background: url("../images/logo.png") no-repeat 50% 50%;display: block;float: left;margin-right: 20px;width: 126px;height: 38px;text-indent: -999999px;}
+
+.searchBox{overflow: hidden;float: left;}
+	.iptBlock{float: left;margin-right: 15px;}
+	.iptSearch{color: #8b8bac;border: none;border-radius: 3px;width:400px;padding: 12px 5px 12px 45px;background: url("../images/seach.png") no-repeat 16px 50% #3B3B52;}
+	.searchBtn{float: left;display: block; width: 110px;line-height: 40px;height: 40px;background: #686886;border-radius: 3px; text-align: center;color: #fff;font-family: "PTSerif_Italic"}
+
+#Menu {float: right;}
+#Menu li{float: left;color: #8383a6;position: relative;text-align: center;line-height: 40px;padding: 0 5px;font-size: 12px;font-family: "Helvetica"}
+	.mLink{color: #8383a6}
+	.mLink:hover,.mLink.active{color: #fff}
+	.mCut{padding: 0 0 0 5px;}
+.subMenu{display: none;}
