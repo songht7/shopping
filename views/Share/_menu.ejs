@@ -4,12 +4,6 @@
 			<a href="javascript:;" id="MenuBtn" class="active"><span>left memu</span></a>
 		</div>
 		<a href="/" id="Logo"><span>360 shopping channel</span></a>
-		<div class="searchBox">
-				<div class="iptBlock">
-					<input type="text" value="" class="iptSearch" placeholder="<%=langs['sch_want'][lgkey] %>">
-				</div>
-				<a href="javascript:;" class="btns searchBtn"><span><%=langs['search'][lgkey] %></span></a>
-		</div>
 		<ul id="Menu" class=" clearfix">
 		 <% menu.forEach(function(m,k){ %>
 		 <% if(k>2){%>
@@ -31,6 +25,12 @@
 				</li>
 		 <% }}) %>
 		</ul>
+		<div class="searchBox">
+				<div class="iptBlock">
+					<input type="text" value="" class="iptSearch" placeholder="<%=langs['sch_want'][lgkey] %>">
+				</div>
+				<a href="javascript:;" class="btns searchBtn"><span><%=langs['search'][lgkey] %></span></a>
+		</div>
 	</div>
 </header>
 <div id="SlideMenu">

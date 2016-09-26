@@ -46,7 +46,7 @@ header{background: #2C2C3C;padding: 10px 0;}
 	#MenuBtn.active{background-position:50% -71px }
 #Logo{background: url("../images/logo.png") no-repeat 50% 50%;display: block;float: left;margin-right: 65px;width: 126px;height: 38px;text-indent: -999999px;}
 
-.searchBox{overflow: hidden;float: left;}
+.searchBox{overflow: hidden;float: right;padding-right: 20px;}
 	.iptBlock{float: left;margin-right: 15px;}
 	.iptSearch{color: #8b8bac;border: none;outline: none; border-radius: 3px;width:400px;padding: 12px 5px 12px 45px;background: url("../images/seach.png") no-repeat 16px 50% #3B3B52;}
 	.searchBtn{float: left;display: block; width: 110px;line-height: 40px;height: 40px;background: #686886;border-radius: 3px; text-align: center;color: #fff;font-family: "PTSerif_Italic"}
