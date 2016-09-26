@@ -1,28 +1,28 @@
 <header>
-	<div class="inner clearfix">
+	<div class="clearfix">
 		<div id="LeftMenu">
 			<a href="javascript:;" id="MenuBtn" class="active"><span>left memu</span></a>
 		</div>
 		<a href="/" id="Logo"><span>360 shopping channel</span></a>
 		<div class="searchBox">
 				<div class="iptBlock">
-					<input type="text" value="" class="iptSearch" placeholder="Search you want...">
+					<input type="text" value="" class="iptSearch" placeholder="<%=langs['sch_want'][lgkey] %>">
 				</div>
-				<a href="javascript:;" class="btns searchBtn"><span>Search</span></a>
+				<a href="javascript:;" class="btns searchBtn"><span><%=langs['search'][lgkey] %></span></a>
 		</div>
 		<ul id="Menu" class=" clearfix">
 		 <% menu.forEach(function(m,k){ %>
 		 <% if(k>2){%>
 				<li>
 					<% if(m['multi']){%>
-						<a href="#" class="mLink"><%= m['multi'][lgkey] %></a>
+						<a href="#" class="mLink hasSub"><%= m['multi'][lgkey] %></a>
 				    <ul class="subMenu">
 				      <% m['sublevel'].forEach(function(sm,key){ %>
-				      <li><a href=""><%= sm[lgkey] %></a></li>
+				      <li><a href=""><span><%= sm[lgkey] %></span></a></li>
 				      <% }) %>
 				    </ul>
 			 		<% }else{ %>
-						<a href="#" class="mLink"><%= m[lgkey] %></a>
+						<a href="#" class="mLink"><span><%= m[lgkey] %></span></a>
 			 		<% }%>
 					<% if(m[0]=="tp_cart"){%>
 			 		<span class="cartConut" data-val="0">0</span>
@@ -33,3 +33,13 @@
 		</ul>
 	</div>
 </header>
+<div id="SlideMenu">
+	<ul>
+		 <% menu.forEach(function(m,k){ %>
+		 <% if(k<=2){%>
+		<li>
+			<a href="#" class="mLink <%= k==0?'active':'' %>"><span><%= m[lgkey] %></span></a>
+		</li>
+		 <% }}) %>
+	</ul>
+</div>

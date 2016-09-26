@@ -3,6 +3,8 @@
 var lang={
 	"web_title":["tp_shopping","Shopping Channel","购物频道"]
 	,"language":["tp_slang","Select Language","选择语言"]
+	,"search":["tp_sch","Search","收索"]
+	,"sch_want":["tp_schwt","Search you want...","收你喜欢..."]
 	,"menu":[
 				["tp_home","Home","首页"]
 				,["tp_dis","Discovery","发现"]
@@ -22,5 +24,6 @@ var lang={
 									,["tp_cu","Contact Us","联系我们"],["tp_hc","Help Center","帮助中心"]
 									,["tp_ts","Terms","法律声明"],["tp_priv","Privacy","隐私条款"]
 								]
+	,"copyright":["tp_copyr","© 360 Shopping Channel 2016","© 360 购物频道 2016"]
 };
 module.exports = lang;
