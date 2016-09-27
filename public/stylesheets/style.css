@@ -23,7 +23,7 @@
   font-family: 'Helvetica-Bold';
   src: url('./font/helvetica/HelveticaNeueLTPro-Bd.ttf') format('truetype');
 }
-body {min-width: 1245px;background: #fff; color: #5C5C5C;font-family:"PTSerif",Arial,"Microsoft YaHei","微软雅黑","宋体"; font-size: 14px; line-height: 18px; margin: 0; padding: 0}
+body {background: #fff; color: #5C5C5C;font-family:"PTSerif",Arial,"Microsoft YaHei","微软雅黑","宋体"; font-size: 14px; line-height: 18px; margin: 0; padding: 0}
 h1, h2, h3, h4, h5, h6, p, form { margin: 0; padding: 0; font-weight: normal; font-size: 14px; }
 ul, li, menu, ol, dd, dl, dt { list-style: none outside none; margin: 0; padding: 0; }
 img, a { border: medium none; color: #5C5C5C; text-decoration: none; }
@@ -57,9 +57,14 @@ header{background: #2C2C3C;padding: 10px 0;}
 	.mLink{color: #8383a6}
 	.mLink:hover,.mLink.active{color: #fff}
   .mLink.hasSub{background: url("../images/arrow01.png") no-repeat right 50%;padding-right:15px;}
+  .mLink.hasSub.active{background-image: url("../images/arrow02.png");}
 	.mCut{padding: 0 0 0 5px;}
 	.cartConut{display: inline-block;background: #7ea656;color: #fff;font-family: "Helvetica-Bold";border-radius: 50%;width: 18px;height: 18px;text-align: center;line-height: 18px;}
-.subMenu{display: none;}
+.subMenu{display: none;position: absolute;z-index: 5; top: 42px;left: 0;background: url("../images/arrow_menu.png") no-repeat 50% 0 #3B3B52;padding: 20px 15px 0;width: 100%}
+  #Menu .subMenu li{float: none;text-align: left;line-height: 24px;}
+  .subMenu li a{display: block;color: #8b8bac;padding: 5px 0;}
+  .subMenu li a:hover,.subMenu li a.active{color: #fff}
+
 #SlideMenu{padding: 0;height: 0;overflow: hidden;opacity: 0}
 #SlideMenu ul{overflow: hidden;margin: 0 auto;width: 300px;}
 #SlideMenu ul li{float: left;padding: 0 15px;}

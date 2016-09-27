@@ -1,13 +1,13 @@
 <header>
 	<div class="clearfix">
 		<div id="LeftMenu">
-			<a href="javascript:;" id="MenuBtn" class="active"><span>left memu</span></a>
+			<a href="javascript:;" id="MenuBtn" class=""><span>left memu</span></a>
 		</div>
 		<a href="/" id="Logo"><span>360 shopping channel</span></a>
 		<ul id="Menu" class=" clearfix">
 		 <% menu.forEach(function(m,k){ %>
 		 <% if(k>2){%>
-				<li>
+				<li class="<%- m['multi'] ? 'multi':'' %>">
 					<% if(m['multi']){%>
 						<a href="#" class="mLink hasSub"><%= m['multi'][lgkey] %></a>
 				    <ul class="subMenu">

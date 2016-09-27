@@ -2,4 +2,5 @@
 
 @media screen and (min-width: 0px) and (max-width: 736px) {
   body{width: 100%;min-width: 100px;font-size: 62.5%;max-width: auto;}
+  .inner{width: 95%;}
 }
