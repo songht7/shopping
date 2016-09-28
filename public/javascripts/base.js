@@ -14,12 +14,12 @@ $(function(){
     $(".multi").mouseover(function(){
         var obj=$(this);
         obj.find(".hasSub").addClass("active");
-        obj.find(".subMenu").show();
+        obj.find(".subBox").show();
     });
     $(".multi").mouseleave(function(){
         var obj=$(this);
         obj.find(".hasSub").removeClass("active");
-        obj.find(".subMenu").hide();
+        obj.find(".subBox").hide();
     });
     $("#Language").change(function(){
         var obj=$(this);

@@ -53,15 +53,17 @@ header{background: #2C2C3C;padding: 10px 0;}
 
 #Menu {float: right;}
 #Menu li{float: left;color: #8383a6;position: relative;text-align: center;line-height: 40px;padding: 0 5px;font-size: 12px;font-family: "Helvetica"}
-	#Menu li:last-child span{display: none;}
+	#Menu li:last-child > span{display: none;}
 	.mLink{color: #8383a6}
 	.mLink:hover,.mLink.active{color: #fff}
   .mLink.hasSub{background: url("../images/arrow01.png") no-repeat right 50%;padding-right:15px;}
   .mLink.hasSub.active{background-image: url("../images/arrow02.png");}
 	.mCut{padding: 0 0 0 5px;}
 	.cartConut{display: inline-block;background: #7ea656;color: #fff;font-family: "Helvetica-Bold";border-radius: 50%;width: 18px;height: 18px;text-align: center;line-height: 18px;}
-.subMenu{display: none;position: absolute;z-index: 5; top: 42px;left: 0;background: url("../images/arrow_menu.png") no-repeat 50% 0 #3B3B52;padding: 20px 15px 0;width: 100%}
-  #Menu .subMenu li{float: none;text-align: left;line-height: 24px;}
+.subBox{display: none;position: absolute;z-index: 5;top: 30px;left: -20px;background: #3B3B52;border-top: 20px solid #2C2C3C;width: 100%;padding:10px 20px;border-radius: 0 0 3px 3px}
+.subArrow{display: block;background: url("../images/arrow_menu.png") no-repeat 50% 0;top: -19px;text-indent: -99999px;height: 20px;position: absolute;z-index: 5;width: 100%;left: 0;}
+.subMenu{width: 100%}
+  #Menu .subMenu li{float: none;text-align: left;line-height: 18px;padding: 0;}
   .subMenu li a{display: block;color: #8b8bac;padding: 5px 0;}
   .subMenu li a:hover,.subMenu li a.active{color: #fff}
 
