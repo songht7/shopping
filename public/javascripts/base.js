@@ -33,27 +33,4 @@ $(function(){
             }
         });
     });
-    //////
-    function getGallerySlideNumber(){
-        var scrollOffset = Math.abs($(".homeSlide .wrapper").offset().left);
-        var slideWidth = $(".homeSlide .slides").width();
-        var slideNum = parseInt(scrollOffset/slideWidth);
-        return slideNum;
-    }
-
-    $(".homeSlide > .arrowLeft").click(function(){
-        var gallery =  $(".homeSlide");
-        var prevSlideNum = getGallerySlideNumber() - 1; 
-        if(prevSlideNum >= 0){
-            gallery.find(".swiper-wrapper").scrollTo(gallery.find('.slides:eq('+prevSlideNum+')'), 500);
-        }
-    });
-
-    $(".homeSlide > .arrowRight").click(function(){
-        var gallery =  $(".homeSlide");
-        var nextSlideNum = getGallerySlideNumber() + 1;
-        if(nextSlideNum <= gallery.find('.slides').length){
-            gallery.find(".swiper-wrapper").scrollTo(gallery.find('.slides:eq('+nextSlideNum+')'), 500);
-        }
-    });
 });

@@ -1,4 +1,5 @@
 http://www.wirewax.com/view/8039580
 
+http://www.bootcdn.cn/jquery-scrollTo/
 
 http://www.voicer.me/

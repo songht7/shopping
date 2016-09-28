@@ -81,14 +81,15 @@ header{background: #2C2C3C;padding: 10px 0;}
   .bLeft{font-family:"PTSerif_Italic";font-size: 28px;color: #303042;float: left;}
   .bRight{font-family:"PTSerif_Italic";float: right;font-size: 14px;}
 
-.swiper-container {width: 100%;height: 400px;margin: 0 auto;padding-bottom: 20px}
-.swiper-slide {background: url('../images/slide/slide01.jpg') no-repeat 50% 50%;text-indent: -99999px;
-    /* Center slide text vertically */
-    display: -webkit-box;    display: -ms-flexbox;    display: -webkit-flex;
-    display: flex;    -webkit-box-pack: center;    -ms-flex-pack: center;
-    -webkit-justify-content: center;    justify-content: center;    -webkit-box-align: center;
-    -ms-flex-align: center;    -webkit-align-items: center;    align-items: center;
-}
+#featuredGallery{position:relative}
+#featuredGallery .container{position:relative;width:100%;height:430px;overflow-x:scroll;overflow-y:hidden}
+#featuredGallery .wrapper{position:absolute;width:calc(640px*6);height:430px}
+.navGallery{position:absolute;top:0;width:100%;z-index:666}
+.navGallery>.arrowLeft{position:absolute;top:100px;left:30px;height:230px;width:100px;background:url(../images/btn_gallery_arrow_left@2x.png) no-repeat center;background-size:44px 44px;cursor:pointer;display:none}
+.navGallery>.arrowRight{position:absolute;top:100px;right:30px;height:230px;width:100px;background:url(../images/btn_gallery_arrow_right@2x.png) no-repeat center;background-size:44px 44px;cursor:pointer;display:none}
+#featuredGallery .galleryItem{float:left;width:640px;height:100%;background:#C0C0C0}
+#featuredGallery .galleryItem .thImage{position:relative;height:100%;width:100%;background:no-repeat center;background-size:cover}
+
 .swiper-button-prev,.swiper-button-next{border-radius: 50%;background:url("../images/arrow_left.png") no-repeat 50% 50% rgba(44,44,60,0.8);width: 45px;height: 45px;}
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{left: 5%;right: auto;}
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev{left: auto;right: 5%;background-image:url("../images/arrow_right.png")}
@@ -102,3 +103,4 @@ footer{background: #2C2C3C;color: #8383a6;font-family: ""}
   .ftMenu li{float: left;padding:0 5px;}
   .ftMenu li a{color: #8383a6}
 #Copyright{float: right;}
+

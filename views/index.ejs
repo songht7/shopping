@@ -2,16 +2,35 @@
 <% include Share/_menu.ejs %>
 
 <!-- Swiper -->
-<div class="swiper-container homeSlide">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+<div id="featuredGallery">
+  <div class="navGallery">
+    <span class="arrowLeft"></span>
+    <span class="arrowRight"></span>
+  </div>
+  <div class="container swiper-container">
+    <div class="wrapper swiper-wrapper">
+      <a id="s1" class="galleryItem swiper-slide" href="http://www.voicer.me/archives/38791" rel="bookmark">
+        <div class="thImage b-lazy" data-src="http://7xijn6.com1.z0.glb.clouddn.com/wp-content/uploads/2016/08/ExFBhrU-960x645.jpg"></div>
+      </a>
+      <a id="s2" class="galleryItem swiper-slide" href="http://www.voicer.me/archives/38791" rel="bookmark">
+        <div class="thImage b-lazy" data-src="http://7xijn6.com1.z0.glb.clouddn.com/wp-content/uploads/2016/08/ExFBhrU-960x645.jpg"></div>
+      </a>
+      <a id="s3" class="galleryItem swiper-slide" href="http://www.voicer.me/archives/38791" rel="bookmark">
+        <div class="thImage b-lazy" data-src="http://7xijn6.com1.z0.glb.clouddn.com/wp-content/uploads/2016/08/ExFBhrU-960x645.jpg"></div>
+      </a>
+      <a id="s4" class="galleryItem swiper-slide" href="http://www.voicer.me/archives/38791" rel="bookmark">
+        <div class="thImage b-lazy" data-src="http://7xijn6.com1.z0.glb.clouddn.com/wp-content/uploads/2016/08/ExFBhrU-960x645.jpg"></div>
+      </a>
+      <a id="s5" class="galleryItem swiper-slide" href="http://www.voicer.me/archives/38791" rel="bookmark">
+        <div class="thImage b-lazy" data-src="http://7xijn6.com1.z0.glb.clouddn.com/wp-content/uploads/2016/08/ExFBhrU-960x645.jpg"></div>
+      </a>
+      <a id="s6" class="galleryItem swiper-slide" href="http://www.voicer.me/archives/38791" rel="bookmark">
+        <div class="thImage b-lazy" data-src="http://7xijn6.com1.z0.glb.clouddn.com/wp-content/uploads/2016/08/ExFBhrU-960x645.jpg"></div>
+      </a>
     </div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+  </div>
 </div>
+
 
 <div class="pages inner">
   <div class="proBlock">
@@ -24,17 +43,6 @@
     </div>
   </div>
 </div>
-<script>
-  var swiper = new Swiper('.swiper-container', {
-      loop : true,
-      autoplay:2000,
-      slidesPerView: 3,
-      paginationClickable: true,
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-      spaceBetween: 5,
-      freeMode: true
-  });
-</script>
+<script src="/javascripts/scroll_config.js"></script>
 
 <% include Share/_footer.ejs %>
