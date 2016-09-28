@@ -9,40 +9,58 @@
   </div>
   <div class="container swiper-container">
     <div class="wrapper swiper-wrapper">
-      <a id="s1" class="galleryItem swiper-slide" href="http://www.voicer.me/archives/38791" rel="bookmark">
-        <div class="thImage b-lazy" data-src="http://7xijn6.com1.z0.glb.clouddn.com/wp-content/uploads/2016/08/ExFBhrU-960x645.jpg"></div>
+      <a id="s1" class="galleryItem swiper-slide" href="#" rel="bookmark">
+        <div class="thImage b-lazy" data-src="/images/slide/slide01.jpg"></div>
       </a>
-      <a id="s2" class="galleryItem swiper-slide" href="http://www.voicer.me/archives/38791" rel="bookmark">
-        <div class="thImage b-lazy" data-src="http://7xijn6.com1.z0.glb.clouddn.com/wp-content/uploads/2016/08/ExFBhrU-960x645.jpg"></div>
+      <a id="s2" class="galleryItem swiper-slide" href="#" rel="bookmark">
+        <div class="thImage b-lazy" data-src="/images/slide/slide01.jpg"></div>
       </a>
-      <a id="s3" class="galleryItem swiper-slide" href="http://www.voicer.me/archives/38791" rel="bookmark">
-        <div class="thImage b-lazy" data-src="http://7xijn6.com1.z0.glb.clouddn.com/wp-content/uploads/2016/08/ExFBhrU-960x645.jpg"></div>
+      <a id="s3" class="galleryItem swiper-slide" href="#" rel="bookmark">
+        <div class="thImage b-lazy" data-src="/images/slide/slide01.jpg"></div>
       </a>
-      <a id="s4" class="galleryItem swiper-slide" href="http://www.voicer.me/archives/38791" rel="bookmark">
-        <div class="thImage b-lazy" data-src="http://7xijn6.com1.z0.glb.clouddn.com/wp-content/uploads/2016/08/ExFBhrU-960x645.jpg"></div>
+      <a id="s4" class="galleryItem swiper-slide" href="#" rel="bookmark">
+        <div class="thImage b-lazy" data-src="/images/slide/slide01.jpg"></div>
       </a>
-      <a id="s5" class="galleryItem swiper-slide" href="http://www.voicer.me/archives/38791" rel="bookmark">
-        <div class="thImage b-lazy" data-src="http://7xijn6.com1.z0.glb.clouddn.com/wp-content/uploads/2016/08/ExFBhrU-960x645.jpg"></div>
+      <a id="s5" class="galleryItem swiper-slide" href="#" rel="bookmark">
+        <div class="thImage b-lazy" data-src="/images/slide/slide01.jpg"></div>
       </a>
-      <a id="s6" class="galleryItem swiper-slide" href="http://www.voicer.me/archives/38791" rel="bookmark">
-        <div class="thImage b-lazy" data-src="http://7xijn6.com1.z0.glb.clouddn.com/wp-content/uploads/2016/08/ExFBhrU-960x645.jpg"></div>
+      <a id="s6" class="galleryItem swiper-slide" href="#" rel="bookmark">
+        <div class="thImage b-lazy" data-src="/images/slide/slide01.jpg"></div>
       </a>
     </div>
   </div>
 </div>
-
 
 <div class="pages inner">
-  <div class="proBlock">
+
+  <% category.forEach(function(ctg,key){ %>
+  <div class="ctgBlock">
     <div class="blockHead">
-      <div class="bLeft">Latest From Your Favorite Bloggers</div>
+      <div class="bLeft"><%= ctg["ctgName"][lgkey] %> <%- ctg["ctgBrief"]?"<span class=\"ctgBrief\">"+ctg["ctgBrief"][lgkey]+"</span>":"" %> </div>
       <div class="bRight">
-        <a href="javascript:;" class="proMore prev"><span>Previous</span></a>
-        <a href="javascript:;" class="proMore next"><span>Next</span></a>
+        <a href="javascript:;" class="ctgMore prev"><span>Previous</span></a>
+        <a href="javascript:;" class="ctgMore next"><span>Next</span></a>
       </div>
     </div>
+    <div class="ctgList col-<%= ctg["colNumb"]?ctg["colNumb"]:4 %>">
+      <ul>
+        <% ctg["ctgList"].forEach(function(obj,k){ %>
+        <li>
+          <a href="/detail/<%= obj["id"] %>" class="ctgLink">
+            <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
+            <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>
+            <p class="ctgOvs"><%= obj["ctgOvs"][lgkey] %></p>
+            <p class="view">5,600 views - 2 hours ago</p>
+          </a>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
   </div>
+  <% }) %>
+
 </div>
+
 <script src="/javascripts/scroll_config.js"></script>
 
 <% include Share/_footer.ejs %>
