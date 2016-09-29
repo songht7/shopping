@@ -2,12 +2,16 @@
 	     <footer>
 	     		<div class="inner">
 		     		<div class="ftRow clearfix">
-		     			<div class="selLng">
-		     				<span><%=langs['language'][lgkey] %></span>
-				     		<select name="Language" id="Language">
-				     			<option value="1"  data-lg="en" <%= lgkey==1?"selected":"" %> >English</option>
-				     			<option value="2" data-lg="zh" <%= lgkey==2?"selected":"" %> >中文</option>
-				     		</select>
+		     			<div class="selLng clearfix">
+		     				<span class="lgTip"><%=langs['language'][lgkey] %></span>
+		             <div class="selBlock">
+		                 <div class="selHtm"><%= lgkey==1?"English":"中文" %></div>
+		                 <input type="hidden" value="<%= lgkey %>" id="Language" name="Language" class="selVal">
+		                 <ul class="selList">
+		                     <li data-value="1" data-lg="en">English</li>
+		                     <li data-value="2" data-lg="zh">中文</li>
+		                 </ul>
+		             </div>
 		     			</div>
 		     		</div>
 		     		<div class="ftRow clearfix">

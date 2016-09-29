@@ -97,9 +97,10 @@ header{background: #2C2C3C;padding: 10px 0;}
     .bLeft .ctgBrief{font-size: 14px;color: #797980;padding: 0 10px}
   .bRight{font-family:"PTSerif_Italic";float: right;font-size: 14px;}
 .ctgBlock{padding-bottom: 20px;}
-.ctgList{padding: 20px 0}
+.ctgList{padding: 20px 0 10px}
 .ctgList ul{overflow: hidden;margin-left: -18px}
-.ctgList li{float: left;width: 308px;margin: 0 0 10px 18px}
+.ctgList li{float: left;width: 308px;margin: 0 0 20px 18px}
+.ctgList li.fRow{clear: both;}
   .ctgLink{display: block;width: 100%;}
     .ctgLink p{line-height: 18px}
     .ctgImg{display: block;width: 100%;height: 178px;margin-bottom: 10px;}
@@ -114,6 +115,17 @@ footer{background: #2C2C3C;color: #8383a6;font-family: ""}
 .ftRow{border-bottom: 1px solid #3B3B4E;padding: 20px 0;}
 .ftRow:last-child{border-bottom: 0;}
   .selLng{float:left;}
+  .lgTip{float: left;padding-right: 10px;}
+
+  /**表单**/
+  .selBlock{float: left; background:url("../images/select_arrow.png") no-repeat 90% 50%;font-size:14px;width:108px;height:24px;line-height:24px;border:1px solid #7A7A9E;position:relative;border-radius: 3px;}
+  .selBlock.on{z-index:1}
+  .selHtm{border:none;background:none;padding:0px 15px 0px 12px;margin:0;cursor:pointer;color:#7A7A9E;}
+  .selVal{display:none;}
+  .selBlock .selList{display:none;position:absolute;width:100%;top:100%;left:-1px;border:1px solid #7A7A9E;background:#2C2C3C;z-index:100}
+  .selBlock .selList li{padding:4px 18px 5px 12px;line-height:20px;cursor:pointer;color:#7A7A9E;}
+  .selBlock .selList li:hover{color:#fff;}
+
 .ftMenu{overflow: hidden;float: left;}
   .ftMenu li{float: left;padding:0 5px;}
   .ftMenu li a{color: #8383a6}

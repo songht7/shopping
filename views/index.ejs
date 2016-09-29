@@ -45,7 +45,7 @@
     <div class="ctgList col-<%= ctg["colNumb"]?ctg["colNumb"]:4 %>">
       <ul>
         <% ctg["ctgList"].forEach(function(obj,k){ %>
-        <li>
+        <li class="<%=(k)%ctg["colNumb"]<=0?'fRow':'' %>">
           <a href="/detail/<%= obj["id"] %>" class="ctgLink">
             <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
             <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>

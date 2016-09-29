@@ -70,7 +70,6 @@ var category={
 		,{
 			"colNumb":4,
 			"ctgName":["c1title","Newly Added","新添加的"]
-			,"ctgBrief":["cf","latest most viewed videos","最新最受欢迎视频"]
 			,"ctgList":[
 				{
 					"id":11,
@@ -91,6 +90,54 @@ var category={
 					"id":14,
 					"ctgTitle":["p4name","Pairings: Winter Fashion","冬季时装"],
 					"ctgOvs":["o5name","Wendy's Lookbook","温迪的代言人"]
+				}
+			]
+		}
+		/**pro4**/
+		,{
+			"colNumb":4,
+			"ctgName":["c1title","Most Popular","最受欢迎的"]
+			,"ctgBrief":["cf","latest most viewed videos","最新最受欢迎视频"]
+			,"ctgList":[
+				{
+					"id":15,
+					"ctgTitle":["pname","Date Night Pairings","约会派对"],
+					"ctgOvs":["oname","Wendy's Lookbook","温迪的代言人"]
+				},
+				{
+					"id":16,
+					"ctgTitle":["p2name","My secrets to an easy topknot / bun updo ","我的秘密，一个简单的头饰/发髻高髻"],
+					"ctgOvs":["o2name","EP Style","EP风格"]
+				},
+				{
+					"id":17,
+					"ctgTitle":["p3name","Joe Fattorini Gets Yelled","Joe Fattorini大叫"],
+					"ctgOvs":["o3name","The Wine Show ","葡萄酒展"]
+				},
+				{
+					"id":18,
+					"ctgTitle":["p4name","Designing A Wine Label Using Crayons","一个用蜡笔葡萄酒标签设计"],
+					"ctgOvs":["o5name","The Wine Show","葡萄酒展"]
+				},
+				{
+					"id":19,
+					"ctgTitle":["p4name","The Grand Beedapest Hotel","大beedapest酒店"],
+					"ctgOvs":["o5name","Bloomberg","彭博社"]
+				},
+				{
+					"id":20,
+					"ctgTitle":["p4name","Planner Supplies & Stationery Haul","计划用品及文具"],
+					"ctgOvs":["o5name","Xao Vang","XAO万荣"]
+				},
+				{
+					"id":21,
+					"ctgTitle":["p4name","An artistic view on Nittardi","在nittardi艺术观"],
+					"ctgOvs":["o5name","The Wine Show","葡萄酒展"]
+				},
+				{
+					"id":22,
+					"ctgTitle":["p4name","Be your shoeself","是你的shoeself"],
+					"ctgOvs":["o5name","The Wine Show","葡萄酒展"]
 				}
 			]
 		}
