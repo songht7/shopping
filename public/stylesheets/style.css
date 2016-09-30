@@ -102,7 +102,7 @@ header{background: #2C2C3C;padding: 10px 0;}
 .ctgList{padding: 20px 0 10px}
 .ctgList ul{overflow: hidden;margin-left: -18px}
 .ctgList li{float: left;width: 308px;margin: 0 0 20px 18px}
-.ctgList li.fRow{clear: both;}
+.fRow{clear: both;}
   .ctgLink{display: block;width: 100%;}
     .ctgLink p{line-height: 18px}
     .ctgImg{display: block;width: 100%;height: 178px;margin-bottom: 10px;}
@@ -160,6 +160,25 @@ header{background: #2C2C3C;padding: 10px 0;}
     .cpLink{padding: 10px 0;overflow: hidden;clear: both;}
       .cpIpt{width: 75%;background: none;border:1px solid #D4D4DB;border-radius: 3px;padding: 10px 10px;float: left;}
       .cpBtn{display: block;float: right;width: 20%;background: #686886;color: #fff;border-radius: 3px;text-align: center;line-height: 36px;}
+.productBox{padding: 50px 0 30px;}
+  .proList{padding: 20px 0 0}
+  .proList ul{overflow: hidden;margin-left: -16px}
+  .proList li{float: left;width: 200px;margin: 0 0 50px 16px}
+  .proImg{background: #fff;text-align: center;}
+  .pTitle{display: block;padding: 10px 0;font-family: "Helvetica-Bold";height: 40px}
+  .pLike{overflow: hidden;padding-bottom: 20px}
+    .pLike .price{float: left;}
+    .proLikeBtn{float: right;background: url("../images/like2.png") no-repeat;width: 22px;height: 19px;cursor: pointer;}
+    .proLikeBtn:hover{background-image:url("../images/like3.png")}
+    .add2Cart{display: block;width: 100%;height: 38px;line-height: 38px;text-align: center;font-family: "PTSerif_Italic";font-size: 12px;background: #799D4D;border-radius: 3px;color: #fff}
+    .add2Cart.noStock{background: #A9A9AE}
+.cmtBlock{padding: 20px 0 15px;margin-bottom: 10px;border-bottom: 1px solid #CFCFD7;overflow: hidden;}
+  .cmtIpt{overflow: hidden}
+    .cmtHead{float: left;width: 52px;height: 51px;}
+    .txtArea{background: #fff;width: 565px;height: 110px;float: right;}
+    .txtArea textarea{padding: 15px 30px;width: 505px;height: 80px;background: none;border: none;outline: none;}
+    .postBtn{float: right;width: 105px;height: 38px;line-height: 38px;color: #fff;text-align: center;font-family:"PTSerif_Italic";font-size: 12px;background: #686886;border-radius: 3px;margin: 10px 0 0}
+
 
 .detailRight{float: left;width: 635px;}
 

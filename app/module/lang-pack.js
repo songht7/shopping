@@ -31,5 +31,7 @@ var lang={
 	,"hago":["dago","hours ago","小时前"]
 	,"dago":["dago","days ago","天前"]
 	,"mago":["mago","months ago","月前"]
+	,"add2Cart":["add2Cart","Add To Cart","加入购物车"]
+	,"noStock":["noStock","Sorry, no longer available","对不起，不再提供"]
 };
 module.exports = lang;

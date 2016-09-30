@@ -5,7 +5,7 @@
 	<div class="inner clearfix">
 		<div class="video">
 			<div class="fltBox">
-				<img src="/images/wine/qr1.png" class="wqr" alt="">
+				<img src="/images/wine/qr<%= wine["ctgId"] %>.png" class="wqr" alt="">
 				<div class="wineAdd">
 					<p class="addHd">Add to Cart!</p>
 					<p class="addOvs">Scan the QR code add all products to your shopping cart</p>
@@ -18,7 +18,7 @@
 				<div class="vrTop">
 					<img src="/images/wine/portrait1.png" class="portrait" alt="">
 					<div class="vrtRight">
-						<div class="wCtgName">The Wine Show</div>
+						<div class="wCtgName"><%= wine["ctgName"][lgkey] %></div>
 						<div class="flwNumb">61,351 Followers</div>
 						<a href="javascript:;" class="flwBtn"><span>Follow</span></a>
 					</div>
@@ -44,17 +44,19 @@
 <div class="pages inner clearfix">
 	<div class="detailLeft">
 		<div class="wineDtl">
+
 			<div class="wTop">
 				<h1 class="wTitle">
-					<span class="wTInfo">Matthew Rhys Suckers Joe!</span>
+					<span class="wTInfo"><%= wine["ctgTitle"][lgkey] %></span>
 					<span class="wvws">474,747 <%= langs["views"][lgkey] %></span>
 				</h1>
 				<div class="wUpload">Upload: May 27, 2016</div>
 			</div>
 			<div class="wOverview">
-				<div class="ovBox">Spero nancisceris anulum facere quod lignum sit amet. Auree aere ostendo addere potes, si vis relinquere lignum simplex retinent. Triforce feci ex Legenda Zelda quia satis expedito…</div>
+				<div class="ovBox"><%= wine["detail"][lgkey] %></div>
 				<a href="javascript:;" class="openBtn">Open More</a>
 			</div>
+
 			<div class="shareBox clearfix">
 				<div class="shareLeft">
 					<a href="javascript:;">Bookmark Video</a>
@@ -84,8 +86,55 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
+
+		<div class="productBox">
+			<div class="blockHead">
+	      <div class="bLeft"><%= wine["proTitle"][lgkey] %></div>
+	      <div class="bRight">
+	        <a href="javascript:;" class="addAllBtn"><span>Add All to Cart</span></a>
+	      </div>
+	    </div>
+	    <div class="proList">
+	    	<ul class=" col-<%= wine["colNumb"]?wine["colNumb"]:3 %>">
+  				<% wine["product"].forEach(function(pro,key){ %>
+	    		<li class="<%=(key)%wine["colNumb"]<=0?'fRow':'' %>">
+	    			<div class="proImg"><img src="/images/wine/wine<%= pro["id"] %>.jpg" alt=""></div>
+	    			<a href="javascript:;" class="pTitle"><%=pro["title"][lgkey] %></a>
+	    			<div class="pLike">
+	    				<span class="price"><%=pro["price"][lgkey] %></span>
+	    				<span class="proLikeBtn"></span>
+	    			</div>
+	    			<a href="javascript" class="add2Cart <%- pro["stock"]<=0?"noStock":"" %>" data-ctgid="<%= wine["ctgId"] %>" data-id="<%= pro["id"] %>"><span><%- pro["stock"]<=0?langs["noStock"][lgkey]: langs["add2Cart"][lgkey] %></span></a>
+	    		</li>
+  				<% }) %>
+	    	</ul>
+	    </div>
+		</div>
+		
+		<div class="commentBox">
+			<div class="blockHead">
+	      <div class="bLeft">Comments(5,935)</div>
+	      <div class="bRight"></div>
+	    </div>
+			<div class="cmtBlock">
+				<div class="cmtIpt">
+					<img src="/images/userHead.png" class="cmtHead" alt="">
+					<div class="txtArea">
+						<textarea name="" id="" class="" cols="30" rows="10" placeholder="Write your comment..."></textarea>
+					</div>
+					<a href="javascript:;" class="postBtn"><span>Post</span></a>
+				</div>
+			</div>
+			<div class="cmtList">
+				
+			</div>
+		</div>
+
+
 	</div>
+
 	<div class="detailRight">
 		
 	</div>
