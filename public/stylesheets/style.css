@@ -178,6 +178,23 @@ header{background: #2C2C3C;padding: 10px 0;}
     .txtArea{background: #fff;width: 565px;height: 110px;float: right;}
     .txtArea textarea{padding: 15px 30px;width: 505px;height: 80px;background: none;border: none;outline: none;}
     .postBtn{float: right;width: 105px;height: 38px;line-height: 38px;color: #fff;text-align: center;font-family:"PTSerif_Italic";font-size: 12px;background: #686886;border-radius: 3px;margin: 10px 0 0}
+.cmtList{padding: 0 0 20px;margin-bottom: 10px;border-bottom: 1px solid #CFCFD7;}
+  .cmtType{padding: 0 0 30px;font-size: 12px;}
+    .cmtType .active{font-family: "Helvetica-Bold"}
+    .cmtType span{padding: 0 5px}
+  .cmtsBlock{overflow: hidden;padding-bottom: 20px;}
+    .cmtUser{font-size: 12px;padding-bottom: 5px;}
+      .cmtName{font-family: "Helvetica-Bold"}
+  .cmtCont{padding-left: 65px;}
+    .cmtInfos{padding-bottom: 5px;font-size: 12px;}
+    .replys{overflow: hidden;font-size: 12px;}
+      .rpNumb{font-family: "Helvetica-Bold";padding-right: 20px;float: left;}
+      .cmtLike{float: left;padding-left: 20px;background: url("../images/like.png") no-repeat 0 50%;}
+  .subCmt {padding-bottom: 20px}
+  .subCmt .cmtsBlock{padding: 20px 0 20px;margin-bottom: 10px;border-bottom: 1px solid #CFCFD7}
+    .subCmt .cmtsBlock .cmtHead{width: 45px;height: 45px;}
+    .subCmt .cmtsBlock .cmtCont{padding-left: 60px;}
+.moreReply{font-size: 12px;}
 
 
 .detailRight{float: left;width: 635px;}

@@ -128,7 +128,54 @@
 				</div>
 			</div>
 			<div class="cmtList">
-				
+				<div class="cmtType">
+					<a href="javascript:;" class="active">TOP COMMENTS</a><span>|</span>
+					<a href="javascript:;">NEWWEST FIRST</a>
+				</div>
+				<!--cmts-->
+				<div class="cmts">
+					<!--cmtsBlock-->
+					<% for(var c=0;c<2;c++){ %>
+					<div class="cmtsBlock">
+						<img src="/images/userHead.png" class="cmtHead" alt="">
+						<div class="cmtCont">
+							<div class="cmtUser">
+								<span class="cmtName">Name A</span> - 2 <%= langs["dago"][lgkey] %>
+							</div>
+							<div class="cmtInfos">
+								Ok wait! I just had a cool idea, what about make a ring for each of the spiritual stones from Ocarina Of Time! I am so going to make that!
+							</div>
+							<div class="replys">
+								<span class="rpNumb">Reply(12)</span>
+								<span class="cmtLike">(8)</span>
+							</div>
+							<!--subCmt-->
+							<div class="subCmt">
+								<div class="cmtsBlock">
+									<img src="/images/userHead.png" class="cmtHead" alt="">
+									<div class="cmtCont">
+										<div class="cmtUser">
+											<span class="cmtName">Name A</span> - 2 <%= langs["dago"][lgkey] %>
+										</div>
+										<div class="cmtInfos">
+											Ok wait! I just had a cool idea, what about make a ring for each of the spiritual stones from Ocarina Of Time! I am so going to make that!
+										</div>
+										<div class="replys">
+											<span class="rpNumb">Reply(12)</span>
+											<span class="cmtLike">(8)</span>
+										</div>
+									</div>
+								</div>
+								<a href="javascript:;" class="moreReply">Open more replys (5) > </a>
+							</div>
+							<!--/subCmt-->
+						</div>
+					</div>
+					<% } %>
+					<!--/cmtsBlock-->
+
+				</div>
+				<!--/cmts-->
 			</div>
 		</div>
 
