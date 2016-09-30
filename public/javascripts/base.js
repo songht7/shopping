@@ -41,6 +41,9 @@ $(function(){
             changeLang($(".selVal"));
         }
     });
+    $(document).on("click",".shareBtn",function(){
+        $(".shareMain").toggle();
+    });
 });
 function changeLang(obj){
     var key=obj.val(),

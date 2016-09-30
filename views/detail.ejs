@@ -1,0 +1,96 @@
+<% include Share/_header.ejs %>
+<% include Share/_menu.ejs %>
+
+<div id="VideoBox">
+	<div class="inner clearfix">
+		<div class="video">
+			<div class="fltBox">
+				<img src="/images/wine/qr1.png" class="wqr" alt="">
+				<div class="wineAdd">
+					<p class="addHd">Add to Cart!</p>
+					<p class="addOvs">Scan the QR code add all products to your shopping cart</p>
+				</div>
+			</div>
+			<iframe class="iframe" src="//embed.wirewax.com/8039580/" frameborder="0" scrolling="no" allowfullscreen></iframe>
+		</div>
+		<div class="videoRight">
+			<div class="vrInner">
+				<div class="vrTop">
+					<img src="/images/wine/portrait1.png" class="portrait" alt="">
+					<div class="vrtRight">
+						<div class="wCtgName">The Wine Show</div>
+						<div class="flwNumb">61,351 Followers</div>
+						<a href="javascript:;" class="flwBtn"><span>Follow</span></a>
+					</div>
+				</div>
+				<ul class="ctgMList">
+					<% for(var i=0;i<3;i++){ %>
+					<li>
+						<a href="javascript:;">
+							<img src="/images/wine/cImg101.png" alt="">
+							<p class="cInfos">
+								<span class="cName">Matthew Goode On Making Wine Less Snobbish </span>
+								<span class="cView">5,600 <%= langs["views"][lgkey] %></span>
+							</p>
+						</a>
+					</li>
+					<% } %>
+				</ul>
+				<a href="javascript:;" class="ctmBtn"><span></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="pages inner clearfix">
+	<div class="detailLeft">
+		<div class="wineDtl">
+			<div class="wTop">
+				<h1 class="wTitle">
+					<span class="wTInfo">Matthew Rhys Suckers Joe!</span>
+					<span class="wvws">474,747 <%= langs["views"][lgkey] %></span>
+				</h1>
+				<div class="wUpload">Upload: May 27, 2016</div>
+			</div>
+			<div class="wOverview">
+				<div class="ovBox">Spero nancisceris anulum facere quod lignum sit amet. Auree aere ostendo addere potes, si vis relinquere lignum simplex retinent. Triforce feci ex Legenda Zelda quia satis expedito…</div>
+				<a href="javascript:;" class="openBtn">Open More</a>
+			</div>
+			<div class="shareBox clearfix">
+				<div class="shareLeft">
+					<a href="javascript:;">Bookmark Video</a>
+					<span>|</span>
+					<a href="javascript:;" class="shareBtn">Share</a>
+				</div>
+				<div class="shareRight">
+					<span class="like">13,907</span>
+					<span class="unlike">341</span>
+				</div>
+				<div class="shareMain">
+					<div class="smInner">
+						<div class="shareArrow"></div>
+						<!-- JiaThis Button BEGIN -->
+						<div class="jiathis_style_32x32">
+							<a class="jiathis_button_fb">Facebook</a>
+							<a class="jiathis_button_tsina">Weibo</a>
+							<a class="jiathis_button_weixin">WeChat Friend</a>
+							<a class="jiathis_button_weixin weChatMoment">WeChat Moment</a>
+						</div>
+						<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+						<!-- JiaThis Button END -->
+						<div class="cpLink">
+							<input type="text" name="CopyLink" readonly="" class="cpIpt" value="http://www.360shopping.com">
+							<a href="javascript:;" class="cpBtn">Copy Link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="detailRight">
+		
+	</div>
+
+</div>
+
+
+<% include Share/_footer.ejs %>

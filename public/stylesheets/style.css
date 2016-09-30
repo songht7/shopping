@@ -23,7 +23,7 @@
   font-family: 'Helvetica-Bold';
   src: url('./font/helvetica/HelveticaNeueLTPro-Bd.ttf') format('truetype');
 }
-body {background: #fff; color: #5C5C5C;font-family:"PTSerif",Arial,"Microsoft YaHei","微软雅黑","宋体"; font-size: 14px; line-height: 18px; margin: 0; padding: 0}
+body {background: #E6E6EE; color: #5C5C5C;font-family:"PTSerif",Arial,"Microsoft YaHei","微软雅黑","宋体"; font-size: 14px; line-height: 18px; margin: 0; padding: 0}
 h1, h2, h3, h4, h5, h6, p, form { margin: 0; padding: 0; font-weight: normal; font-size: 14px; }
 ul, li, menu, ol, dd, dl, dt { list-style: none outside none; margin: 0; padding: 0; }
 img, a { border: medium none; color: #5C5C5C; text-decoration: none; }
@@ -96,6 +96,8 @@ header{background: #2C2C3C;padding: 10px 0;}
   .bLeft{font-family:"PTSerif_Italic";font-size: 28px;color: #303042;float: left;}
     .bLeft .ctgBrief{font-size: 14px;color: #797980;padding: 0 10px}
   .bRight{font-family:"PTSerif_Italic";float: right;font-size: 14px;}
+    .ctgMore{padding: 0 0 0 15px;margin: 0 5px;background: url("../images/list_left.png") no-repeat 0 50%;}
+    .ctgMore.next{background: url("../images/list_right.png") no-repeat right 50%;padding: 0 15px 0 0}
 .ctgBlock{padding-bottom: 20px;}
 .ctgList{padding: 20px 0 10px}
 .ctgList ul{overflow: hidden;margin-left: -18px}
@@ -110,8 +112,60 @@ header{background: #2C2C3C;padding: 10px 0;}
 .ctgList.col-4 li{width: 226px;}
 .ctgList.col-4 .ctgImg{height: 130px;}
 
+/** video **/
+#VideoBox{background: #1E1E23;padding: 18px 0;margin-bottom: 20px;}
+  .video{position: relative;width: 665px;float: left;}
+    .fltBox{position: absolute;z-index: 3;right: 20px;bottom: 20px;background: rgba(26,29,35,0.8);border-radius: 5px;padding: 8px;overflow: hidden;}
+    .wqr{width: 60px;height: 60px;border-radius: 3px;float: left;}
+    .wineAdd{width:170px;color: #A0A09D;padding: 5px 0 0 70px;}
+      .addHd{font-size: 18px;padding-bottom: 5px;}
+      .addOvs{font-size: 12px;line-height: 14px;}
+    .iframe{width: 665px;height: 405px;}
+  .videoRight{width: 295px;height: 405px; background: #2C2C3C;float: right;}
+    .vrInner{padding: 15px 20px 0}
+    .vrTop{padding: 10px 0 15px;border-bottom: 1px solid #4A4A59;margin-bottom: 15px;overflow: hidden;}
+      .portrait{width: 75px;height: 75px;border-radius: 50%;float: left;}
+      .vrtRight{padding-left: 90px;}
+        .wCtgName,.flwNumb{font-size: 14px;font-family: "Helvetica-Bold";color: #e9e9f0}
+        .flwNumb{font-size: 12px}
+        .flwBtn{background: #686886;color: #e9e9f0;border-radius: 5px;display: block;width:100px;height: 33px;line-height: 33px;text-align: center; margin: 5px 0 0;font-family: "PTSerif_Italic";font-size: 12px;}
+   ul.ctgMList{border-bottom: 1px solid #4A4A59;}
+   .ctgMList li{padding-bottom: 15px;}
+     .ctgMList li a{display: block;overflow: hidden;}
+     .ctgMList li a img{float: left;width: 112px;height: 65px;}
+     .cInfos{display: block;padding-left: 125px;}
+     .cName{display: block;font-size: 12px;font-family:"Helvetica-Bold";color: #e9e9f0;line-height: 14px;}
+     .cView{font-size: 12px;font-family: "PTSerif_Italic";color: #71718f}
+     .ctmBtn{display: block;width: 100%;height: 30px; background: url("../images/arrow01.png") no-repeat 50% 50%;}
+.detailLeft{float: left;width: 635px;}
+  .wTop{padding-bottom: 20px;}
+  h1.wTitle{line-height: 30px;overflow: hidden;}
+    h1.wTitle .wTInfo{font-size: 28px;float: left;}
+    h1.wTitle .wvws{font-size: 22px;float: right;font-family: "PTSerif_Italic"}
+    .wUpload{font-family: "PTSerif_Italic";font-size: 12px;color: #797980}
+  .wOverview{padding: 0 0 25px}
+    .ovBox{padding-bottom: 5px;}
+    .openBtn{color: #303042;text-decoration: underline;margin-left: 10px;}
+.shareBox{position: relative;background: #D4D4DB;padding: 10px 20px;}
+  .shareLeft{float: left;font-size: 12px;}
+    .shareLeft span{padding: 0 5px;}
+  .shareRight{float: right;}
+    .like,.unlike{padding-left: 20px;background: url("../images/like.png") no-repeat 0 50%;margin-right: 20px}
+    .unlike{background-image: url("../images/unlike.png");margin-right: 0}
+.shareMain{position: absolute;top: 100%;left: 0;width: 100%;background:#fff;z-index: 2;display: none}
+  .smInner{padding: 10px;position: relative;}
+    .shareArrow{background: url("../images/shareArrow.png") no-repeat 50% 0;width: 20px;height: 10px;position: absolute;top:-5px;left: 135px}
+    .shareMain .jiathis_style_32x32 .jiathis_txt{font-size: 14px;margin:0 20px 0 0;}
+    .jiathis_style_32x32 .weChatMoment .jtico_weixin{background-image: url("../images/wechat2.png");background-position:0 0;}
+    .cpLink{padding: 10px 0;overflow: hidden;clear: both;}
+      .cpIpt{width: 75%;background: none;border:1px solid #D4D4DB;border-radius: 3px;padding: 10px 10px;float: left;}
+      .cpBtn{display: block;float: right;width: 20%;background: #686886;color: #fff;border-radius: 3px;text-align: center;line-height: 36px;}
+
+.detailRight{float: left;width: 635px;}
+
+
 /** footer  */
-footer{background: #2C2C3C;color: #8383a6;font-family: ""}
+footer{background: #2C2C3C;color: #8383a6;font-family: "PTSerif"}
 .ftRow{border-bottom: 1px solid #3B3B4E;padding: 20px 0;}
 .ftRow:last-child{border-bottom: 0;}
   .selLng{float:left;}
@@ -130,5 +184,6 @@ footer{background: #2C2C3C;color: #8383a6;font-family: ""}
   .ftMenu li{float: left;padding:0 5px;}
   .ftMenu li:last-child span.mCut{display: none;}
   .ftMenu li a{color: #8383a6}
+  #FtLogo{background: url("../images/logo_footer.png") no-repeat 50% 50%;display: block;float: right; width: 118px;height: 36px;text-indent: -999999px;}
 #Copyright{float: right;}
 

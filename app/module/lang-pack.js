@@ -25,5 +25,11 @@ var lang={
 									,["tp_ts","Terms","法律声明"],["tp_priv","Privacy","隐私条款"]
 								]
 	,"copyright":["tp_copyr","© 360 Shopping Channel 2016","© 360 购物频道 2016"]
+	,"prev":["prev","Previous","上一页"]
+	,"next":["next","Next","下一页"]
+	,"views":["views","views","观看"]
+	,"hago":["dago","hours ago","小时前"]
+	,"dago":["dago","days ago","天前"]
+	,"mago":["mago","months ago","月前"]
 };
 module.exports = lang;

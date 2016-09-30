@@ -1,7 +1,7 @@
 ////["类型","英","中"]
 ///////[0,1,2]
 var category={
-	"product":[
+	"ctgs":[
 		/**pro1**/
 		{
 			"colNumb":3,

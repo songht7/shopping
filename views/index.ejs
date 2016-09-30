@@ -38,8 +38,8 @@
     <div class="blockHead">
       <div class="bLeft"><%= ctg["ctgName"][lgkey] %> <%- ctg["ctgBrief"]?"<span class=\"ctgBrief\">"+ctg["ctgBrief"][lgkey]+"</span>":"" %> </div>
       <div class="bRight">
-        <a href="javascript:;" class="ctgMore prev"><span>Previous</span></a>
-        <a href="javascript:;" class="ctgMore next"><span>Next</span></a>
+        <a href="javascript:;" class="ctgMore prev"><span><%= langs["prev"][lgkey] %></span></a>
+        <a href="javascript:;" class="ctgMore next"><span><%= langs["next"][lgkey] %></span></a>
       </div>
     </div>
     <div class="ctgList col-<%= ctg["colNumb"]?ctg["colNumb"]:4 %>">
@@ -50,7 +50,7 @@
             <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
             <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>
             <p class="ctgOvs"><%= obj["ctgOvs"][lgkey] %></p>
-            <p class="view">5,600 views - 2 hours ago</p>
+            <p class="view">5,600 <%= langs["views"][lgkey] %> - 2 <%= langs["hago"][lgkey] %></p>
           </a>
         </li>
         <% }) %>

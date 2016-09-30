@@ -7,5 +7,6 @@ module.exports = function(app){
 	/* GET home page. */
 	app.get('/setlang',lg.Setlang);
 	app.get('/',lg.CheckLang,home.index);
+	app.get('/detail/:id?',lg.CheckLang,home.detail);
 
 };
