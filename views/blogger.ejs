@@ -1,0 +1,44 @@
+<% include Share/_header.ejs %>
+<% include Share/_menu.ejs %>
+
+<div class="pageImgs"></div>
+
+<div class="userBox">
+	<div class="inner">
+		<div class="userBlock clearfix">
+			<img src="/images/blogger/userHead.png" class="uHead" alt="">
+		</div>
+	</div>
+</div>
+
+<div class="pages inner">
+
+  <% category.forEach(function(ctg,key){ %>
+  <div class="ctgBlock">
+    <div class="blockHead">
+      <div class="bLeft"><%= ctg["ctgName"][lgkey] %> <%- ctg["ctgBrief"]?"<span class=\"ctgBrief\">"+ctg["ctgBrief"][lgkey]+"</span>":"" %> </div>
+      <div class="bRight">
+        <a href="javascript:;" class="ctgMore prev"><span><%= langs["prev"][lgkey] %></span></a>
+        <a href="javascript:;" class="ctgMore next"><span><%= langs["next"][lgkey] %></span></a>
+      </div>
+    </div>
+    <div class="ctgList col-<%= ctg["colNumb"]?ctg["colNumb"]:4 %>">
+      <ul>
+        <% ctg["ctgList"].forEach(function(obj,k){ %>
+        <li class="<%=(k)%ctg["colNumb"]<=0?'fRow':'' %>">
+          <a href="/detail/<%= obj["id"] %>" class="ctgLink">
+            <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
+            <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>
+            <p class="ctgOvs"><%= obj["ctgOvs"][lgkey] %></p>
+            <p class="view">5,600 <%= langs["views"][lgkey] %> - 2 <%= langs["hago"][lgkey] %></p>
+          </a>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
+  </div>
+  <% }) %>
+
+</div>
+
+<% include Share/_footer.ejs %>

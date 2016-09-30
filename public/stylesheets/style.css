@@ -196,9 +196,23 @@ header{background: #2C2C3C;padding: 10px 0;}
     .subCmt .cmtsBlock .cmtCont{padding-left: 60px;}
 .moreReply{font-size: 12px;}
 
+.paging{padding: 20px 0 10px}
 
-.detailRight{float: left;width: 635px;}
+.detailRight{float: right;width: 295px;}
+  .recBlock{background: #fff;margin-bottom: 30px;}
+  .recInner{padding: 20px 15px 0;}
+  .recHead{font-size: 16px;font-family: "PTSerif_Italic";padding: 0 0 20px;}
+  .recList{border-bottom: 1px solid #D8D8DF}
+  .recRow{overflow: hidden;padding: 0 0 20px;}
+    .recImg{float: left;}
+    .recInfo{padding-left: 150px;}
+    .recTitle{font-family: "Helvetica-Bold";font-size: 12px;padding:0 0 5px;line-height: 14px}
+  .recMore{display: block;width: 100%;text-align: center;padding: 10px 0}
+  .recMore span{background: url("../images/arrow01.png") no-repeat right 50%;padding-right: 15px;}
 
+/** brogger  */
+.pageImgs{width: 100%;height:225px; background: url("../images/blogger/img1.jpg") no-repeat 50% 50% #322B23;}
+.userBox{background: #fff}
 
 /** footer  */
 footer{background: #2C2C3C;color: #8383a6;font-family: "PTSerif"}

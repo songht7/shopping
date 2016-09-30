@@ -19,6 +19,12 @@ var lang={
 				,["tp_msg","Message","个人信息"]
 				,["tp_hst","My History","我的历史"]
 	]
+	,"page_menu":[
+				["pg_home","HOME","首页"]
+				,["pg_video","VIDEOS","视频"]
+				,["pg_pro","PRODUCTS","产品"]
+				,["pg_about","ABOUT","关于"]
+	]
 	,"footer_menu":[
 									["tp_au","About Us","关于我们"],["tp_join","Join our Team","加入我们"]
 									,["tp_cu","Contact Us","联系我们"],["tp_hc","Help Center","帮助中心"]

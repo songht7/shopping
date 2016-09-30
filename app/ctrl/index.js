@@ -33,3 +33,21 @@ exports.detail = function(getlang,req, res, next) {
 
   	res.render('detail',item);
 }
+
+exports.blogger = function(getlang,req, res, next) {
+	var ctgid=req.params.id;
+	
+	var langs=langpack;
+	var menu=langs.menu,
+	footer_menu=langs.footer_menu;
+	var lgkey=getlang.key,lgtype=getlang.lgType;
+	var item={ title: 'shopping',lang:lgtype,lgkey:lgkey,langs:langs,menu:menu,footerMenu:footer_menu};
+  
+
+	var category=ctg.ctgs;
+  item["category"]=category;
+  var wine=video.detail[ctgid];
+  item["wine"]=wine;
+
+	res.render('blogger',item);
+}

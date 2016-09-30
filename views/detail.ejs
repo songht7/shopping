@@ -26,7 +26,7 @@
 				<ul class="ctgMList">
 					<% for(var i=0;i<3;i++){ %>
 					<li>
-						<a href="javascript:;">
+						<a href="/blogger/1">
 							<img src="/images/wine/cImg101.png" alt="">
 							<p class="cInfos">
 								<span class="cName">Matthew Goode On Making Wine Less Snobbish </span>
@@ -179,11 +179,37 @@
 			</div>
 		</div>
 
+		<div class="paging">
+			<img src="/images/paging.png" alt="">
+		</div>
 
 	</div>
 
 	<div class="detailRight">
-		
+
+	<% for(var r=0;r<2;r++){ %>
+		<div class="recBlock">
+			<div class="recInner">
+				<div class="recHead">Other Videos from This Blogger</div>
+				<div class="recList">
+					<% for(var rc=0;rc<3;rc++){ %>
+					<div class="recRow">
+						<img src="/images/wine/rec1.jpg" class="recImg" alt="">
+						<div class="recInfo">
+							<div class="recTitle">Confessions of a Food Stylist</div>
+							<div class="recVews">
+								<p>5,666 <%= langs["views"][lgkey] %></p>
+								<p>5,666 <%= langs["dago"][lgkey] %></p>
+							</div>
+						</div>
+					</div>
+					<% } %>
+				</div>
+				<a href="javascript:;" class="recMore"><span>SHOW MORE</span></a>
+			</div>
+		</div>
+	<% } %>
+
 	</div>
 
 </div>
