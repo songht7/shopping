@@ -128,6 +128,7 @@ footer{background: #2C2C3C;color: #8383a6;font-family: ""}
 
 .ftMenu{overflow: hidden;float: left;}
   .ftMenu li{float: left;padding:0 5px;}
+  .ftMenu li:last-child span.mCut{display: none;}
   .ftMenu li a{color: #8383a6}
 #Copyright{float: right;}
 
