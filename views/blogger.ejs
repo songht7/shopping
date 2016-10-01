@@ -5,27 +5,45 @@
 
 <div class="userBox">
 	<div class="inner">
-		<div class="userBlock clearfix">
-			<img src="/images/blogger/userHead.png" class="uHead" alt="">
+		<div class="uBox">
+			<div class="userBlock clearfix">
+				<img src="/images/blogger/userHead.png" class="uHead" alt="">
+				<div class="uMain">
+					<a href="javascript:;" class="flwBtn"><span><%= langs["follow"][lgkey] %></span></a>
+					<% related["list"].forEach(function(rl,k){ if(rl["id"]==id){ %>
+					<div class="bTitle"><%= rl["title"][lgkey] %></div>
+					<div class="bFlw"><span>61,351</span> <%= langs["followers"][lgkey] %></div>
+					<div class="bDetail"><%= rl["detail"][lgkey] %></div>
+        	<% }}) %>
+					<a href="javascript:;"><%= langs["showMore"][lgkey] %></a>
+				</div>
+			</div>
+			<div class="pageMenu">
+				<ul>
+  			<% page_menu.forEach(function(pm,i){ %>
+  				<li><a href="<%= pm[0] %>" class="<%- i==0?"active":"" %>"><%= pm[lgkey] %></a></li>
+        <% }) %>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
 
-<div class="pages inner">
-
-  <% category.forEach(function(ctg,key){ %>
+<div class="pages inner blogBox">
+	<div class="blogLeft">
+  <% category.forEach(function(ctg,key){if(key==0||key==3){ %>
   <div class="ctgBlock">
     <div class="blockHead">
-      <div class="bLeft"><%= ctg["ctgName"][lgkey] %> <%- ctg["ctgBrief"]?"<span class=\"ctgBrief\">"+ctg["ctgBrief"][lgkey]+"</span>":"" %> </div>
+      <div class="bLeft"><%= ctg["blogName"][lgkey] %></div>
       <div class="bRight">
         <a href="javascript:;" class="ctgMore prev"><span><%= langs["prev"][lgkey] %></span></a>
         <a href="javascript:;" class="ctgMore next"><span><%= langs["next"][lgkey] %></span></a>
       </div>
     </div>
-    <div class="ctgList col-<%= ctg["colNumb"]?ctg["colNumb"]:4 %>">
+    <div class="ctgList blgList col-3">
       <ul>
         <% ctg["ctgList"].forEach(function(obj,k){ %>
-        <li class="<%=(k)%ctg["colNumb"]<=0?'fRow':'' %>">
+        <li class="<%=(k)%3<=0?'fRow':'' %>">
           <a href="/detail/<%= obj["id"] %>" class="ctgLink">
             <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
             <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>
@@ -37,7 +55,53 @@
       </ul>
     </div>
   </div>
-  <% }) %>
+  <% }}) %>
+	</div>
+	
+	<div class="blogRight">
+
+			<div class="recBlock">
+				<div class="recInner">
+					<div class="recHead"><%= recmd["title"][lgkey] %></div>
+					<div class="recList">
+						<% recmd["list"].forEach(function(rc,k){ %>
+						<div class="recRow">
+							<div class="recImg"><img src="/images/wine/wine<%= rc["id"] %>.jpg" alt=""></div>
+							<div class="recInfo">
+								<div class="recTitle"><%= rc["wine"][lgkey] %></div>
+								<div class="recPrice">
+									<p><%= rc["price"][lgkey] %></p>
+									<a href="javascript" class="add2Cart <%- rc["stock"]<=0?"noStock":"" %>" data-ctgid="<%= rc["id"] %>" data-id="<%= rc["id"] %>"><span><%- rc["stock"]<=0?langs["soldOut"][lgkey]: langs["add2Cart"][lgkey] %></span></a>
+								</div>
+							</div>
+						</div>
+						<% }) %>
+					</div>
+					<a href="javascript:;" class="recMore"><span><%= langs["showMore"][lgkey] %></span></a>
+				</div>
+			</div>
+
+			<div class="recBlock">
+				<div class="recInner">
+					<div class="recHead"><%= related["title"][lgkey] %></div>
+					<div class="recList">
+						<% related["list"].forEach(function(rl,k){ %>
+						<div class="recRow">
+							<div class="recImg uHead"><img src="/images/portrait.png" alt=""></div>
+							<div class="recInfo">
+								<div class="recTitle"><%= rl["title"][lgkey] %></div>
+								<div class="recPrice">
+									<p>5,999<%= langs["followers"][lgkey] %></p>
+									<a href="javascript" class="flwBtn <%= k==1?"isFlwed":"" %>"><span><%= langs["follow"][lgkey] %></span></a>
+								</div>
+							</div>
+						</div>
+						<% }) %>
+					</div>
+				</div>
+			</div>
+
+	</div>
 
 </div>
 

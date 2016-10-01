@@ -23,7 +23,7 @@
   font-family: 'Helvetica-Bold';
   src: url('./font/helvetica/HelveticaNeueLTPro-Bd.ttf') format('truetype');
 }
-body {background: #E6E6EE; color: #5C5C5C;font-family:"PTSerif",Arial,"Microsoft YaHei","微软雅黑","宋体"; font-size: 14px; line-height: 18px; margin: 0; padding: 0}
+body {background: #E6E6EE; color: #5C5C5C;font-family:"Helvetica",'PTSerif',Arial,"Microsoft YaHei","微软雅黑","宋体"; font-size: 14px; line-height: 18px; margin: 0; padding: 0}
 h1, h2, h3, h4, h5, h6, p, form { margin: 0; padding: 0; font-weight: normal; font-size: 14px; }
 ul, li, menu, ol, dd, dl, dt { list-style: none outside none; margin: 0; padding: 0; }
 img, a { border: medium none; color: #5C5C5C; text-decoration: none; }
@@ -129,6 +129,7 @@ header{background: #2C2C3C;padding: 10px 0;}
         .wCtgName,.flwNumb{font-size: 14px;font-family: "Helvetica-Bold";color: #e9e9f0}
         .flwNumb{font-size: 12px}
         .flwBtn{background: #686886;color: #e9e9f0;border-radius: 5px;display: block;width:100px;height: 33px;line-height: 33px;text-align: center; margin: 5px 0 0;font-family: "PTSerif_Italic";font-size: 12px;}
+        .flwBtn.isFlwed{background: #A9A9AE}
    ul.ctgMList{border-bottom: 1px solid #4A4A59;}
    .ctgMList li{padding-bottom: 15px;}
      .ctgMList li a{display: block;overflow: hidden;}
@@ -204,7 +205,8 @@ header{background: #2C2C3C;padding: 10px 0;}
   .recHead{font-size: 16px;font-family: "PTSerif_Italic";padding: 0 0 20px;}
   .recList{border-bottom: 1px solid #D8D8DF}
   .recRow{overflow: hidden;padding: 0 0 20px;}
-    .recImg{float: left;}
+    .recImg{float: left;text-align: center;width: 140px;height: 82px;}
+    .recImg img{max-width: 100%;max-height: 100%}
     .recInfo{padding-left: 150px;}
     .recTitle{font-family: "Helvetica-Bold";font-size: 12px;padding:0 0 5px;line-height: 14px}
   .recMore{display: block;width: 100%;text-align: center;padding: 10px 0}
@@ -213,6 +215,79 @@ header{background: #2C2C3C;padding: 10px 0;}
 /** brogger  */
 .pageImgs{width: 100%;height:225px; background: url("../images/blogger/img1.jpg") no-repeat 50% 50% #322B23;}
 .userBox{background: #fff}
+.userBlock{padding: 50px 0 55px;overflow: hidden;}
+.uHead{float: left;}
+.uMain{padding-left: 185px}
+  .uMain .flwBtn{float: right;}
+  .bTitle{font-family: "PTSerif";font-size: 22px;line-height: 20px;padding: 0 0 10px}
+  .bFlw span{font-family:"Helvetica-Bold"}
+  .bDetail{font-size: 12px;padding: 15px 0 5px;}
+.pageMenu ul{overflow: hidden;}
+.pageMenu li{float: left;margin-right: 50px;}
+.pageMenu li a{display: block;padding: 0 0 10px;border-bottom: 2px solid #fff;font-family: "PTSerif"}
+.pageMenu li a.active{border-bottom: 2px solid #2C2C3C}
+
+.blogBox{padding: 55px 0 50px;overflow: hidden;}
+.blogLeft{width: 635px;float: left; }
+  .blgList li{width: 200px;margin: 0 0 20px 17px;}
+  .blgList li .ctgImg{height: auto;}
+.blogRight{float: right;width: 295px;}
+  .blogRight .recBlock{background: #F6F6FC}
+  .blogRight .recImg{width: 85px;height: 85px; border: 1px solid #E6E6EE;background: #fff}
+  .blogRight .recImg.uHead{border: none;background: none}
+  .blogRight .recInfo{padding-left: 100px;}
+  .blogRight .add2Cart{width: 60%;height: 30px;line-height: 30px;margin-top: 5px;}
+
+/**cart**/
+#CartPage{padding: 70px 0 10px;}
+.cartCk{font-family:"PTSerif_Italic";font-size: 28px;line-height: 30px;padding: 0 0 40px;}
+.cartBlock{padding-bottom: 60px;}
+.adsList{padding: 20px 0 0}
+.adsBlock{width: 220px;height: 220px;float: left;background: #fff; margin-right: 18px;border:2px solid #fff}
+.adsBlock.active{border-color: #8D8DB7}
+.adsInner{padding: 15px}
+.adsTop{overflow: hidden;border-bottom: 1px solid #CFCFD7;padding: 5px 0 10px;margin-bottom: 10px;}
+  .aName{float: left;}
+  .aPhone{float: right;font-size: 12px;}
+.adsInfo{height: 125px;font-size: 12px;}
+.adsBottm{overflow: hidden;}
+  .setDefault{padding-left: 25px;background: url("../images/checked_un.png") no-repeat 0 50%;float: left;}
+  .adsBlock.active .setDefault{background-image: url("../images/checked.png");}
+  .editBox{float: right;color: #7ea656}
+    .editBox span{padding: 0 5px;}
+    .editBtn{font-size: 12px;color: #7ea656}
+.addAds{display: block;background: url("../images/add.jpg") no-repeat 50% 50%; width: 224px;height: 224px;text-indent: -99999px;float: left;}
+.cartBlock .blockHead{padding: 5px 0}
+  .cartBlock .bLeft{font-size: 16px;}
+  .cartBlock .bRight{overflow: hidden;}
+  .orderInfo{float: left;}
+  .total{margin:0 30px 0 95px;}
+.orderList{border-bottom: 1px dotted #2C2C3C;padding: 10px 0;}
+.oderRow{overflow: hidden;padding: 10px 0;border-bottom: 1px solid #CFCFD7}
+.oderRow:last-child{border-bottom: none;}
+  .wImg{float: left;width: 85px;height: 85px;margin-right:15px;text-align: center;background: #fff}
+    .wImg img{max-width: 100%;max-height: 100%}
+  .wInfo{float: left;width: 360px;}
+    .wName{font-family:"Helvetica-Bold";padding-bottom: 5px;}
+    .wOvs{font-size: 12px;}
+  .wCount{float: right;width:260px;overflow: hidden;}
+    .wQuan,.wTotal{float: left;width: 50%;text-align: center;line-height: 85px;}
+.wMore{overflow: hidden;padding: 15px 0 0}
+  .msg{float: left;overflow: hidden;}
+  .msg span{float: left;margin-right: 10px;display: block;line-height: 38px;}
+  #MsgIpt{background: #fff;width: 520px;height: 38px;line-height: 38px;border: none;outline: none;}
+  .totals{float: right;line-height: 40px}
+    .totals span{font-family:"Helvetica-Bold";padding-right: 10px;}
+    .totals em{font-size: 24px;}
+.payList{padding: 15px 0;}
+  .btnBox{overflow: hidden;}
+  .payList .ptBtn{width: 200px;float: right;}
+  .payList li{padding: 5px 0}
+    .payType{display: block;background: url("../images/radio_un.png") no-repeat 0 50%;padding
+    :5px 0 5px 35px;}
+    .payType.active{background-image: url("../images/radio.png");}
+    .alipay span,.wechat span{background: url("../images/pay1.png") no-repeat 0 50%;padding: 5px 0 5px 35px}
+    .wechat span{background-image: url("../images/pay2.png")}
 
 /** footer  */
 footer{background: #2C2C3C;color: #8383a6;font-family: "PTSerif"}

@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+@media screen and (min-width: 0px) and (max-width: 1250px) {
+	.iptSearch{width: 200px}
+}
+@media screen and (min-width: 0px) and (max-width: 1020px) {
+	.iptSearch{width: 150px}
+}
+@media screen and (min-width: 0px) and (max-width: 980px) {
+	.searchBox{padding-right:0;}
+}
 @media screen and (min-width: 0px) and (max-width: 736px) {
   body{width: 100%;min-width: 100px;font-size: 62.5%;max-width: auto;}
   .inner{width: 95%;}

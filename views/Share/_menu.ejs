@@ -9,7 +9,7 @@
 		 <% if(k>2){%>
 				<li class="<%- m['multi'] ? 'multi':'' %>">
 					<% if(m['multi']){%>
-						<a href="#" class="mLink hasSub"><%= m['multi'][lgkey] %></a>
+						<a href='#' class="mLink hasSub"><%= m['multi'][lgkey] %></a>
 						<div class="subBox">
 							<div class="subArrow">subArrow</div>
 					    <ul class="subMenu">
@@ -19,7 +19,7 @@
 					    </ul>
 				    </div>
 			 		<% }else{ %>
-						<a href="#" class="mLink"><span><%= m[lgkey] %></span></a>
+						<a href="<%= m[0]=='tp_cart'?'cart':'' %>" class="mLink"><span><%= m[lgkey] %></span></a>
 			 		<% }%>
 					<% if(m[0]=="tp_cart"){%>
 			 		<span class="cartConut" data-val="0">0</span>

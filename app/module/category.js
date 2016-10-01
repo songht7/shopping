@@ -6,6 +6,7 @@ var category={
 		{
 			"colNumb":3,
 			"ctgName":["c1title","Latest From Your Favorite Bloggers","最喜欢的博客"]
+			,"blogName":["b1title","Lastest Uploads","最新上传"]
 			,"ctgList":[
 				{
 					"id":1,
@@ -97,6 +98,7 @@ var category={
 		,{
 			"colNumb":4,
 			"ctgName":["c1title","Most Popular","最受欢迎的"]
+			,"blogName":["b1title","Popular Uploads","受欢迎的"]
 			,"ctgBrief":["cf","latest most viewed videos","最新最受欢迎视频"]
 			,"ctgList":[
 				{
@@ -136,6 +138,11 @@ var category={
 				},
 				{
 					"id":22,
+					"ctgTitle":["p4name","Be your shoeself","是你的shoeself"],
+					"ctgOvs":["o5name","The Wine Show","葡萄酒展"]
+				},
+				{
+					"id":23,
 					"ctgTitle":["p4name","Be your shoeself","是你的shoeself"],
 					"ctgOvs":["o5name","The Wine Show","葡萄酒展"]
 				}

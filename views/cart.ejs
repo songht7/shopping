@@ -1,0 +1,97 @@
+<% include Share/_header.ejs %>
+<% include Share/_menu.ejs %>
+
+<div id="CartPage">
+	<div class="inner">
+		<h1 class="cartCk">Checkout</h1>
+
+		<div class="cartBlock">
+	    <div class="blockHead">
+	      <div class="bLeft"><%= cart["ads"]["blockTitle"][lgkey] %></div>
+	      <div class="bRight"></div>
+	    </div>
+	    <div class="adsList clearfix">
+		 		<% cart["ads"]["list"].forEach(function(ct,k){ %>
+	    	<div class="adsBlock <% if(ct["isDefault"]){ %> active <% } %>">
+	    		<div class="adsInner">
+	    			<div class="adsTop">
+		    			<span class="aName"><%= ct["uname"][lgkey]%></span>
+		    			<span class="aPhone"><%= ct["phone"][lgkey]%></span>
+		    		</div>
+		    		<div class="adsInfo">
+		    			<%= ct["address"][lgkey]%>
+		    		</div>
+		    		<div class="adsBottm">
+		    			<a href="javascript:;" class="setDefault">Default</a>
+		    			<div class="editBox">
+		    				<a href="javascript:;" class="editBtn">Edit</a><span>|</span>
+		    				<a href="javascript:;" class="editBtn">Delete</a>
+		    			</div>
+		    		</div>
+	    		</div>
+	    	</div>
+		 		<% }) %>
+		 		<a href="javascript:;" class="addAds">add shopping address</a>
+	    </div>
+    </div>
+
+		<div class="cartBlock">
+	    <div class="blockHead">
+	      <div class="bLeft">Order details</div>
+	      <div class="bRight">
+	        <div class="orderInfo">Quantity</div>
+	        <div class="orderInfo total">Quantity</div>
+	      </div>
+	    </div>
+	    <div class="orderList">
+				<% for(var od=0;od<3;od++){ %>
+	    	<div class="oderRow">
+	    		<div class="wImg"><img src="/images/wine/wine101.jpg" alt=""></div>
+	    		<div class="wInfo">
+	    			<div class="wName">Wine Saver | Vacu Vin</div>
+	    			<div class="wOvs">The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...</div>
+	    		</div>
+	    		<div class="wCount">
+	    			<div class="wQuan">x<span>1</span></div>
+	    			<div class="wTotal">$180</div>
+	    		</div>
+	    	</div>
+				<% } %>
+	    </div>
+	    <div class="wMore">
+	    	<div class="msg">
+	    		<span>Message</span><input type="text" id="MsgIpt">
+	    	</div>
+	    	<div class="totals">
+	    		<span>Total</span><em>$270.00</em>
+	    	</div>
+	    </div>
+    </div>
+
+		<div class="cartBlock">
+	    <div class="blockHead">
+	      <div class="bLeft">Payment</div>
+	      <div class="bRight"></div>
+	    </div>
+	    <div class="payList">
+	    	<ul>
+	    		<li>
+	    			<a href="javascript:;" class="payType cod active"><span>Cash on delivery (COD)</span></a>
+	    		</li>
+	    		<li>
+	    			<a href="javascript:;" class="payType alipay"><span>Alipay</span></a>
+	    		</li>
+	    		<li>
+	    			<a href="javascript:;" class="payType wechat"><span>WeChat Pay</span></a>
+	    		</li>
+	    	</ul>
+	    	<div class="btnBox">
+					<a href="javascript" class="add2Cart ptBtn"><span>Proceed with Payment</span></a>
+				</div>
+	    </div>
+    </div>
+
+	</div>
+</div>
+
+<% include Share/_footer.ejs %>

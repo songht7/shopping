@@ -7,8 +7,8 @@
 			<div class="fltBox">
 				<img src="/images/wine/qr<%= wine["ctgId"] %>.png" class="wqr" alt="">
 				<div class="wineAdd">
-					<p class="addHd">Add to Cart!</p>
-					<p class="addOvs">Scan the QR code add all products to your shopping cart</p>
+					<p class="addHd"><%= langs["add2Cart"][lgkey] %>!</p>
+					<p class="addOvs"><%= langs["scanQR"][lgkey] %></p>
 				</div>
 			</div>
 			<iframe class="iframe" src="//embed.wirewax.com/8039580/" frameborder="0" scrolling="no" allowfullscreen></iframe>
@@ -19,22 +19,22 @@
 					<img src="/images/wine/portrait1.png" class="portrait" alt="">
 					<div class="vrtRight">
 						<div class="wCtgName"><%= wine["ctgName"][lgkey] %></div>
-						<div class="flwNumb">61,351 Followers</div>
-						<a href="javascript:;" class="flwBtn"><span>Follow</span></a>
+						<div class="flwNumb">61,351 <%= langs["followers"][lgkey] %></div>
+						<a href="javascript:;" class="flwBtn"><span><%= langs["follow"][lgkey] %></span></a>
 					</div>
 				</div>
 				<ul class="ctgMList">
-					<% for(var i=0;i<3;i++){ %>
+					<% related["list"].forEach(function(rl,k){ %>
 					<li>
-						<a href="/blogger/1">
+						<a href="/blogger/<%= rl["id"] %>">
 							<img src="/images/wine/cImg101.png" alt="">
 							<p class="cInfos">
-								<span class="cName">Matthew Goode On Making Wine Less Snobbish </span>
+								<span class="cName"><%= rl["title"][lgkey] %></span>
 								<span class="cView">5,600 <%= langs["views"][lgkey] %></span>
 							</p>
 						</a>
 					</li>
-					<% } %>
+					<% }) %>
 				</ul>
 				<a href="javascript:;" class="ctmBtn"><span></span></a>
 			</div>
@@ -50,18 +50,18 @@
 					<span class="wTInfo"><%= wine["ctgTitle"][lgkey] %></span>
 					<span class="wvws">474,747 <%= langs["views"][lgkey] %></span>
 				</h1>
-				<div class="wUpload">Upload: May 27, 2016</div>
+				<div class="wUpload"><%= langs["upload"][lgkey] %>: <%= langs["May"][lgkey] %> 27, 2016</div>
 			</div>
 			<div class="wOverview">
 				<div class="ovBox"><%= wine["detail"][lgkey] %></div>
-				<a href="javascript:;" class="openBtn">Open More</a>
+				<a href="javascript:;" class="openBtn"><%= langs["openMore"][lgkey] %></a>
 			</div>
 
 			<div class="shareBox clearfix">
 				<div class="shareLeft">
-					<a href="javascript:;">Bookmark Video</a>
+					<a href="javascript:;"><%= langs["bookmark"][lgkey] %></a>
 					<span>|</span>
-					<a href="javascript:;" class="shareBtn">Share</a>
+					<a href="javascript:;" class="shareBtn"><%= langs["share"][lgkey] %></a>
 				</div>
 				<div class="shareRight">
 					<span class="like">13,907</span>
@@ -81,7 +81,7 @@
 						<!-- JiaThis Button END -->
 						<div class="cpLink">
 							<input type="text" name="CopyLink" readonly="" class="cpIpt" value="http://www.360shopping.com">
-							<a href="javascript:;" class="cpBtn">Copy Link</a>
+							<a href="javascript:;" class="cpBtn"><%= langs["copyLink"][lgkey] %></a>
 						</div>
 					</div>
 				</div>
@@ -93,7 +93,7 @@
 			<div class="blockHead">
 	      <div class="bLeft"><%= wine["proTitle"][lgkey] %></div>
 	      <div class="bRight">
-	        <a href="javascript:;" class="addAllBtn"><span>Add All to Cart</span></a>
+	        <a href="javascript:;" class="addAllBtn"><span><%= langs["addAll"][lgkey] %></span></a>
 	      </div>
 	    </div>
 	    <div class="proList">
@@ -115,22 +115,22 @@
 		
 		<div class="commentBox">
 			<div class="blockHead">
-	      <div class="bLeft">Comments(5,935)</div>
+	      <div class="bLeft"><%= langs["comments"][lgkey] %>(5,935)</div>
 	      <div class="bRight"></div>
 	    </div>
 			<div class="cmtBlock">
 				<div class="cmtIpt">
 					<img src="/images/userHead.png" class="cmtHead" alt="">
 					<div class="txtArea">
-						<textarea name="" id="" class="" cols="30" rows="10" placeholder="Write your comment..."></textarea>
+						<textarea name="" id="" class="" cols="30" rows="10" placeholder="<%= langs["writeCmt"][lgkey] %>"></textarea>
 					</div>
-					<a href="javascript:;" class="postBtn"><span>Post</span></a>
+					<a href="javascript:;" class="postBtn"><span><%= langs["post"][lgkey] %></span></a>
 				</div>
 			</div>
 			<div class="cmtList">
 				<div class="cmtType">
-					<a href="javascript:;" class="active">TOP COMMENTS</a><span>|</span>
-					<a href="javascript:;">NEWWEST FIRST</a>
+					<a href="javascript:;" class="active"><%= langs["topCmt"][lgkey] %></a><span>|</span>
+					<a href="javascript:;"><%= langs["newest"][lgkey] %></a>
 				</div>
 				<!--cmts-->
 				<div class="cmts">
@@ -146,7 +146,7 @@
 								Ok wait! I just had a cool idea, what about make a ring for each of the spiritual stones from Ocarina Of Time! I am so going to make that!
 							</div>
 							<div class="replys">
-								<span class="rpNumb">Reply(12)</span>
+								<span class="rpNumb"><%= langs["reply"][lgkey] %>(12)</span>
 								<span class="cmtLike">(8)</span>
 							</div>
 							<!--subCmt-->
@@ -161,12 +161,12 @@
 											Ok wait! I just had a cool idea, what about make a ring for each of the spiritual stones from Ocarina Of Time! I am so going to make that!
 										</div>
 										<div class="replys">
-											<span class="rpNumb">Reply(12)</span>
+											<span class="rpNumb"><%= langs["reply"][lgkey] %>(12)</span>
 											<span class="cmtLike">(8)</span>
 										</div>
 									</div>
 								</div>
-								<a href="javascript:;" class="moreReply">Open more replys (5) > </a>
+								<a href="javascript:;" class="moreReply"><%= langs["mrReply"][lgkey] %> (5) > </a>
 							</div>
 							<!--/subCmt-->
 						</div>
@@ -187,28 +187,47 @@
 
 	<div class="detailRight">
 
-	<% for(var r=0;r<2;r++){ %>
 		<div class="recBlock">
 			<div class="recInner">
-				<div class="recHead">Other Videos from This Blogger</div>
+				<div class="recHead"><%= otherVideo["title"][lgkey] %></div>
 				<div class="recList">
-					<% for(var rc=0;rc<3;rc++){ %>
+					<% otherVideo["list"].forEach(function(obj,k){ %>
 					<div class="recRow">
-						<img src="/images/wine/rec1.jpg" class="recImg" alt="">
+						<div class="recImg"><img src="/images/wine/rec1.jpg" alt=""></div>
 						<div class="recInfo">
-							<div class="recTitle">Confessions of a Food Stylist</div>
+							<div class="recTitle"><%= obj["title"][lgkey] %></div>
 							<div class="recVews">
 								<p>5,666 <%= langs["views"][lgkey] %></p>
 								<p>5,666 <%= langs["dago"][lgkey] %></p>
 							</div>
 						</div>
 					</div>
-					<% } %>
+					<% }) %>
 				</div>
-				<a href="javascript:;" class="recMore"><span>SHOW MORE</span></a>
+				<a href="javascript:;" class="recMore"><span><%= langs["showMore"][lgkey] %></span></a>
 			</div>
 		</div>
-	<% } %>
+
+		<div class="recBlock">
+			<div class="recInner">
+				<div class="recHead"><%= uMayLike["title"][lgkey] %></div>
+				<div class="recList">
+					<% uMayLike["list"].forEach(function(obj,k){ %>
+					<div class="recRow">
+						<div class="recImg"><img src="/images/wine/rec1.jpg" alt=""></div>
+						<div class="recInfo">
+							<div class="recTitle"><%= obj["title"][lgkey] %></div>
+							<div class="recVews">
+								<p>5,666 <%= langs["views"][lgkey] %></p>
+								<p>5,666 <%= langs["dago"][lgkey] %></p>
+							</div>
+						</div>
+					</div>
+					<% }) %>
+				</div>
+				<a href="javascript:;" class="recMore"><span><%= langs["showMore"][lgkey] %></span></a>
+			</div>
+		</div>
 
 	</div>
 

@@ -44,16 +44,16 @@
     </div>
     <div class="ctgList col-<%= ctg["colNumb"]?ctg["colNumb"]:4 %>">
       <ul>
-        <% ctg["ctgList"].forEach(function(obj,k){ %>
+        <% ctg["ctgList"].forEach(function(obj,k){ if(k<8){ %>
         <li class="<%=(k)%ctg["colNumb"]<=0?'fRow':'' %>">
-          <a href="/detail/<%= obj["id"] %>" class="ctgLink">
+          <a href="/video/<%= obj["id"] %>" class="ctgLink">
             <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
             <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>
             <p class="ctgOvs"><%= obj["ctgOvs"][lgkey] %></p>
             <p class="view">5,600 <%= langs["views"][lgkey] %> - 2 <%= langs["hago"][lgkey] %></p>
           </a>
         </li>
-        <% }) %>
+        <% }}) %>
       </ul>
     </div>
   </div>

@@ -7,7 +7,8 @@ module.exports = function(app){
 	/* GET home page. */
 	app.get('/setlang',lg.Setlang);
 	app.get('/',lg.CheckLang,home.index);
-	app.get('/detail/:id?',lg.CheckLang,home.detail);
+	app.get('/video/:id?',lg.CheckLang,home.video);
 	app.get('/blogger/:id?',lg.CheckLang,home.blogger);
+	app.get('/cart/',lg.CheckLang,home.cart);
 
 };
