@@ -4,35 +4,40 @@
 			<a href="javascript:;" id="MenuBtn" class=""><span>left memu</span></a>
 		</div>
 		<a href="/" id="Logo"><span>360 shopping channel</span></a>
-		<ul id="Menu" class=" clearfix">
-		 <% menu.forEach(function(m,k){ %>
-		 <% if(k>2){%>
-				<li class="<%- m['multi'] ? 'multi':'' %>">
-					<% if(m['multi']){%>
-						<a href='#' class="mLink hasSub"><%= m['multi'][lgkey] %></a>
-						<div class="subBox">
-							<div class="subArrow">subArrow</div>
-					    <ul class="subMenu">
-					      <% m['sublevel'].forEach(function(sm,key){ %>
-					      <li><a href="#"><span><%= sm[lgkey] %></span></a></li>
-					      <% }) %>
-					    </ul>
-				    </div>
-			 		<% }else{ %>
-						<a href="<%= m[0]=='tp_cart'?'cart':'' %>" class="mLink"><span><%= m[lgkey] %></span></a>
-			 		<% }%>
-					<% if(m[0]=="tp_cart"){%>
-			 		<span class="cartConut" data-val="0">0</span>
-					<% } %>
-			 		<span class="mCut">|</span>
-				</li>
-		 <% }}) %>
-		</ul>
-		<div class="searchBox">
-				<div class="iptBlock">
-					<input type="text" value="" class="iptSearch" placeholder="<%=langs['sch_want'][lgkey] %>">
-				</div>
-				<a href="javascript:;" class="btns searchBtn"><span><%=langs['search'][lgkey] %></span></a>
+		
+		<div class="hdRight">
+			<ul id="Menu" class=" clearfix">
+				<li class="mobile"><a href="cart" class="mobileCart"><span class="cartConut" data-val="0">0</span></a></li>
+			 <% menu.forEach(function(m,k){ %>
+			 <% if(k>2){%>
+					<li class="<%- m['multi'] ? 'multi':'' %>">
+						<% if(m['multi']){%>
+							<a href='#' class="mLink hasSub"><%= m['multi'][lgkey] %></a>
+							<div class="subBox">
+								<div class="subArrow">subArrow</div>
+						    <ul class="subMenu">
+						      <% m['sublevel'].forEach(function(sm,key){ %>
+						      <li><a href="#"><span><%= sm[lgkey] %></span></a></li>
+						      <% }) %>
+						    </ul>
+					    </div>
+				 		<% }else{ %>
+				 			<% var _href=""; m[0]=="tp_cart"?_href="cart":"" %>
+							<a href="<%= _href %>" class="mLink"><span><%= m[lgkey] %></span></a>
+				 		<% }%>
+						<% if(m[0]=="tp_cart"){%>
+				 		<span class="cartConut" data-val="0">0</span>
+						<% } %>
+				 		<span class="mCut">|</span>
+					</li>
+			 <% }}) %>
+			</ul>
+			<div class="searchBox">
+					<div class="iptBlock">
+						<input type="text" value="" class="iptSearch" placeholder="<%=langs['sch_want'][lgkey] %>">
+					</div>
+					<a href="javascript:;" class="btns searchBtn"><span><%=langs['search'][lgkey] %></span></a>
+			</div>
 		</div>
 	</div>
 </header>

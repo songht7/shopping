@@ -38,6 +38,7 @@ var blog={
 	}
 	,"related":{
 		"title":["","Related Blogger","相关的博客"]
+		,"head":["","Coming up next...","下一个…"]
 		,"list":[
 			{
 				"id":1//blog id

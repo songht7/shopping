@@ -23,7 +23,7 @@
 						<a href="javascript:;" class="flwBtn"><span><%= langs["follow"][lgkey] %></span></a>
 					</div>
 				</div>
-				<ul class="ctgMList">
+				<ul class="ctgMList mbHide">
 					<% related["list"].forEach(function(rl,k){ %>
 					<li>
 						<a href="/blogger/<%= rl["id"] %>">
@@ -36,7 +36,7 @@
 					</li>
 					<% }) %>
 				</ul>
-				<a href="javascript:;" class="ctmBtn"><span></span></a>
+				<a href="javascript:;" class="ctmBtn mbHide"><span></span></a>
 			</div>
 		</div>
 	</div>
@@ -88,6 +88,30 @@
 			</div>
 
 		</div>
+		
+		<div class="mobile coming">
+				<div class="blockHead">
+		      <div class="bLeft"><%= related["head"][lgkey] %></div>
+		      <div class="bRight"></div>
+		    </div>
+		    <ul class="ctgMList">
+					<% related["list"].forEach(function(rl,k){ %>
+					<li>
+						<a href="/blogger/<%= rl["id"] %>">
+							<img src="/images/wine/cImg101.png" alt="">
+							<p class="cInfos">
+								<span class="cName"><%= rl["title"][lgkey] %></span>
+								<span class="cView">5,600 <%= langs["views"][lgkey] %></span>
+							</p>
+						</a>
+					</li>
+					<% }) %>
+				</ul>
+	      <div class="mobile liMore">
+	        <a href="javascript:;" class="mBtn liPrev"><span>prev</span></a>
+	        <a href="javascript:;" class="mBtn liNext"><span>next</span></a>
+	      </div>
+		</div>
 
 		<div class="productBox">
 			<div class="blockHead">
@@ -99,14 +123,16 @@
 	    <div class="proList">
 	    	<ul class=" col-<%= wine["colNumb"]?wine["colNumb"]:3 %>">
   				<% wine["product"].forEach(function(pro,key){ %>
-	    		<li class="<%=(key)%wine["colNumb"]<=0?'fRow':'' %>">
+	    		<li class="p_<%=key%> <%=(key)%wine["colNumb"]<=0?'fRow':'' %>">
 	    			<div class="proImg"><img src="/images/wine/wine<%= pro["id"] %>.jpg" alt=""></div>
-	    			<a href="javascript:;" class="pTitle"><%=pro["title"][lgkey] %></a>
-	    			<div class="pLike">
-	    				<span class="price"><%=pro["price"][lgkey] %></span>
-	    				<span class="proLikeBtn"></span>
+	    			<div class="pDtl">
+		    			<a href="javascript:;" class="pTitle"><%=pro["title"][lgkey] %></a>
+		    			<div class="pLike">
+		    				<span class="price"><%=pro["price"][lgkey] %></span>
+		    				<span class="proLikeBtn"></span>
+		    			</div>
+		    			<a href="javascript" class="add2Cart <%- pro["stock"]<=0?"noStock":"" %>" data-ctgid="<%= wine["ctgId"] %>" data-id="<%= pro["id"] %>"><span><%- pro["stock"]<=0?langs["noStock"][lgkey]: langs["add2Cart"][lgkey] %></span></a>
 	    			</div>
-	    			<a href="javascript" class="add2Cart <%- pro["stock"]<=0?"noStock":"" %>" data-ctgid="<%= wine["ctgId"] %>" data-id="<%= pro["id"] %>"><span><%- pro["stock"]<=0?langs["noStock"][lgkey]: langs["add2Cart"][lgkey] %></span></a>
 	    		</li>
   				<% }) %>
 	    	</ul>
@@ -185,7 +211,7 @@
 
 	</div>
 
-	<div class="detailRight">
+	<div class="detailRight mbHide">
 
 		<div class="recBlock">
 			<div class="recInner">

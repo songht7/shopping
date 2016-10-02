@@ -46,6 +46,8 @@ header{background: #2C2C3C;padding: 10px 0;}
 	#MenuBtn.active{background-position:50% -71px }
 #Logo{background: url("../images/logo.png") no-repeat 50% 50%;display: block;float: left;margin-right: 65px;width: 126px;height: 38px;text-indent: -999999px;}
 
+.hdRight{float: right;overflow: hidden;}
+
 .searchBox{overflow: hidden;float: right;padding-right: 20px;}
 	.iptBlock{float: left;margin-right: 15px;}
 	.iptSearch{color: #8b8bac;border: none;outline: none; border-radius: 3px;width:400px;padding: 12px 5px 12px 45px;background: url("../images/seach.png") no-repeat 16px 50% #3B3B52;}
@@ -178,7 +180,7 @@ header{background: #2C2C3C;padding: 10px 0;}
     .cmtHead{float: left;width: 52px;height: 51px;}
     .txtArea{background: #fff;width: 565px;height: 110px;float: right;}
     .txtArea textarea{padding: 15px 30px;width: 505px;height: 80px;background: none;border: none;outline: none;}
-    .postBtn{float: right;width: 105px;height: 38px;line-height: 38px;color: #fff;text-align: center;font-family:"PTSerif_Italic";font-size: 12px;background: #686886;border-radius: 3px;margin: 10px 0 0}
+    .postBtn{clear: both; float: right;width: 105px;height: 38px;line-height: 38px;color: #fff;text-align: center;font-family:"PTSerif_Italic";font-size: 12px;background: #686886;border-radius: 3px;margin: 10px 0 0}
 .cmtList{padding: 0 0 20px;margin-bottom: 10px;border-bottom: 1px solid #CFCFD7;}
   .cmtType{padding: 0 0 30px;font-size: 12px;}
     .cmtType .active{font-family: "Helvetica-Bold"}

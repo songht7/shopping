@@ -34,7 +34,7 @@
 <div class="pages inner">
 
   <% category.forEach(function(ctg,key){ %>
-  <div class="ctgBlock">
+  <div class="ctgBlock cBlk_<%= key %>">
     <div class="blockHead">
       <div class="bLeft"><%= ctg["ctgName"][lgkey] %> <%- ctg["ctgBrief"]?"<span class=\"ctgBrief\">"+ctg["ctgBrief"][lgkey]+"</span>":"" %> </div>
       <div class="bRight">
@@ -45,7 +45,7 @@
     <div class="ctgList col-<%= ctg["colNumb"]?ctg["colNumb"]:4 %>">
       <ul>
         <% ctg["ctgList"].forEach(function(obj,k){ if(k<8){ %>
-        <li class="<%=(k)%ctg["colNumb"]<=0?'fRow':'' %>">
+        <li class="li_<%=k%> <%=(k)%ctg["colNumb"]<=0?'fRow':'' %>">
           <a href="/video/<%= obj["id"] %>" class="ctgLink">
             <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
             <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>
@@ -55,6 +55,10 @@
         </li>
         <% }}) %>
       </ul>
+      <div class="mobile liMore">
+        <a href="javascript:;" class="mBtn liPrev"><span>prev</span></a>
+        <a href="javascript:;" class="mBtn liNext"><span>next</span></a>
+      </div>
     </div>
   </div>
   <% }) %>
