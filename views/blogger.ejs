@@ -32,7 +32,7 @@
 <div class="pages inner blogBox">
 	<div class="blogLeft">
   <% category.forEach(function(ctg,key){if(key==0||key==3){ %>
-  <div class="ctgBlock">
+  <div class="ctgBlock bBlk_<%=key%> ">
     <div class="blockHead">
       <div class="bLeft"><%= ctg["blogName"][lgkey] %></div>
       <div class="bRight">
@@ -43,16 +43,22 @@
     <div class="ctgList blgList col-3">
       <ul>
         <% ctg["ctgList"].forEach(function(obj,k){ %>
-        <li class="<%=(k)%3<=0?'fRow':'' %>">
+        <li class="bLi_<%=k%> <%=(k)%3<=0?'fRow':'' %>">
           <a href="/detail/<%= obj["id"] %>" class="ctgLink">
             <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
-            <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>
-            <p class="ctgOvs"><%= obj["ctgOvs"][lgkey] %></p>
-            <p class="view">5,600 <%= langs["views"][lgkey] %> - 2 <%= langs["hago"][lgkey] %></p>
+            <div class="bDtls">
+	            <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>
+	            <p class="ctgOvs"><%= obj["ctgOvs"][lgkey] %></p>
+	            <p class="view">5,600 <%= langs["views"][lgkey] %> - 2 <%= langs["hago"][lgkey] %></p>
+            </div>
           </a>
         </li>
         <% }) %>
       </ul>
+      <div class="mobile liMore">
+        <a href="javascript:;" class="mBtn liPrev"><span>prev</span></a>
+        <a href="javascript:;" class="mBtn liNext"><span>next</span></a>
+      </div>
     </div>
   </div>
   <% }}) %>
@@ -71,8 +77,8 @@
 								<div class="recTitle"><%= rc["wine"][lgkey] %></div>
 								<div class="recPrice">
 									<p><%= rc["price"][lgkey] %></p>
-									<a href="javascript" class="add2Cart <%- rc["stock"]<=0?"noStock":"" %>" data-ctgid="<%= rc["id"] %>" data-id="<%= rc["id"] %>"><span><%- rc["stock"]<=0?langs["soldOut"][lgkey]: langs["add2Cart"][lgkey] %></span></a>
 								</div>
+								<a href="javascript" class="add2Cart <%- rc["stock"]<=0?"noStock":"" %>" data-ctgid="<%= rc["id"] %>" data-id="<%= rc["id"] %>"><span><%- rc["stock"]<=0?langs["soldOut"][lgkey]: langs["add2Cart"][lgkey] %></span></a>
 							</div>
 						</div>
 						<% }) %>
@@ -89,11 +95,13 @@
 						<div class="recRow">
 							<div class="recImg uHead"><img src="/images/portrait.png" alt=""></div>
 							<div class="recInfo">
-								<div class="recTitle"><%= rl["title"][lgkey] %></div>
-								<div class="recPrice">
-									<p>5,999<%= langs["followers"][lgkey] %></p>
-									<a href="javascript" class="flwBtn <%= k==1?"isFlwed":"" %>"><span><%= langs["follow"][lgkey] %></span></a>
+								<div class="riLeft">
+									<div class="recTitle"><%= rl["title"][lgkey] %></div>
+									<div class="recPrice">
+										<p>5,999<%= langs["followers"][lgkey] %></p>
+									</div>
 								</div>
+								<a href="javascript" class="flwBtn <%= k==1?"isFlwed":"" %>"><span><%= langs["follow"][lgkey] %></span></a>
 							</div>
 						</div>
 						<% }) %>

@@ -15,7 +15,7 @@
 	.inner{width: 736px;}
   .fRow{clear: none;}
 	.ctgList li,.ctgList.col-4 li{width: 359px}
-	.ctgImg,.ctgList.col-4 .ctgImg{height: 210px}
+	.ctgImg,.ctgList.col-4 .ctgImg{height: 300px}
 
 	/*video*/
 	.video{width: 100%;float: none;}
@@ -28,6 +28,12 @@
 	.detailRight.mbHide{display: none;}
 	.proList li{width: 234px;}
 
+	/*blog*/
+	.blogLeft,.blogRight{float: none;width: 100%}
+		.blogRight .add2Cart,.blogRight .flwBtn{height: 42px;line-height: 42px;width: 150px;max-width: 60%;}
+	.blogRight .recInfo{overflow: hidden;padding-left:10px;}
+	.riLeft{float: left;width: 40%}
+	.blogRight .flwBtn{float: right;max-width: 40%;}
 }
 @media screen and (min-width: 0px) and (max-width: 736px) {
   body{width: 100%;min-width: 100px;font-size: 62.5%;max-width: auto;background: #E9E9F0}
@@ -37,16 +43,18 @@
 
 	.mobileCart{display: inline-block;background: url("../images/mobile/spCart.png") no-repeat 0 50%;padding-left: 28px;background-size: 20px auto}
 
+	.ctgImg,.ctgList.col-4 .ctgImg{height: 210px}
+
 	#Menu li{display: none;}
 	#Menu li.mobile{display: inline-block;}
 	.bLeft{font-size: 2.4em}
 	.ctgList ul{margin-left: 0;}
-		.ctgList li{float: none;width: 100%;margin-left: 0;height: 245px;}
+		.ctgList li{float: none;width: 100%;margin-left: 0;height: 225px;}
 		.cBlk_0 .ctgList li{height: auto;}
 		.ctgList.col-4 ul{margin-left: -4%;height: 520px;overflow: hidden;}
 		.cBlk_0 .ctgList ul li.li_4,.cBlk_0 .ctgList ul li.li_5{display: none;}
 		.ctgList.col-4 li{float: left;width: 46%;margin-left: 4%}
-		.ctgList.col-4 li .ctgImg{height: 155px;}
+		.ctgList.col-4 li .ctgImg{height: 130px;}
 		.ctgMore{display: none;}
 		.ctgLink p{font-size:1.4em;line-height: 1.4em}
 	.liMore{width: 100%;overflow: hidden;}
@@ -68,9 +76,13 @@
 		.wCtgName{font-size: 2em;line-height: 1.6em}
 		.flwNumb{font-size: 1.4em;}
 		.ctgMList.mbHide{display: none;}
-		.flwBtn{position: absolute;top: 10px;right: 0}
+		.videoRight .flwBtn{position: absolute;top: 10px;right: 0}
 	h1.wTitle .wTInfo{font-size: 2em;line-height: 1.4em; float: none;display: block;}
 	h1.wTitle .wvws{float: none;display: block;font-size: 1.4em}
+
+	.shareMain .jiathis_style_32x32 .jiathis_txt{width: 35%;margin-right: 0}
+	.cpIpt{width: 60%}
+
 	.wUpload{display: none;}
 	.mobile.coming{width: 100%}
 		.mobile.coming .ctgMList{border-bottom: none;padding: 15px 0;}
@@ -89,8 +101,24 @@
 		.txtArea{width: 80%}
 		.txtArea textarea{width: 90%;height: 90%;padding: 0;margin: 2% 0 0 2%}
 
-  #featuredGallery .wrapper{width:calc(100%*6);}
+	#featuredGallery .container{height: 320px;}
+  #featuredGallery .wrapper{width:calc(100%*6);height: 320px}
   #featuredGallery .galleryItem{width: 100%}
+
+	/*blogger*/
+	.blogBox{padding:15px 0;}
+	.userBox .pageMenu li{width: 25%;text-align: center;margin: 0}
+		.bDetail{display: none;}
+		.uHead{width: 80px;height: 80px;}
+		.uMain{float: left;padding-left: 10px;width: 70%;}
+		.blogLeft .ctgList li {height: auto;}
+			.blogLeft .ctgList li .ctgLink{overflow: hidden;}
+			.blogLeft .ctgList li .ctgImg{float: left;width: 40%;}
+			.bDtls{float: left;padding-left: 10px;width: 55%;}
+			.bLi_3,.bLi_4,.bLi_5,.bLi_6,.bLi_7,.bLi_8{display: none;}
+		.blogBox .ctgLink p.ctgTitle{font-size: 1.6em;padding-bottom: 5px;}
+		.recBlock .recHead{font-size: 2em;}
+		.recBlock .recTitle{font-size: 1.4em;}
 
   .lgTip,#Copyright,.ftMenu,#FtLogo{display: none;}
   .mobile.copyright{text-align: right;float: right;}
