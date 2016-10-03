@@ -245,7 +245,7 @@ header{background: #2C2C3C;padding: 10px 0;}
 .cartCk{font-family:"PTSerif_Italic";font-size: 28px;line-height: 30px;padding: 0 0 40px;}
 .cartBlock{padding-bottom: 60px;}
 .adsList{padding: 20px 0 0}
-.adsBlock{width: 220px;height: 220px;float: left;background: #fff; margin-right: 18px;border:2px solid #fff}
+.adsBlock{width: 220px;height: 220px;float: left;background: #fff; margin:0 18px 18px 0;border:2px solid #fff}
 .adsBlock.active{border-color: #8D8DB7}
 .adsInner{padding: 15px}
 .adsTop{overflow: hidden;border-bottom: 1px solid #CFCFD7;padding: 5px 0 10px;margin-bottom: 10px;}
@@ -261,19 +261,23 @@ header{background: #2C2C3C;padding: 10px 0;}
 .addAds{display: block;background: url("../images/add.jpg") no-repeat 50% 50%; width: 224px;height: 224px;text-indent: -99999px;float: left;}
 .cartBlock .blockHead{padding: 5px 0}
   .cartBlock .bLeft{font-size: 16px;}
-  .cartBlock .bRight{overflow: hidden;}
-  .orderInfo{float: left;}
-  .total{margin:0 30px 0 95px;}
+  .cartBlock .bRight{overflow: hidden;width: 60%}
+  .orderInfo{float: left;width: 25%;text-align: center;}
 .orderList{border-bottom: 1px dotted #2C2C3C;padding: 10px 0;}
 .oderRow{overflow: hidden;padding: 10px 0;border-bottom: 1px solid #CFCFD7}
 .oderRow:last-child{border-bottom: none;}
   .wImg{float: left;width: 85px;height: 85px;margin-right:15px;text-align: center;background: #fff}
     .wImg img{max-width: 100%;max-height: 100%}
-  .wInfo{float: left;width: 360px;}
+  .wInfo{float: left;width: 200px;}
     .wName{font-family:"Helvetica-Bold";padding-bottom: 5px;}
     .wOvs{font-size: 12px;}
-  .wCount{float: right;width:260px;overflow: hidden;}
-    .wQuan,.wTotal{float: left;width: 50%;text-align: center;line-height: 85px;}
+  .wCount{float: right;width:60%;overflow: hidden;}
+    .wnInfo{width: 25%;float: left;text-align: center;line-height: 40px;font-size: 16px;}
+    .wQuan{background: url("../images/cart_quan.png") no-repeat 50% 50%;width: 100px;background-size: 100% auto;text-indent: -99999px}
+    .cartEdit{overflow: hidden;float: right;line-height: 30px;}
+      .proTotal{font-family: "Helvetica-Bold";text-align: right;}
+      .delt,.cartLike{display: block;background: url("../images/delt.png") no-repeat 0 50%;background-size: 20px auto;padding:5px 0 5px 25px;cursor: pointer;text-align: left;line-height: 18px;}
+      .cartLike{background-image: url("../images/like2.png");}
 .wMore{overflow: hidden;padding: 15px 0 0}
   .msg{float: left;overflow: hidden;}
   .msg span{float: left;margin-right: 10px;display: block;line-height: 38px;}
@@ -283,7 +287,7 @@ header{background: #2C2C3C;padding: 10px 0;}
     .totals em{font-size: 24px;}
 .payList{padding: 15px 0;}
   .btnBox{overflow: hidden;}
-  .payList .ptBtn{width: 200px;float: right;}
+  .payBox .ptBtn{width: 200px;float: right;}
   .payList li{padding: 5px 0}
     .payType{display: block;background: url("../images/radio_un.png") no-repeat 0 50%;padding
     :5px 0 5px 35px;}

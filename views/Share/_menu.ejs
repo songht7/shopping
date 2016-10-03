@@ -22,7 +22,7 @@
 						    </ul>
 					    </div>
 				 		<% }else{ %>
-				 			<% var _href=""; m[0]=="tp_cart"?_href="cart":"" %>
+				 			<% var _href="/"; m[0]=="tp_cart"?_href="/cart":"/" %>
 							<a href="<%= _href %>" class="mLink"><span><%= m[lgkey] %></span></a>
 				 		<% }%>
 						<% if(m[0]=="tp_cart"){%>

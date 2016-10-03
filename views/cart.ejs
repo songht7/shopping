@@ -37,23 +37,35 @@
 
 		<div class="cartBlock">
 	    <div class="blockHead">
-	      <div class="bLeft">Order details</div>
+	      <div class="bLeft">Shopping Cart</div>
 	      <div class="bRight">
+	        <div class="orderInfo">Price</div>
 	        <div class="orderInfo">Quantity</div>
-	        <div class="orderInfo total">Quantity</div>
+	        <div class="orderInfo total">Subtotal</div>
+	        <div class="orderInfo optin">&nbsp;</div>
 	      </div>
 	    </div>
 	    <div class="orderList">
 				<% for(var od=0;od<3;od++){ %>
 	    	<div class="oderRow">
 	    		<div class="wImg"><img src="/images/wine/wine101.jpg" alt=""></div>
-	    		<div class="wInfo">
-	    			<div class="wName">Wine Saver | Vacu Vin</div>
-	    			<div class="wOvs">The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...</div>
-	    		</div>
-	    		<div class="wCount">
-	    			<div class="wQuan">x<span>1</span></div>
-	    			<div class="wTotal">$180</div>
+	    		<div class="wInfoBox">
+		    		<div class="wInfo">
+		    			<div class="wName">
+		    				Wine Saver | Vacu Vin
+		    				<div class="mobilr mbPrice">$<span>180</span></div>
+		    			</div>
+		    			<div class="wOvs">The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...</div>
+		    		</div>
+		    		<div class="wCount">
+		    			<div class="wnInfo wTotal">$<span>180</span></div>
+		    			<div class="wnInfo wQuan">x<span>1</span></div>
+		    			<div class="wnInfo proTotal">$<span>180</span></div>
+		    			<div class="wnInfo cartEdit">
+		    				<div class="delt">Remove</div>
+		    				<div class="cartLike">Add to Wishlist</div>
+		    			</div>
+		    		</div>
 	    		</div>
 	    	</div>
 				<% } %>
@@ -68,7 +80,7 @@
 	    </div>
     </div>
 
-		<div class="cartBlock">
+		<div class="cartBlock payBox">
 	    <div class="blockHead">
 	      <div class="bLeft">Payment</div>
 	      <div class="bRight"></div>
@@ -85,10 +97,16 @@
 	    			<a href="javascript:;" class="payType wechat"><span>WeChat Pay</span></a>
 	    		</li>
 	    	</ul>
-	    	<div class="btnBox">
+	    </div>
+
+    	<div class="btnBox">
+    		<div class="bbInner">
+	    		<div class="total mobile">
+	    			Total: $<span>180</span>
+	    		</div>
 					<a href="javascript" class="add2Cart ptBtn"><span>Proceed with Payment</span></a>
 				</div>
-	    </div>
+			</div>
     </div>
 
 	</div>
