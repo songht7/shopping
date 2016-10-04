@@ -45,8 +45,10 @@
   .inner{width: 95%;}
 	.mobile{display: inline-block;}
 	.mbHide{display: none;}
+	#MbMenuBtn{display: block;}
 
 	.mobileCart{display: inline-block;background: url("../images/mobile/spCart.png") no-repeat 0 50%;padding-left: 28px;background-size: 20px auto}
+	#MenuBtn{display: none;}
 
 	.ctgImg,.ctgList.col-4 .ctgImg{height: 210px}
 
@@ -56,10 +58,11 @@
 	.ctgList ul{margin-left: 0;}
 		.ctgList li{float: none;width: 100%;margin-left: 0;height: 225px;}
 		.cBlk_0 .ctgList li{height: auto;}
-		.ctgList.col-4 ul{margin-left: -4%;height: 520px;overflow: hidden;}
-		.cBlk_0 .ctgList ul li.li_4,.cBlk_0 .ctgList ul li.li_5{display: none;}
+		.ctgList.col-4 ul{margin-left: -4%;overflow: hidden;}
+		.cBlk_0 .ctgList ul li.li_5{display: none;}
 		.ctgList.col-4 li{float: left;width: 46%;margin-left: 4%}
 		.ctgList.col-4 li .ctgImg{height: 130px;}
+		.cBlk_3 .li_4,.cBlk_3 .li_5,.cBlk_3 .li_6,.cBlk_3 .li_7{display: none;}
 		.ctgMore{display: none;}
 		.ctgLink p{font-size:1.4em;line-height: 1.4em}
 	.liMore{width: 100%;overflow: hidden;}
@@ -148,6 +151,11 @@
 	.cartBlock.payBox{background: #41415B;position: fixed;bottom: 0;left: 0;width: 100%;z-index: 5;padding:0;}
 	.bbInner{padding: 10px;overflow: hidden;}
 	.bbInner .total.mobile{font-family: "Helvetica-Bold";font-size: 1.8em;line-height: 2em;color: #fff}
+
+	#OrderPage{padding: 80px 0;}
+	.odInfo{font-size: 1.6em}
+	.thx{font-size: 3em}
+	.ckBtn,.goHome{font-size: 1.4em;}
 
 	.ftRow{padding: 10px 0}
   .lgTip,#Copyright,.ftMenu,#FtLogo{display: none;}

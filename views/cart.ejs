@@ -46,21 +46,21 @@
 	      </div>
 	    </div>
 	    <div class="orderList">
-				<% for(var od=0;od<3;od++){ %>
+				<% cartList.forEach(function(obj,k){ %>
 	    	<div class="oderRow">
-	    		<div class="wImg"><img src="/images/wine/wine101.jpg" alt=""></div>
+	    		<div class="wImg"><img src="/images/wine/wine<%= obj.id %>.jpg" alt=""></div>
 	    		<div class="wInfoBox">
 		    		<div class="wInfo">
 		    			<div class="wName">
-		    				Wine Saver | Vacu Vin
-		    				<div class="mobilr mbPrice">$<span>180</span></div>
+		    				<%= obj["title"][lgkey] %>
+		    				<div class="mobilr mbPrice"><span><%= obj["price"][lgkey] %></span></div>
 		    			</div>
-		    			<div class="wOvs">The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...</div>
+		    			<div class="wOvs"><%= obj["ovs"][lgkey] %></div>
 		    		</div>
 		    		<div class="wCount">
-		    			<div class="wnInfo wTotal">$<span>180</span></div>
-		    			<div class="wnInfo wQuan">x<span>1</span></div>
-		    			<div class="wnInfo proTotal">$<span>180</span></div>
+		    			<div class="wnInfo wTotal"><span><%= obj["price"][lgkey] %></span></div>
+		    			<div class="wnInfo wQuan" data-numb="<%= obj["numb"] %>">x<span><%= obj["numb"] %></span></div>
+		    			<div class="wnInfo proTotal"><span><%= obj["price"][lgkey] %></span></div>
 		    			<div class="wnInfo cartEdit">
 		    				<div class="delt">Remove</div>
 		    				<div class="cartLike">Add to Wishlist</div>
@@ -68,7 +68,7 @@
 		    		</div>
 	    		</div>
 	    	</div>
-				<% } %>
+				<% }) %>
 	    </div>
 	    <div class="wMore">
 	    	<div class="msg">
@@ -104,7 +104,7 @@
 	    		<div class="total mobile">
 	    			Total: $<span>180</span>
 	    		</div>
-					<a href="javascript" class="add2Cart ptBtn"><span>Proceed with Payment</span></a>
+					<a href="/order" class="add2Cart ptBtn"><span>Proceed with Payment</span></a>
 				</div>
 			</div>
     </div>

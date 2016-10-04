@@ -11,7 +11,7 @@
 					<p class="addOvs"><%= langs["scanQR"][lgkey] %></p>
 				</div>
 			</div>
-			<iframe class="iframe" src="//embed.wirewax.com/8039580/" frameborder="0" scrolling="no" allowfullscreen></iframe>
+			<iframe class="iframe" src="<%= wine["videoLink"] %>" frameborder="0" scrolling="no" allowfullscreen></iframe>
 		</div>
 		<div class="videoRight">
 			<div class="vrInner">
@@ -89,6 +89,7 @@
 
 		</div>
 		
+		<!-- 移动版显示 -->
 		<div class="mobile coming">
 				<div class="blockHead">
 		      <div class="bLeft"><%= related["head"][lgkey] %></div>
@@ -112,6 +113,7 @@
 	        <a href="javascript:;" class="mBtn liNext"><span>next</span></a>
 	      </div>
 		</div>
+		<!-- /移动版显示 -->
 
 		<div class="productBox">
 			<div class="blockHead">
@@ -131,7 +133,7 @@
 		    				<span class="price"><%=pro["price"][lgkey] %></span>
 		    				<span class="proLikeBtn"></span>
 		    			</div>
-		    			<a href="javascript" class="add2Cart <%- pro["stock"]<=0?"noStock":"" %>" data-ctgid="<%= wine["ctgId"] %>" data-id="<%= pro["id"] %>"><span><%- pro["stock"]<=0?langs["noStock"][lgkey]: langs["add2Cart"][lgkey] %></span></a>
+		    			<a href="javascript:;" class="add2Cart <%- pro["stock"]<=0?"noStock":"" %>" data-ctgid="<%= wine["ctgId"] %>" data-id="<%= pro["id"] %>"><span><%- pro["stock"]<=0?langs["noStock"][lgkey]: langs["add2Cart"][lgkey] %></span></a>
 	    			</div>
 	    		</li>
   				<% }) %>
@@ -263,5 +265,6 @@
 
 </div>
 
+<script src="/javascripts/add2cart.js"></script>
 
 <% include Share/_footer.ejs %>

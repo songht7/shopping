@@ -44,7 +44,7 @@
       <ul>
         <% ctg["ctgList"].forEach(function(obj,k){ %>
         <li class="bLi_<%=k%> <%=(k)%3<=0?'fRow':'' %>">
-          <a href="/detail/<%= obj["id"] %>" class="ctgLink">
+          <a href="/video/<%= obj["id"] %>" class="ctgLink">
             <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
             <div class="bDtls">
 	            <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>

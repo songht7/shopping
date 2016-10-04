@@ -2,31 +2,31 @@
 	<div class="clearfix">
 		<div id="LeftMenu">
 			<a href="javascript:;" id="MenuBtn" class=""><span>left memu</span></a>
+			<a href="javascript:;" id="MbMenuBtn" class=""><span>left memu</span></a>
 		</div>
 		<a href="/" id="Logo"><span>360 shopping channel</span></a>
 		
-		<div class="hdRight">
+		<div class="hdRight clearfix">
 			<ul id="Menu" class=" clearfix">
-				<li class="mobile"><a href="cart" class="mobileCart"><span class="cartConut" data-val="0">0</span></a></li>
+				<li class="mobile mbCart"><a href="cart" class="mobileCart"><span class="cartConut" data-val="<%- cartNumb?cartNumb:0 %>"><%- cartNumb?cartNumb:0 %></span></a></li>
 			 <% menu.forEach(function(m,k){ %>
 			 <% if(k>2){%>
 					<li class="<%- m['multi'] ? 'multi':'' %>">
 						<% if(m['multi']){%>
-							<a href='#' class="mLink hasSub"><%= m['multi'][lgkey] %></a>
+							<a href='<%= m[0] %>' class="mLink hasSub"><%= m['multi'][lgkey] %></a>
 							<div class="subBox">
 								<div class="subArrow">subArrow</div>
 						    <ul class="subMenu">
 						      <% m['sublevel'].forEach(function(sm,key){ %>
-						      <li><a href="#"><span><%= sm[lgkey] %></span></a></li>
+						      <li><a href="<%= sm[0] %>"><span><%= sm[lgkey] %></span></a></li>
 						      <% }) %>
 						    </ul>
 					    </div>
 				 		<% }else{ %>
-				 			<% var _href="/"; m[0]=="tp_cart"?_href="/cart":"/" %>
-							<a href="<%= _href %>" class="mLink"><span><%= m[lgkey] %></span></a>
+							<a href="<%= m[0] %>" class="mLink"><span><%= m[lgkey] %></span></a>
 				 		<% }%>
-						<% if(m[0]=="tp_cart"){%>
-				 		<span class="cartConut" data-val="0">0</span>
+						<% if(m[0]=="/cart"){%>
+				 		<span class="cartConut" id="CartWarp" data-val="<%- cartNumb?cartNumb:0 %>"><%- cartNumb?cartNumb:0 %></span>
 						<% } %>
 				 		<span class="mCut">|</span>
 					</li>
@@ -40,14 +40,17 @@
 			</div>
 		</div>
 	</div>
+	<% include _mobileMenu.ejs %>
 </header>
 <div id="SlideMenu">
-	<ul>
-		 <% menu.forEach(function(m,k){ %>
-		 <% if(k<=2){%>
-		<li>
-			<a href="#" class="mLink <%= k==0?'active':'' %>"><span><%= m[lgkey] %></span></a>
-		</li>
-		 <% }}) %>
-	</ul>
+	<div class="sldMBox">
+		<ul>
+			 <% menu.forEach(function(m,k){ %>
+			 <% if(k<=2){%>
+			<li>
+				<a href="#" class="mLink <%= k==0?'active':'' %>"><span><%= m[lgkey] %></span></a>
+			</li>
+			 <% }}) %>
+		</ul>
+	</div>
 </div>

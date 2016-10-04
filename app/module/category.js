@@ -10,32 +10,32 @@ var category={
 			,"ctgList":[
 				{
 					"id":1,
-					"ctgTitle":["pname","Matthew Rhys Suckers Joe! ","Matthew 乔！"],
+					"ctgTitle":["pname","Matthew Rhys Suckers Joe!1 ","Matthew 乔！"],
 					"ctgOvs":["oname","The Wine Show","葡萄酒展"]
 				},
 				{
 					"id":2,
-					"ctgTitle":["pname","Finding Inspiration","寻找灵感"],
+					"ctgTitle":["pname","Finding Inspiration2","寻找灵感"],
 					"ctgOvs":["oname","Wendy’s Lookbook","温迪的代言人"]
 				},
 				{
 					"id":3,
-					"ctgTitle":["pname","How to Travel for a Living","如何为生活旅行"],
+					"ctgTitle":["pname","How to Travel for a Living3","如何为生活旅行"],
 					"ctgOvs":["oname","High On Life","高生活"]
 				},
 				{
 					"id":4,
-					"ctgTitle":["pname","Matthew Rhys Suckers Joe! ","Matthew 乔！"],
+					"ctgTitle":["pname","Matthew Rhys Suckers Joe!4 ","Matthew 乔！"],
 					"ctgOvs":["oname","The Wine Show","葡萄酒展"]
 				},
 				{
 					"id":5,
-					"ctgTitle":["pname","Matthew Rhys Suckers Joe! ","Matthew 乔！"],
+					"ctgTitle":["pname","Matthew Rhys Suckers Joe!5 ","Matthew 乔！"],
 					"ctgOvs":["oname","The Wine Show","葡萄酒展"]
 				},
 				{
 					"id":6,
-					"ctgTitle":["pname","Matthew Rhys Suckers Joe! ","Matthew 乔！"],
+					"ctgTitle":["pname","Matthew Rhys Suckers Joe!6 ","Matthew 乔！"],
 					"ctgOvs":["oname","The Wine Show","葡萄酒展"]
 				}
 			]

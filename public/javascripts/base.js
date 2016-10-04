@@ -4,7 +4,7 @@ $(function(){
         if(!slideMenu.hasClass("on")){
             obj.addClass("active");
             slideMenu.addClass("on");
-            slideMenu.animate({"height":"30px","opacity":1,"padding":"20px 0 0"},500);
+            slideMenu.animate({"height":"32px","opacity":1,"padding":"20px 0 0"},500);
         }else{
             obj.removeClass("active");
             slideMenu.removeClass("on");
@@ -20,6 +20,19 @@ $(function(){
         var obj=$(this);
         obj.find(".hasSub").removeClass("active");
         obj.find(".subBox").hide();
+    });
+
+    $("#MbMenuBtn").on("click",function(){
+        var obj=$(this), mbMenu=$("#MobileMenu");
+        if(!mbMenu.hasClass("on")){
+            obj.addClass("active");
+            mbMenu.addClass("on");
+            mbMenu.animate({"left":"0"},500);
+        }else{
+            obj.removeClass("active");
+            mbMenu.removeClass("on");
+            mbMenu.animate({"left":"-100%"},500);
+        }
     });
     /**表单**/
     $(document).on("click", ".selHtm", function () {
@@ -44,14 +57,32 @@ $(function(){
     $(document).on("click",".shareBtn",function(){
         $(".shareMain").toggle();
     });
+
+    resize();
+    $(window).resize(function(){
+        resize();
+    });
 });
 function changeLang(obj){
     var key=obj.val(),
     url="/setlang?key="+key;
-    console.log(url);
+    //console.log(url);
     $.get(url,function(data){
         if(data.Result==1){
             window.location.reload() 
         }
     });
+}
+function resize(){
+    var bodyHeight=$("body").height(),
+        headerHeight=$("header").height(),
+        winHeight=$(window).height(),
+        winWidth=$(window).width();
+    var mHeight=bodyHeight-headerHeight;
+    if(bodyHeight<=winHeight){mHeight=winHeight-headerHeight}
+    $("#MobileMenu").css({"height":mHeight});
+    if(winWidth>=736){
+        $("#MbMenuBtn").removeClass("active");
+        $("#MobileMenu").css({"left":"-100%"});
+    }
 }

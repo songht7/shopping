@@ -24,11 +24,11 @@
 			          <%= m['multi'][lgkey] %>
 			            <ul>
 			              <% m['sublevel'].forEach(function(sm,key){ %>
-			              <li><a href=""><%= sm[lgkey] %></a></li>
+			              <li><a href="<%= sm[0] %>"><%= sm[lgkey] %></a></li>
 			              <% }) %>
 			            </ul>
 			         <% }else{ %>
-			          <a href=""><%= m[lgkey] %></a>
+			          <a href="<%= m[0] %>"><%= m[lgkey] %></a>
 				 				<span class="mCut">|</span>
 			         	<% }%>
 			         	</li>
