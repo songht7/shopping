@@ -133,7 +133,7 @@
 		    				<span class="price"><%=pro["price"][lgkey] %></span>
 		    				<span class="proLikeBtn"></span>
 		    			</div>
-		    			<a href="javascript:;" class="add2Cart <%- pro["stock"]<=0?"noStock":"" %>" data-ctgid="<%= wine["ctgId"] %>" data-id="<%= pro["id"] %>"><span><%- pro["stock"]<=0?langs["noStock"][lgkey]: langs["add2Cart"][lgkey] %></span></a>
+		    			<a href="javascript:;" class="add2Cart <%- pro["stock"]<=0?"noStock":"" %>" data-ctgid="<%= wine["ctgId"] %>" data-id="<%= pro["id"] %>" data-price="<%= pro["unit_price"] %>"><span><%- pro["stock"]<=0?langs["noStock"][lgkey]: langs["add2Cart"][lgkey] %></span></a>
 	    			</div>
 	    		</li>
   				<% }) %>

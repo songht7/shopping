@@ -67,23 +67,27 @@ exports.blogger = function(getlang,req, res, next) {
 	res.render('blogger',item);
 }
 
-
 exports.add2cart = function(getlang,req, res, next) {
 	
 	var list=[],
 	ctgid=req.body.ctgid,
-	id=req.body.id;
-	var odr={"ctgid":ctgid,"id":id,"numb":1},cartNumb=1;
+	id=req.body.id,
+	price=req.body.price;
+	var odr={"ctgid":ctgid,"id":id,"numb":1,"price":price,"subtotal":price}
+	,cartNumb=1;
+	var total=price;
 	//var getOdr=eval("(" + odr + ")");
 
 	var cks=req.cookies;
 	var has=false;
 	if(cks.cart!=undefined){
-		list=cks.cart;
+		list=cks.cart,total=0;
 		list.forEach(function(obj,key){
 			cartNumb+=obj.numb;
 			if(obj.id==id){
 				obj.numb+=1;
+				var nb=obj.numb,pc=obj.price;
+				obj.subtotal=funs.floatMul(nb,pc);
 				has=true;
 			}
 		});
@@ -91,16 +95,40 @@ exports.add2cart = function(getlang,req, res, next) {
 	if(!has){
 		list.push(odr);
 	}
+	if(cks.total){tl=cks.total;}else{tl=0;}
+	total=funs.floatAdd(price,tl);
+
 	res.cookie('cart', list, {  path: '/' });
 	res.cookie('cartNumb', cartNumb, {  path: '/' });
-	res.json({ "result": '1',"msg":"success","cartNumb":cartNumb })
+	res.cookie('total', total, {  path: '/' });
+	res.json({ "result": '1',"msg":"success","cartNumb":cartNumb,"total":total})
 }
+
+exports.removecart = function(getlang,req, res, next) {
+	var ctgid=req.body.ctgid,
+			id=req.body.id;
+  var cks=req.cookies;
+  var cart=cks.cart,cartNumb=cks.cartNumb,total=cks.total;
+  cart.forEach(function(obj,key){
+  	if(obj.id==id&&obj.ctgid==ctgid){
+  		cart.splice(key,1);
+  		cartNumb-=obj.numb;
+  		total=funs.floatSub(total,obj.subtotal);
+  	}
+  });
+	res.cookie('cart', cart, {  path: '/' });
+	res.cookie('cartNumb', cartNumb, {  path: '/' });
+	res.cookie('total', total, {  path: '/' });
+	res.json({ "result": '1',"msg":"success","cartNumb":cartNumb,"total":total})
+}
+
 exports.cart = function(getlang,req, res, next) {
 	var item = funs.base(getlang,req, res);
   
   var list=[];
   var cks=req.cookies;
 	var dtl=video.detail;
+	var total=0;
 
 	if(cks.cart!=undefined){
 		cks.cart.forEach(function(obj,key){
@@ -114,9 +142,14 @@ exports.cart = function(getlang,req, res, next) {
 			});
 		});
 	}
+	if(cks.total!=undefined){
+		total=cks.total;
+	}
 
   item["cart"]=cart;
+  //console.log(list);
   item["cartList"]=list;
+  item["total"]=total;
 	res.render('cart',item);
 }
 
@@ -126,5 +159,6 @@ exports.order = function(getlang,req, res, next) {
 
 	res.clearCookie('cart', { path: '/' });
 	res.clearCookie('cartNumb', { path: '/' });
+	res.clearCookie('total', {  path: '/' });
 	res.render('order',item);
 }

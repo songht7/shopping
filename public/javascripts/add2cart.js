@@ -4,8 +4,9 @@ $(function() {
         if (!obj.hasClass("noStock")) {
             var img = obj.parent().parent().find('img').attr('src'),
                 ctgid = obj.data("ctgid"),
-                id = obj.data("id");
-            $.post("/add2cart", { "ctgid": ctgid, "id": id }, function(data) {
+                id = obj.data("id"),
+                price=obj.data("price");
+            $.post("/add2cart", { "ctgid": ctgid, "id": id,"price":price }, function(data) {
                 if (data.result == 1) {
                     obj.addClass("noStock");
                     shopAnimate(obj, img, data.cartNumb); //购物车动画效果
@@ -13,7 +14,6 @@ $(function() {
             });
         }
     });
-
 });
 
 var fo = 0;

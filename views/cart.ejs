@@ -47,13 +47,13 @@
 	    </div>
 	    <div class="orderList">
 				<% cartList.forEach(function(obj,k){ %>
-	    	<div class="oderRow">
+	    	<div class="oderRow" id="Odr<%=obj.id%>">
 	    		<div class="wImg"><img src="/images/wine/wine<%= obj.id %>.jpg" alt=""></div>
 	    		<div class="wInfoBox">
 		    		<div class="wInfo">
 		    			<div class="wName">
 		    				<%= obj["title"][lgkey] %>
-		    				<div class="mobilr mbPrice"><span><%= obj["price"][lgkey] %></span></div>
+		    				<div class="mobile mbPrice"><span><%= obj["price"][lgkey] %></span></div>
 		    			</div>
 		    			<div class="wOvs"><%= obj["ovs"][lgkey] %></div>
 		    		</div>
@@ -61,7 +61,7 @@
 		    			<div class="wnInfo wTotal"><span><%= obj["price"][lgkey] %></span></div>
 		    			<div class="wnInfo wQuan" data-numb="<%= obj["numb"] %>">x<span><%= obj["numb"] %></span></div>
 		    			<div class="wnInfo proTotal"><span><%= obj["price"][lgkey] %></span></div>
-		    			<div class="wnInfo cartEdit">
+		    			<div class="wnInfo cartEdit" data-ctgid="<%= obj["ctgid"] %>" data-id="<%= obj["id"] %>" data-row="Odr<%=obj.id%>">
 		    				<div class="delt">Remove</div>
 		    				<div class="cartLike">Add to Wishlist</div>
 		    			</div>
@@ -75,7 +75,7 @@
 	    		<span>Message</span><input type="text" id="MsgIpt">
 	    	</div>
 	    	<div class="totals">
-	    		<span>Total</span><em>$270.00</em>
+	    		<span>Total</span><em>￥<i><%=total%></i></em>
 	    	</div>
 	    </div>
     </div>
@@ -102,7 +102,7 @@
     	<div class="btnBox">
     		<div class="bbInner">
 	    		<div class="total mobile">
-	    			Total: $<span>180</span>
+	    			Total: ￥<span><i><%=total%></i></span>
 	    		</div>
 					<a href="/order" class="add2Cart ptBtn"><span>Proceed with Payment</span></a>
 				</div>
