@@ -74,6 +74,7 @@
 	#VideoBox .inner{width: 100%}
 		.iframe{height: 250px}
 		.fltBox .wqr{width: 45px;height: 45px;}
+		.fltBox .wqr .qrSmall canvas{width: 45px;height: 45px;}
 		.wineAdd{padding:0 0 0 55px;}
 			.addHd{font-size: 1.4em;padding-bottom: 0}
 			.addOvs{font-size: 1.2em}

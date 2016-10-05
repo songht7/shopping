@@ -1,11 +1,17 @@
 <% include Share/_header.ejs %>
 <% include Share/_menu.ejs %>
 
+<script src="/javascripts/qrcode/jquery.qrcode.min.js"></script>
+<script src="/javascripts/qrcode/qrcode.js"></script>
+
 <div id="VideoBox">
 	<div class="inner clearfix">
 		<div class="video">
-			<div class="fltBox">
-				<img src="/images/wine/qr<%= wine["ctgId"] %>.png" class="wqr" alt="">
+			<div class="fltBox clearfix">
+				<div class="wqr">
+					<div id="QRcode" data-ctgid="<%= wine["ctgId"] %>"></div>
+					<div class="qrSmall"></div>
+				</div>
 				<div class="wineAdd">
 					<p class="addHd"><%= langs["add2Cart"][lgkey] %>!</p>
 					<p class="addOvs"><%= langs["scanQR"][lgkey] %></p>
