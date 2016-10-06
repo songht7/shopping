@@ -8,7 +8,7 @@
 		
 		<div class="hdRight clearfix">
 			<ul id="Menu" class=" clearfix">
-				<li class="mobile mbCart"><a href="cart" class="mobileCart"><span class="cartConut" data-val="<%- cartNumb?cartNumb:0 %>"><%- cartNumb?cartNumb:0 %></span></a></li>
+				<li class="mobile mbCart"><a href="/cart" class="mobileCart"><span class="cartConut" data-val="<%- cartNumb?cartNumb:0 %>"><%- cartNumb?cartNumb:0 %></span></a></li>
 			 <% menu.forEach(function(m,k){ %>
 			 <% if(k>2){%>
 					<li class="<%- m['multi'] ? 'multi':'' %>">
@@ -23,7 +23,7 @@
 						    </ul>
 					    </div>
 				 		<% }else{ %>
-							<a href="<%= m[0] %>" class="mLink"><span><%= m[lgkey] %></span></a>
+							<a href="<%= m[0] %>" class="mLink <%- m[0]=="/cart" ? "cartLink1":"" %>"><span><%= m[lgkey] %></span></a>
 				 		<% }%>
 						<% if(m[0]=="/cart"){%>
 				 		<span class="cartConut" id="CartWarp" data-val="<%- cartNumb?cartNumb:0 %>"><%- cartNumb?cartNumb:0 %></span>

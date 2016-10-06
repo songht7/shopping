@@ -15,7 +15,7 @@
 					<div class="bFlw"><span>61,351</span> <%= langs["followers"][lgkey] %></div>
 					<div class="bDetail"><%= rl["detail"][lgkey] %></div>
         	<% }}) %>
-					<a href="javascript:;"><%= langs["showMore"][lgkey] %></a>
+					<a href="javascript:;" class="openBtn"><%= langs["openMore"][lgkey] %></a>
 				</div>
 			</div>
 			<div class="pageMenu">
@@ -48,7 +48,7 @@
             <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
             <div class="bDtls">
 	            <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>
-	            <p class="ctgOvs"><%= obj["ctgOvs"][lgkey] %></p>
+	            <!-- <p class="ctgOvs"><%= obj["ctgOvs"][lgkey] %></p> -->
 	            <p class="view">5,600 <%= langs["views"][lgkey] %> - 2 <%= langs["hago"][lgkey] %></p>
             </div>
           </a>

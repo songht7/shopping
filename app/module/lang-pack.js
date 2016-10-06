@@ -58,7 +58,7 @@ var lang={
 	,"writeCmt":["wcmt","Write your comment...","写你的评论…"]
 	,"reply":["Reply","Reply","回复"]
 	,"mrReply":["mrReply","Open more replys","更多回复"]
-	,"odrSuccess":["odrSuccess","Your orders has been successfully placed.","您的订单已成功提交"]
+	,"odrSuccess":["odrSuccess","Your orders has <br/>been successfully placed.","您的订单已成功提交"]
 	,"thx":["thx","Thank you!","感谢订购!"]
 	,"ckOdr":["ckOdr","Check Your Order Status","检看您的订单状态"]
 	,"backHome":["ckOdr","Back to Home","返回首页"]

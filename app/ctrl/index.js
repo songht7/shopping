@@ -124,42 +124,51 @@ exports.removecart = function(getlang,req, res, next) {
 
 exports.cart = function(getlang,req, res, next) {
 	var item = funs.base(getlang,req, res);
-	var fqr=req.query.fqr;
+	var fqr=req.query.fqr?req.query.fqr:"",
+			getctgid=req.query.ctgid?req.query.ctgid:1,
+			add=req.query.add?req.query.add:"",
+			check=req.query.ct?req.query.ct:"";
 	var list=[],total=0;
 	var dtl=video.detail;//分类下产品列表
-	if(fqr){//微信扫描购物
-		var ctgid=req.query.ctgid;
-		var pro=dtl[ctgid]["product"];//对应分类产品列表
+
+	//else{//PC购物
+  var cks=req.cookies;
+	if(cks.cart!=undefined){
+		cks.cart.forEach(function(obj,key){
+			var pro=dtl[obj.ctgid]["product"];
+			pro.forEach(function(p,k){
+				if(p.id==obj.id){
+					wn=p;
+					wn["numb"]=obj.numb;
+					list.push(wn);
+				}
+			});
+		});
+	}
+	//}
+
+	if(fqr||add=="all"){//add all
+		var pro=dtl[getctgid]["product"];//对应分类产品列表
 		pro.forEach(function(p,k){
-			if(k<3){
+			//if(k<3){
 				total=funs.floatAdd(total,p.unit_price);
 				p["numb"]=1;
 				list.push(p);
-			}
+			//}
 		});
-		res.cookie('total', total, {  path: '/' });
-	}else{//PC购物
-	  var cks=req.cookies;
-		if(cks.cart!=undefined){
-			cks.cart.forEach(function(obj,key){
-				var pro=dtl[obj.ctgid]["product"];
-				pro.forEach(function(p,k){
-					if(p.id==obj.id){
-						wn=p;
-						wn["numb"]=obj.numb;
-						list.push(wn);
-					}
-				});
-			});
-		}
-		if(cks.total!=undefined){
-			total=cks.total;
-		}
 	}
+		if(cks.total!=undefined){
+			total=funs.floatAdd(total,cks.total);
+		}
+		res.cookie('total', total, {  path: '/' });
   item["cart"]=cart;
   //console.log(list);
   item["cartList"]=list;
   item["total"]=total;
+  item["check"]=check;
+  item["add"]=add;
+  item["fqr"]=fqr;
+  item["getCtgid"]=getctgid;
 	res.render('cart',item);
 }
 

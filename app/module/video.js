@@ -93,7 +93,7 @@ var detail={
 						"id":201
 						,"ctgid":2
 						,"title":["","Wine saver | Vacu Vin","葡萄酒节| Vacu Vin"]
-						,"ovs":["","The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
+						,"ovs":["","201The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
 						,"price":["","￥ 127.00","￥ 127.00"]
 						,"unit_price":127.00
 						,"stock":1000
@@ -104,7 +104,7 @@ var detail={
 						"id":202
 						,"ctgid":2
 						,"title":["","Akashi-Tai Honjozo Genshu Sake","明石泰honjozo根树的缘故"]
-						,"ovs":["","The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
+						,"ovs":["","202The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
 						,"price":["","￥ 127.00","￥ 127.00"]
 						,"unit_price":127.00
 						,"stock":0
@@ -115,40 +115,7 @@ var detail={
 						"id":203
 						,"ctgid":2
 						,"title":["","Altano Douro 2013","altano斗罗2013"]
-						,"ovs":["","The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
-						,"price":["","￥ 127.00","￥ 127.00"]
-						,"unit_price":127.00
-						,"stock":1000
-						,"like":100
-						,"unlike":10
-					}
-					,{
-						"id":204
-						,"ctgid":2
-						,"title":["","Altano Douro 2013","altano斗罗2013"]
-						,"ovs":["","The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
-						,"price":["","￥ 127.00","￥ 127.00"]
-						,"unit_price":127.00
-						,"stock":1000
-						,"like":100
-						,"unlike":10
-					}
-					,{
-						"id":205
-						,"ctgid":2
-						,"title":["","Altano Douro 2013","altano斗罗2013"]
-						,"ovs":["","The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
-						,"price":["","￥ 127.00","￥ 127.00"]
-						,"unit_price":127.00
-						,"stock":1000
-						,"like":100
-						,"unlike":10
-					}
-					,{
-						"id":206
-						,"ctgid":2
-						,"title":["","Altano Douro 2013","altano斗罗2013"]
-						,"ovs":["","The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
+						,"ovs":["","203The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
 						,"price":["","￥ 127.00","￥ 127.00"]
 						,"unit_price":127.00
 						,"stock":1000

@@ -47,7 +47,10 @@
         <% ctg["ctgList"].forEach(function(obj,k){ if(k<8){ %>
         <li class="li_<%=k%> <%=(k)%ctg["colNumb"]<=0?'fRow':'' %>">
           <a href="/video/<%= obj["id"] %>" class="ctgLink">
-            <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
+            <p class="ctgImgBox">
+              <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
+              <span class="vTime">24:24</span>
+            </p>
             <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>
             <p class="ctgOvs"><%= obj["ctgOvs"][lgkey] %></p>
             <p class="view">5,600 <%= langs["views"][lgkey] %> - 2 <%= langs["hago"][lgkey] %></p>

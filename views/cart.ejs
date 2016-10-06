@@ -3,8 +3,9 @@
 
 <div id="CartPage">
 	<div class="inner">
-		<h1 class="cartCk">Checkout</h1>
+		<h1 class="cartCk"><%= check!="" ? "Checkout" : "Shopping Cart" %></h1>
 
+		<% if(check!=""){ %>
 		<div class="cartBlock">
 	    <div class="blockHead">
 	      <div class="bLeft"><%= cart["ads"]["blockTitle"][lgkey] %></div>
@@ -34,12 +35,13 @@
 		 		<a href="javascript:;" class="addAds">add shopping address</a>
 	    </div>
     </div>
+		<% } %>
 
-		<div class="cartBlock">
+		<div class="cartBlock <%= check!="" ? "ckCart" : "" %>">
 	    <div class="blockHead">
-	      <div class="bLeft">Shopping Cart</div>
+	      <div class="bLeft"><%= check!="" ? "Order details" : "Product" %></div>
 	      <div class="bRight">
-	        <div class="orderInfo">Price</div>
+	        <% if(check==""){ %><div class="orderInfo">Price</div><% } %>
 	        <div class="orderInfo">Quantity</div>
 	        <div class="orderInfo total">Subtotal</div>
 	        <div class="orderInfo optin">&nbsp;</div>
@@ -58,28 +60,33 @@
 		    			<div class="wOvs"><%= obj["ovs"][lgkey] %></div>
 		    		</div>
 		    		<div class="wCount">
-		    			<div class="wnInfo wTotal"><span><%= obj["price"][lgkey] %></span></div>
+		    			<% if(check==""){ %><div class="wnInfo wTotal"><span><%= obj["price"][lgkey] %></span></div><% } %>
 		    			<div class="wnInfo wQuan" data-numb="<%= obj["numb"] %>">x<span><%= obj["numb"] %></span></div>
 		    			<div class="wnInfo proTotal"><span><%= obj["price"][lgkey] %></span></div>
+							<% if(check==""){ %>
 		    			<div class="wnInfo cartEdit" data-ctgid="<%= obj["ctgid"] %>" data-id="<%= obj["id"] %>" data-row="Odr<%=obj.id%>">
 		    				<div class="delt">Remove</div>
 		    				<div class="cartLike">Add to Wishlist</div>
 		    			</div>
+							<% } %>
 		    		</div>
 	    		</div>
 	    	</div>
 				<% }) %>
 	    </div>
 	    <div class="wMore">
+				<% if(check!=""){ %>
 	    	<div class="msg">
 	    		<span>Message</span><input type="text" id="MsgIpt">
 	    	</div>
+				<% } %>
 	    	<div class="totals">
 	    		<span>Total</span><em>￥<i><%=total%></i></em>
 	    	</div>
 	    </div>
     </div>
 
+		<% if(check!=""){ %>
 		<div class="cartBlock payBox">
 	    <div class="blockHead">
 	      <div class="bLeft">Payment</div>
@@ -98,16 +105,21 @@
 	    		</li>
 	    	</ul>
 	    </div>
-
-    	<div class="btnBox">
-    		<div class="bbInner">
-	    		<div class="total mobile">
-	    			Total: ￥<span><i><%=total%></i></span>
-	    		</div>
-					<a href="/order" class="add2Cart ptBtn"><span>Proceed with Payment</span></a>
-				</div>
-			</div>
     </div>
+		<% } %>
+
+  	<div class="btnBox">
+  		<div class="bbInner">
+    		<div class="total mobile">
+    			Total: ￥<span><i><%=total%></i></span>
+    		</div>
+		<% if(check==""){ var fqr=fqr ? "&fqr=true&ctgid="+getCtgid : "", add=add? "&add=all&ctgid="+getCtgid : "" %>
+				<a href="/cart?ct=check<%=fqr%><%=add%>" class="add2Cart ptBtn"><span>Proceed to Checkout</span></a> 
+		<% }else{ %>
+				<a href="/order" class="add2Cart ptBtn"><span>Proceed with Payment</span></a>
+				<% } %>
+			</div>
+		</div>
 
 	</div>
 </div>

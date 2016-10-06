@@ -43,7 +43,7 @@ var blog={
 			{
 				"id":1//blog id
 				,"uid":1
-				,"title":["","The Late Show","最后的演出"]
+				,"title":["","TThe Wine Show","红酒展"]
 				,"detail":[""
 							,"Matthew Goode & Matthew Rhys star in this new brand new 13 x 1 hour television series, for broadcast on ITV Spring 2016. Filmed in beautiful locations all over the world, The Wine Show is informative, entertaining, humorous and surprising, with something for everyone who enjoys a glass of wine."
 							,"马修·古迪和马修·瑞斯在这一新的品牌新的13×1小时的电视剧明星，在ITV 2016春季播出。在世界各地的美丽的地方拍摄，葡萄酒展是信息的，有趣的，幽默和令人惊讶的，与每个人都喜欢一杯酒的东西。"
