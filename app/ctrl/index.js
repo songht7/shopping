@@ -42,7 +42,7 @@ exports.video = function(getlang,req, res, next) {
 
 exports.blogger = function(getlang,req, res, next) {
 	var id=req.params.id;
-	
+
 	var item = funs.base(getlang,req, res);
 
 	var page_menu=langs.page_menu;
@@ -161,7 +161,8 @@ exports.cart = function(getlang,req, res, next) {
 		if(cks.total!=undefined){
 			total=funs.floatAdd(total,cks.total);
 		}
-		res.cookie('total', total, {  path: '/' });
+  res.cookie('total', total, {  path: '/' });
+  
   item["cart"]=cart;
   //console.log(list);
   item["cartList"]=list;

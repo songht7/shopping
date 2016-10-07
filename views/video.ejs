@@ -176,7 +176,7 @@
 					<!--cmtsBlock-->
 					<% for(var c=0;c<2;c++){ %>
 					<div class="cmtsBlock">
-						<img src="/images/userHead.png" class="cmtHead" alt="">
+						<img src="/images/comhead/<%=c%>@2x.png" class="cmtHead" alt="">
 						<div class="cmtCont">
 							<div class="cmtUser">
 								<span class="cmtName">Name A</span> - 2 <%= langs["dago"][lgkey] %>
@@ -191,7 +191,7 @@
 							<!--subCmt-->
 							<div class="subCmt">
 								<div class="cmtsBlock">
-									<img src="/images/userHead.png" class="cmtHead" alt="">
+									<img src="/images/comhead/<%- c+2 %>@2x.png" class="cmtHead" alt="">
 									<div class="cmtCont">
 										<div class="cmtUser">
 											<span class="cmtName">Name A</span> - 2 <%= langs["dago"][lgkey] %>
@@ -236,8 +236,8 @@
 						<div class="recInfo">
 							<div class="recTitle"><%= obj["title"][lgkey] %></div>
 							<div class="recVews">
-								<p>5,666 <%= langs["views"][lgkey] %></p>
-								<p>5,666 <%= langs["dago"][lgkey] %></p>
+								<p><%= obj["viewNumb"] %> <%= langs["views"][lgkey] %></p>
+								<p>2 <%= langs["dago"][lgkey] %></p>
 							</div>
 						</div>
 					</div>
@@ -257,8 +257,8 @@
 						<div class="recInfo">
 							<div class="recTitle"><%= obj["title"][lgkey] %></div>
 							<div class="recVews">
-								<p>5,666 <%= langs["views"][lgkey] %></p>
-								<p>5,666 <%= langs["dago"][lgkey] %></p>
+								<p><%= obj["viewNumb"] %> <%= langs["views"][lgkey] %></p>
+								<p>5 <%= langs["dago"][lgkey] %></p>
 							</div>
 						</div>
 					</div>

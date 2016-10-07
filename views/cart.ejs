@@ -42,7 +42,7 @@
 	      <div class="bLeft"><%= check!="" ? "Order details" : "Product" %></div>
 	      <div class="bRight">
 	        <% if(check==""){ %><div class="orderInfo">Price</div><% } %>
-	        <div class="orderInfo">Quantity</div>
+	        <div class="orderInfo quan">Quantity</div>
 	        <div class="orderInfo total">Subtotal</div>
 	        <div class="orderInfo optin">&nbsp;</div>
 	      </div>
@@ -50,7 +50,7 @@
 	    <div class="orderList">
 				<% cartList.forEach(function(obj,k){ %>
 	    	<div class="oderRow" id="Odr<%=obj.id%>">
-	    		<div class="wImg"><img src="/images/wine/wine<%= obj.id %>.jpg" alt=""></div>
+	    		<div class="wImg"><img src="/images/video/<%=obj.ctgid%>/featured/<%= obj.img %>" alt=""></div>
 	    		<div class="wInfoBox">
 		    		<div class="wInfo">
 		    			<div class="wName">
