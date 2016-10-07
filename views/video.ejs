@@ -9,13 +9,13 @@
 		<div class="video">
 			<div class="fltBox clearfix">
 				<div class="wqr">
-					<div id="QRcode" data-ctgid="<%= wine["ctgId"] %>"></div>
 					<div class="qrSmall"></div>
 				</div>
 				<div class="wineAdd">
-					<p class="addHd"><%= langs["add2Cart"][lgkey] %>!</p>
-					<p class="addOvs"><%= langs["scanQR"][lgkey] %></p>
+					<p class="addHd"><%= langs["add2Cart"][lgkey] %></p>
+					<!-- <p class="addOvs"><%= langs["scanQR"][lgkey] %></p> -->
 				</div>
+				<div id="QRcode" data-ctgid="<%= wine["ctgId"] %>"></div>
 			</div>
 			<iframe class="iframe" src="<%= wine["videoLink"] %>" frameborder="0" scrolling="no" allowfullscreen></iframe>
 		</div>

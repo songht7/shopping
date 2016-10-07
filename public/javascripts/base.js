@@ -41,11 +41,6 @@ $(function(){
         /**,port=window.location.port;if(port!=""||port!="80"){port=":"+port;}else{port="";}**/
         var url=protocol+"//"+host+"/cart?fqr=true&ctgid="+ctgid;
         //console.log(url);
-        $(".qrSmall").qrcode({
-            width: 60, //宽度 
-            height:60, //高度 
-            text    : url
-        }); 
         QRcode.qrcode({
             width: 150, //宽度 
             height:150, //高度 
