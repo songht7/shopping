@@ -393,7 +393,7 @@ var detail={
 				"ctgId":4
 				,"videoLink":"//embed.wirewax.com/8041074/"
 				,"ctgName":["","inTrend","流行前沿"]
-				,"ctgTitle":["","Top 10 electric skateboards to buy in 2016","2016 十大最值得购买的电动滑板"]
+				,"ctgTitle":["","Top 10 electric skateboards to buy <br/>in 2016","2016 十大最值得购买的电动滑板"]
 				,"uploadTime":["","May 27,2016","2016年5月27日"]
 				,"detail":["","inTrend covers the intersection of technology, science, art, and culture. Subscribe for original short-form documentaries, news coverage, product reviews, and shows."
 							,"inTrend 涵盖了技术，科学，艺术和文化的交汇点。欢迎关注原创短篇纪录片，新闻报道，产品评论和表演。"]

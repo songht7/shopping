@@ -12,7 +12,7 @@
 					<div class="qrSmall"></div>
 				</div>
 				<div class="wineAdd">
-					<p class="addHd"><%= langs["add2Cart"][lgkey] %></p>
+					<p class="addHd"><%= langs["addAllPro"][lgkey] %></p>
 					<!-- <p class="addOvs"><%= langs["scanQR"][lgkey] %></p> -->
 				</div>
 				<div id="QRcode" data-ctgid="<%= wine["ctgId"] %>"></div>
@@ -53,7 +53,7 @@
 
 			<div class="wTop">
 				<h1 class="wTitle">
-					<span class="wTInfo"><%= wine["ctgTitle"][lgkey] %></span>
+					<span class="wTInfo"><%- wine["ctgTitle"][lgkey] %></span>
 					<span class="wvws">474,747 <%= langs["views"][lgkey] %></span>
 				</h1>
 				<div class="wUpload"><%= langs["upload"][lgkey] %>: <%= wine["uploadTime"][lgkey] %></div>

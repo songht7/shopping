@@ -147,6 +147,7 @@
 			.wInfoBox{}
 			.wInfo{overflow: hidden;width: 68%;padding-bottom: 8px;}
 				.wName{font-size: 1.6em;padding-bottom: 10px;overflow: hidden;}
+				.wName p{width: 60%;float: left;}
 				.wCount{float: left;width: 70%}
 				.wnInfo.cartEdit{width: 38%}
 				.wCount .wTotal,.wCount .proTotal{display: none;}

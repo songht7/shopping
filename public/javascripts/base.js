@@ -42,8 +42,8 @@ $(function(){
         var url=protocol+"//"+host+"/cart?fqr=true&ctgid="+ctgid;
         //console.log(url);
         QRcode.qrcode({
-            width: 150, //宽度 
-            height:150, //高度 
+            width: 140, //宽度 
+            height:140, //高度 
             text    : url
         }); 
     }

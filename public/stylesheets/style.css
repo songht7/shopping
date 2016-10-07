@@ -45,7 +45,7 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
 #LeftMenu{float: left;width: 50px;height: 40px;position: relative;}
 	#MenuBtn,#MbMenuBtn{display: block;text-indent: -999999px;background: url("../images/menu.png") no-repeat 50% 15px;width:100%;height: 100%; }
 	#MenuBtn.active,#MbMenuBtn.active{background-position:50% -71px }
-#Logo{background: url("../images/logo.png") no-repeat 50% 50%;display: block;float: left;margin-right: 65px;width: 126px;height: 38px;text-indent: -999999px;}
+#Logo{background: url("../images/logo.png") no-repeat 50% 50%;display: block;float: left;margin-right: 65px;width: 126px;height: 38px;text-indent: -999999px;background-size: auto 100%}
 
 .hdRight{float: right;padding-right: 10px;}
 
@@ -146,12 +146,12 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
 .floatOrder{width:50px;height:50px;padding:2px;background:#fff;border:solid 1px #3B3B52;overflow:hidden;position:absolute;z-index:9999;}
 #VideoBox{background: #1E1E23;padding: 18px 0;margin-bottom: 20px;}
   .video{position: relative;width: 665px;float: left;}
-    .fltBox{position: absolute;z-index: 3;left: 15px;top: 15px;background: rgba(26,29,35,0.6);border-radius: 5px;padding: 8px;}
+    .fltBox{position: absolute;z-index: 3;left: 20px;top: 25px;background: rgba(26,29,35,0.6);border-radius: 5px;padding: 4px;}
     .wqr{width: 25px;height: 25px;border-radius: 3px;float: left;position: relative;}
     .qrSmall{width: 100%;height: 100%;background: url("../images/mobile/spCart.png") no-repeat 5px 50% #7EA656;background-size: auto 55%;border-radius: 50%}
-    #QRcode{width: 150px;margin: 10px auto 0;border: 2px solid #fff;display: none;}
-    .wineAdd{width:155px;color: #A0A09D;padding: 5px 0 0 35px;}
-      .addHd{font-size: 12px;padding-bottom: 5px;font-family:"PTSerif_Italic"}
+    #QRcode{width: 140px;height:140px; margin: 5px auto 13px;border: 3px solid #fff;display: none;border-radius: 3px}
+    .wineAdd{width:140px;color: #A0A09D;padding: 5px 0 0 35px;}
+      .addHd{font-size: 12px;padding-bottom: 5px;font-family:"PTSerif_Italic";color: #fff}
       .addOvs{font-size: 12px;line-height: 14px;}
     .iframe{width: 665px;height: 405px;}
   .videoRight{width: 295px;height: 405px; background: #2C2C3C;float: right;}
@@ -250,6 +250,7 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
     .recTitle{font-family: "Helvetica-Bold";padding:0 0 5px;line-height: 14px;font-size: 12px;}
     .recPrice p{font-size: 12px;}
     .recVews{font-family: "PTSerif_Italic";color: #797980}
+    .recVews p{font-size: 12px;}
   .recMore{display: block;width: 100%;text-align: center;padding: 10px 0;font-family: "PTSerif";}
   .recMore span{background: url("../images/arrow01.png") no-repeat right 50%;padding-right: 15px;}
 
