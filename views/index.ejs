@@ -13,19 +13,16 @@
         <div class="thImage b-lazy" data-src="/images/slide/slide01.jpg"></div>
       </a>
       <a id="s2" class="galleryItem swiper-slide" href="#" rel="bookmark">
-        <div class="thImage b-lazy" data-src="/images/slide/slide01.jpg"></div>
+        <div class="thImage b-lazy" data-src="/images/slide/slide02.jpg"></div>
       </a>
       <a id="s3" class="galleryItem swiper-slide" href="#" rel="bookmark">
-        <div class="thImage b-lazy" data-src="/images/slide/slide01.jpg"></div>
+        <div class="thImage b-lazy" data-src="/images/slide/slide03.jpg"></div>
       </a>
       <a id="s4" class="galleryItem swiper-slide" href="#" rel="bookmark">
-        <div class="thImage b-lazy" data-src="/images/slide/slide01.jpg"></div>
+        <div class="thImage b-lazy" data-src="/images/slide/slide04.jpg"></div>
       </a>
       <a id="s5" class="galleryItem swiper-slide" href="#" rel="bookmark">
-        <div class="thImage b-lazy" data-src="/images/slide/slide01.jpg"></div>
-      </a>
-      <a id="s6" class="galleryItem swiper-slide" href="#" rel="bookmark">
-        <div class="thImage b-lazy" data-src="/images/slide/slide01.jpg"></div>
+        <div class="thImage b-lazy" data-src="/images/slide/slide05.jpg"></div>
       </a>
     </div>
   </div>
@@ -46,9 +43,9 @@
       <ul>
         <% ctg["ctgList"].forEach(function(obj,k){ if(k<8){ %>
         <li class="li_<%=k%> <%=(k)%ctg["colNumb"]<=0?'fRow':'' %>">
-          <a href="/video/<%= obj["id"] %>" class="ctgLink">
+          <a href="/video/<%= obj["ctgid"] %>" class="ctgLink">
             <p class="ctgImgBox">
-              <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
+              <img src="/images/pro/<%= obj["img"] %>" class="ctgImg" alt="">
               <span class="vTime">24:24</span>
             </p>
             <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>

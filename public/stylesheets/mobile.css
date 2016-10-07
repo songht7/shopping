@@ -113,7 +113,7 @@
 	.paging img{width: 100%}
 
 	#featuredGallery .container{height: 320px;}
-  #featuredGallery .wrapper{width:calc(100%*6);height: 320px}
+  #featuredGallery .wrapper{width:calc(100%*5);height: 320px}
   #featuredGallery .galleryItem{width: 100%}
 
 	/*blogger*/

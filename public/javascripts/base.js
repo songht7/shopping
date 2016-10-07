@@ -114,7 +114,9 @@ function changeLang(obj){
 }
 function resize(){
     var bodyHeight=$("body").height(),
+        mainHeight=$("#PageMain").height(),
         headerHeight=$("header").height(),
+        footerHeight=$("footer").height(),
         winHeight=$(window).height(),
         winWidth=$(window).width();
     var mHeight=bodyHeight-headerHeight;
@@ -124,6 +126,12 @@ function resize(){
         $("#MbMenuBtn").removeClass("active");
         $("#MobileMenu").css({"left":"-100%"});
     }
+
+    var mHeight=winHeight-headerHeight-footerHeight;
+    if(mainHeight<mHeight){
+        $("#PageMain").css({"min-height":mHeight})
+    }
+
 }
 //加    
 function floatAdd(arg1,arg2){    

@@ -10,11 +10,9 @@
 				<img src="/images/blogger/userHead.png" class="uHead" alt="">
 				<div class="uMain">
 					<a href="javascript:;" class="flwBtn"><span><%= langs["follow"][lgkey] %></span></a>
-					<% related["list"].forEach(function(rl,k){ if(rl["id"]==id){ %>
-					<div class="bTitle"><%= rl["title"][lgkey] %></div>
+					<div class="bTitle"><%= blog["title"][lgkey] %></div>
 					<div class="bFlw"><span>61,351</span> <%= langs["followers"][lgkey] %></div>
-					<div class="bDetail"><%= rl["detail"][lgkey] %></div>
-        	<% }}) %>
+					<div class="bDetail"><%= blog["ovs"][lgkey] %></div>
 					<a href="javascript:;" class="openBtn"><%= langs["openMore"][lgkey] %></a>
 				</div>
 			</div>
@@ -31,10 +29,10 @@
 
 <div class="pages inner blogBox">
 	<div class="blogLeft">
-  <% category.forEach(function(ctg,key){if(key==0||key==3){ %>
+  <% blog.list.forEach(function(lst,key){ %>
   <div class="ctgBlock bBlk_<%=key%> ">
     <div class="blockHead">
-      <div class="bLeft"><%= ctg["blogName"][lgkey] %></div>
+      <div class="bLeft"><%= lst["ctgName"][lgkey] %></div>
       <div class="bRight">
         <a href="javascript:;" class="ctgMore prev"><span><%= langs["prev"][lgkey] %></span></a>
         <a href="javascript:;" class="ctgMore next"><span><%= langs["next"][lgkey] %></span></a>
@@ -42,10 +40,10 @@
     </div>
     <div class="ctgList blgList col-3">
       <ul>
-        <% ctg["ctgList"].forEach(function(obj,k){ %>
+        <% lst["ctgList"].forEach(function(obj,k){ %>
         <li class="bLi_<%=k%> <%=(k)%3<=0?'fRow':'' %>">
-          <a href="/video/<%= obj["id"] %>" class="ctgLink">
-            <img src="/images/pro/ctg<%= obj["id"] %>.jpg" class="ctgImg" alt="">
+          <a href="/video/<%= obj["ctgid"] %>" class="ctgLink">
+            <img src="/images/blogger/<%= obj["img"] %>" class="ctgImg" alt="">
             <div class="bDtls">
 	            <p class="ctgTitle"><%= obj["ctgTitle"][lgkey] %></p>
 	            <!-- <p class="ctgOvs"><%= obj["ctgOvs"][lgkey] %></p> -->
@@ -61,7 +59,7 @@
       </div>
     </div>
   </div>
-  <% }}) %>
+  <% }) %>
 	</div>
 	
 	<div class="blogRight">
@@ -72,7 +70,7 @@
 					<div class="recList">
 						<% recmd["list"].forEach(function(rc,k){ %>
 						<div class="recRow">
-							<div class="recImg"><img src="/images/wine/wine<%= rc["id"] %>.jpg" alt=""></div>
+							<div class="recImg"><img src="/images/blogger/rec/<%= rc["img"] %>" alt=""></div>
 							<div class="recInfo">
 								<div class="recTitle"><%= rc["wine"][lgkey] %></div>
 								<div class="recPrice">
@@ -93,7 +91,7 @@
 					<div class="recList">
 						<% related["list"].forEach(function(rl,k){ %>
 						<div class="recRow">
-							<div class="recImg uHead"><img src="/images/portrait.png" alt=""></div>
+							<div class="recImg uHead"><img src="/images/blogger/user/<%= rl["img"] %>" alt=""></div>
 							<div class="recInfo">
 								<div class="riLeft">
 									<div class="recTitle"><%= rl["title"][lgkey] %></div>

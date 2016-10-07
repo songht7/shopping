@@ -48,14 +48,15 @@ exports.blogger = function(getlang,req, res, next) {
 	var page_menu=langs.page_menu;
   item["page_menu"]=page_menu;
 
-	var category=ctg.ctgs;
-  item["category"]=category;
-
   var wine=video.detail[id];
   item["wine"]=wine;
 
+	var blog=blg.detail[id];
+  item["blog"]=blog;
+
   var recmd=blg.rec;
   item["recmd"]=recmd;
+
   var related=blg.related;
   item["related"]=related;
 
