@@ -17,7 +17,7 @@ var detail={
 						,"ctgid":1
 						,"img":"2.1@2x.jpg"
 						,"title":["","Wine saver | Vacu Vin","红酒真空塞 | Vacu Vin"]
-						,"ovs":["","101The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
+						,"ovs":["","The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches... ","您需要零空气的抽真空储存方式，保鲜更持久。需搭配内附的 瓶塞，再运用抽真空器… "]
 						,"price":["","￥ 128.00","￥ 128.00"]
 						,"unit_price":128.00
 						,"stock":1000
@@ -104,7 +104,6 @@ var detail={
 					]
 				}
 		}
-
 	,"2":{
 				"colNumb":3,
 				"ctgId":2
@@ -121,7 +120,7 @@ var detail={
 						,"ctgid":2
 						,"img":"2.1@2x.jpg"
 						,"title":["","Blazer | TopShop","西装外套 | TopShop"]
-						,"ovs":["","201The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
+						,"ovs":["","Classic tailoring goes casual with this traditional double breasted blazer…","经典的剪裁, 休闲与传统的双排扣 西装外套的混搭结合..."]
 						,"price":["","￥ 1,899.00","￥ 1,899.00"]
 						,"unit_price":1899.00
 						,"stock":1000
@@ -133,7 +132,7 @@ var detail={
 						,"ctgid":2
 						,"img":"2.2@2x.jpg"
 						,"title":["","Leather shorts | DROME","皮质短裤 | DROME"]
-						,"ovs":["","202The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
+						,"ovs":["","At the heart of Drome’s inspiration is a poetic vision of leather as a natural material…","来自 Drome 的核心灵感，采用纯 天然的皮质材质，优雅…"]
 						,"price":["","￥ 127.00","￥ 127.00"]
 						,"unit_price":127.00
 						,"stock":0
@@ -145,7 +144,7 @@ var detail={
 						,"ctgid":2
 						,"img":"2.3@2x.jpg"
 						,"title":["","Leopard high heeled court shoe | Marta Jonnsson","豹纹高跟鞋 | Marta Jonnsson"]
-						,"ovs":["","203The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
+						,"ovs":["","Leopard High Heeled Court Shoe made with Suede Material. Marta Jonsson, crafts her shoes and boots…","豹纹高跟单鞋，由麂皮材料制成。Marta Jonsson，它的鞋子和靴子…"]
 						,"price":["","￥ 550.00","￥ 550.00"]
 						,"unit_price":550.00
 						,"stock":1000
@@ -157,7 +156,7 @@ var detail={
 						,"ctgid":2
 						,"img":"2.4@2x.jpg"
 						,"title":["","Flare jeans | M.i.h","喇叭牛仔裤 | M.i.h"]
-						,"ovs":["","203The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
+						,"ovs":["","Cotton-rich denim, Concealed ﬂy, Flared ﬁt, cut with a straight leg that ﬂares at the ankle…","纯棉牛仔布，暗线，阔腿裤，长度超过脚踝..."]
 						,"price":["","￥ 2,067.00","￥ 2,067.00"]
 						,"unit_price":2067.00
 						,"stock":1000
@@ -169,7 +168,7 @@ var detail={
 						,"ctgid":2
 						,"img":"2.5@2x.jpg"
 						,"title":["","Leather tote | Balenciaga","牛皮托特包 | Balenciaga"]
-						,"ovs":["","203The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
+						,"ovs":["","Balenciaga's 'Classic Work’ bag has been crafted in Italy from black textured-leather…","Balenciaga的 “经典包款” 在意大 利制造，黑色纹理皮革..."]
 						,"price":["","￥ 16,204.00","￥ 16,204.00"]
 						,"unit_price":16204.00
 						,"stock":1000
@@ -181,7 +180,7 @@ var detail={
 						,"ctgid":2
 						,"img":"2.6@2x.jpg"
 						,"title":["","L'Instruction du Roy | Hermes","L'Instruction du Roy | Hermes"]
-						,"ovs":["","203The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
+						,"ovs":["","The King’s Instruction in the Exercise of Horse Riding’ was the title given to a 17th-century …","“国王的骑马运动”，一个来自17世纪的称号..."]
 						,"price":["","￥ 4,899.00","￥ 4,899.00"]
 						,"unit_price":4899.00
 						,"stock":1000
@@ -284,7 +283,7 @@ var detail={
 						,"ctgid":3
 						,"img":"2.1@2x.jpg"
 						,"title":["","Large Clear Glass Wavy Serving | Mixing Bowl","大号玻璃料理碗 | Mixing Bowl"]
-						,"ovs":["","",""]
+						,"ovs":["","Simple, clean design enhances presentaion, Made of high quality glass, sturdy and durable…","简洁的设计增强了展现效果，采用优质玻璃，坚固耐用..."]
 						,"price":["","￥ 78.00","￥ 78.00"]
 						,"unit_price":78.00
 						,"stock":1000
@@ -296,7 +295,7 @@ var detail={
 						,"ctgid":3
 						,"img":"2.2@2x.jpg"
 						,"title":["","Water pitcher | Silver smiths","冷水壶 | Silver smiths"]
-						,"ovs":["","",""]
+						,"ovs":["","Crafted of quality crystal material, holds approximately 42 oz. It has Coordinating glassware…","打造优质水晶材质，拥有约42盎司容量，玻璃器皿..."]
 						,"price":["","￥ 99.00","￥ 99.00"]
 						,"unit_price":99.00
 						,"stock":10
@@ -308,7 +307,7 @@ var detail={
 						,"ctgid":3
 						,"img":"2.3@2x.jpg"
 						,"title":["","Jar with lid and band | Ball","储存用玻璃罐 | Ball"]
-						,"ovs":["","",""]
+						,"ovs":["","Ideal for preserving jams, jellies sauces, mustard & ﬂavored vinegar…","理想的保存用玻璃器皿，适合装果酱，果冻酱，芥末调味醋..."]
 						,"price":["","￥ 12.00","￥ 12.00"]
 						,"unit_price":12.00
 						,"stock":1000
@@ -405,7 +404,7 @@ var detail={
 						,"ctgid":4
 						,"img":"2.1@2x.jpg"
 						,"title":["","GT Bamboo street series skateboard | Evolve","GT Bamboo street 系列滑板 | Evolve"]
-						,"ovs":["","",""]
+						,"ovs":["","The Evolve Skateboards original Pintail and Snubnose started the Bamboo legacy…","The Evolve 出品的滑板在前端及后端处采用原生态的竹质…"]
 						,"price":["","￥ 9,660.00","￥ 9,660.00"]
 						,"unit_price":9660.00
 						,"stock":1000
@@ -417,7 +416,7 @@ var detail={
 						,"ctgid":4
 						,"img":"2.2@2x.jpg"
 						,"title":["","Electric Skateboard | M1™","电动滑板 | M1™"]
-						,"ovs":["","",""]
+						,"ovs":["","The M1™ is the ﬁrst skateboard with motors in the wheels. From its streamlined look to its feel under foot…","M1™ 是一个将滑板与电机轮动结合的公司，从它流线型外观到脚感..."]
 						,"price":["","￥ 9,329.00","￥ 9,329.00"]
 						,"unit_price":9329.00
 						,"stock":10
@@ -429,7 +428,7 @@ var detail={
 						,"ctgid":4
 						,"img":"2.3@2x.jpg"
 						,"title":["","Marbel Board","Marbel 电动滑板"]
-						,"ovs":["","",""]
+						,"ovs":["","16+ Miles on a single charge, 25 MPH top speed, ultra portable at only 10 lbs…","16+万里一次充电，25英里的最高速度，超便携只有10磅…"]
 						,"price":["","￥ 9,329.00","￥ 9,329.00"]
 						,"unit_price":9329.00
 						,"stock":1000
@@ -441,7 +440,7 @@ var detail={
 						,"ctgid":4
 						,"img":"2.4@2x.jpg"
 						,"title":["","Bolt","Bolt"]
-						,"ovs":["","",""]
+						,"ovs":["","The smallest and lightest electric skateboard in the world! Extremely portable for everyday commute...","世界最小，最轻的电动滑板！及其便携于日常通勤..."]
 						,"price":["","￥ 5,999.00","￥ 5,999.00"]
 						,"unit_price":5999.00
 						,"stock":1000
@@ -453,7 +452,7 @@ var detail={
 						,"ctgid":4
 						,"img":"2.5@2x.jpg"
 						,"title":["","Slim electric longbard | Metroboard","纤巧电动滑板 | Metroboard"]
-						,"ovs":["","",""]
+						,"ovs":["","We are proud to offer the Metroboard Slim Electric Longboard Stealth Edition…","我们很自豪能够推出Metroboard纤细长板,电动模板几乎隐形…"]
 						,"price":["","￥ 7,662.00","￥ 7,662.00"]
 						,"unit_price":7662.00
 						,"stock":1000
@@ -550,7 +549,7 @@ var detail={
 						,"ctgid":5
 						,"img":"2.1@2x.jpg"
 						,"title":["","Pump bottles | Earth’s Essentials","压嘴瓶 | Earth’s Essentials"]
-						,"ovs":["","",""]
+						,"ovs":["","No Drip Black Pump With Lock Down Safety Feature, Safe BPA Free Food Grade Clear PET Bottle…","无滴漏压嘴锁定特性，安全不含BPA，并采用食品级透明PET瓶..."]
 						,"price":["","￥ 86.00","￥ 86.00"]
 						,"unit_price":86.00
 						,"stock":1000
@@ -562,7 +561,7 @@ var detail={
 						,"ctgid":5
 						,"img":"2.2@2x.jpg"
 						,"title":["","Roumd 9” cake baking pan | Topeka supplies","9寸蛋糕烤盘 | Topeka supplies"]
-						,"ovs":["","",""]
+						,"ovs":["","Affordable commercial-grade bakeware for your home Developed exclusively for Topenca…","经济实惠的商业级烤盘为您的家庭带来更多的快乐..."]
 						,"price":["","￥ 99.00","￥ 9.00"]
 						,"unit_price":99.00
 						,"stock":10
@@ -574,7 +573,7 @@ var detail={
 						,"ctgid":5
 						,"img":"2.3@2x.jpg"
 						,"title":["","Mini glass jars | Nakpunar","迷你玻璃罐 | Nakpunar"]
-						,"ovs":["","",""]
+						,"ovs":["","6 pieces 1.5 oz Glass Jars with BPA FREE Gold Lids, Great for Wedding Favors, Shower Favors…","6个1.5盎司玻璃瓶, 采用不含BPA 金盖，非常适合婚礼回礼，洗礼回礼..."]
 						,"price":["","￥ 86.00","￥ 86.00"]
 						,"unit_price":86.00
 						,"stock":1000
@@ -586,7 +585,7 @@ var detail={
 						,"ctgid":5
 						,"img":"2.4@2x.jpg"
 						,"title":["","Denatured Alcohol | Klean-strip","转换酒精 | Klean-strip"]
-						,"ovs":["","",""]
+						,"ovs":["","Made of 95% renewable resources, Biodegradable, Thins shellac, Cleans glass and metal...","由95％的可再生资源，可生物降解，可清洗玻璃和金属..."]
 						,"price":["","￥ 53.00","￥ 53.00"]
 						,"unit_price":53.00
 						,"stock":1000
@@ -598,7 +597,7 @@ var detail={
 						,"ctgid":5
 						,"img":"2.5@2x.jpg"
 						,"title":["","Lint Roller | Scotch-Brite","粘贴滚筒 | Scotch-Brite"]
-						,"ovs":["","",""]
+						,"ovs":["","It's important to look your best. And with just the right amount of adhesive, Scotch-Brite Lint Rollers …","它对于让你看上去更好有很重要 的作用，具有适度的黏度..."]
 						,"price":["","￥ 126.00","￥ 126.00"]
 						,"unit_price":126.00
 						,"stock":1000
@@ -610,7 +609,7 @@ var detail={
 						,"ctgid":5
 						,"img":"2.5@2x.jpg"
 						,"title":["","Freezer bag | Ziploc","自封袋 | Ziploc"]
-						,"ovs":["","",""]
+						,"ovs":["","Perfect for freezing meat, poultry, ﬁsh, and more, Designed exclusively to protect food against freezer burn…","完美的为冷冻肉，禽，鱼等专门设计，以保障食物避免冻伤…"]
 						,"price":["","￥ 26.00","￥ 26.00"]
 						,"unit_price":26.00
 						,"stock":1000
