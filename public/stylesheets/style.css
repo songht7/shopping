@@ -251,7 +251,7 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
     .recPrice p{font-size: 12px;}
     .recVews{font-family: "PTSerif_Italic";color: #797980}
     .recVews p{font-size: 12px;}
-  .recMore{display: block;width: 100%;text-align: center;padding: 10px 0;font-family: "PTSerif";}
+  .recMore{display: block;width: 100%;text-align: center;padding: 10px 0;font-family: "PTSerif";font-size: 12px}
   .recMore span{background: url("../images/arrow01.png") no-repeat right 50%;padding-right: 15px;}
 
 /** brogger  */

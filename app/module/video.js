@@ -607,7 +607,7 @@ var detail={
 					,{
 						"id":506
 						,"ctgid":5
-						,"img":"2.5@2x.jpg"
+						,"img":"2.6@2x.jpg"
 						,"title":["","Freezer bag | Ziploc","自封袋 | Ziploc"]
 						,"ovs":["","Perfect for freezing meat, poultry, ﬁsh, and more, Designed exclusively to protect food against freezer burn…","完美的为冷冻肉，禽，鱼等专门设计，以保障食物避免冻伤…"]
 						,"price":["","￥ 26.00","￥ 26.00"]
