@@ -73,6 +73,7 @@
 	#VideoBox{padding: 0}
 	#VideoBox .inner{width: 100%}
 		.iframe{height: 250px}
+		.fltBox{display: none;}
 		.fltBox .wqr{width: 45px;height: 45px;}
 		.fltBox .wqr .qrSmall canvas{width: 45px;height: 45px;}
 		.wineAdd{padding:0 0 0 55px;}
