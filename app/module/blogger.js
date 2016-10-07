@@ -5,7 +5,7 @@ var blog={
 		"1":{
 			"title":["","The Wine Show","The Wine Show"],
 			"ovs":["","Matthew Goode & Matthew Rhys star in this new brand new 13 x 1 hour television series, for broadcast on ITV Spring 2016. Filmed in beautiful locations all over the world, The Wine Show is informative, entertaining, humorous and surprising, with something for everyone who enjoys a glass of wine."
-			,"Matthew Goode 和 Matthew Rhy 献映于这档最新的13×1小时电视系列节目，在ITV2016年春季播出。 在世界各地的美丽的地方拍摄，展⽰示葡萄酒的知识、娱乐、趣味和令⼈人惊讶的地方，与每个人共同享用 每一杯葡萄酒。"],
+			,"Matthew Goode 和 Matthew Rhy 献映于这档最新的13×1小时电视系列节目，在ITV2016年春季播出。 在世界各地的美丽的地方拍摄，展示葡萄酒的知识、娱乐、趣味和令⼈人惊讶的地方，与每个人共同享用 每一杯葡萄酒。"],
 			"list":[
 				{
 					"colNumb":3,
@@ -57,7 +57,7 @@ var blog={
 				},
 				{
 					"colNumb":3,
-					"ctgName":["c1title","Popular Uploads","热⻔门视频"]
+					"ctgName":["c1title","Popular Uploads","热门视频"]
 					,"ctgList":[
 							{
 								"id":101,
@@ -133,7 +133,7 @@ var blog={
 			{
 				"id":101
 				,"img":"3.1.jpg"
-				,"wine":["","A Mano Aleatico Di Puglia Passito 2010","2010年passito手aleatico普利亚"]
+				,"wine":["","A Mano Aleatico Di Puglia Passito 2010","A Mano Aleatico Di Puglia Passito 2010"]
 				,"price":["","￥ 127.00","￥ 127.00"]
 				,"stock":1000
 			}
@@ -185,7 +185,7 @@ var blog={
 			,{
 				"id":2
 				,"uid":2
-				,"title":["","Carol","颂歌"]
+				,"title":["","Carol","Carol"]
 				,"img":"4.3.png"
 				,"detail":[""
 							,"Matthew Goode & Matthew Rhys star in this new brand new 13 x 1 hour television series, for broadcast on ITV Spring 2016. Filmed in beautiful locations all over the world, The Wine Show is informative, entertaining, humorous and surprising, with something for everyone who enjoys a glass of wine."
@@ -196,7 +196,7 @@ var blog={
 			,{
 				"id":3
 				,"uid":3
-				,"title":["","Late Night with Seth Meyers","赛金花的深夜秀"]
+				,"title":["","Late Night with Seth Meyers","Late Night with Seth Meyers"]
 				,"img":"4.4.png"
 				,"detail":[""
 							,"Matthew Goode & Matthew Rhys star in this new brand new 13 x 1 hour television series, for broadcast on ITV Spring 2016. Filmed in beautiful locations all over the world, The Wine Show is informative, entertaining, humorous and surprising, with something for everyone who enjoys a glass of wine."

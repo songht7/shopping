@@ -40,7 +40,7 @@ var category={
 					"id":105,
 					"ctgid":5,
 					"img":"ctg105.jpg",
-					"ctgTitle":["pname","MOM HACKS | Arts & Crafts","妈咪解决方案 | 画画与⼿手⼯工"],
+					"ctgTitle":["pname","MOM HACKS | Arts & Crafts","妈咪解决方案 | 画画与手工"],
 					"ctgOvs":["oname","WhatsUpMoms","妈咪怎样"]
 				},
 				{
@@ -125,7 +125,7 @@ var category={
 		/**pro4**/
 		,{
 			"colNumb":4,
-			"ctgName":["c1title","Most Popular","时下流⾏行"]
+			"ctgName":["c1title","Most Popular","时下流行"]
 			,"blogName":["b1title","Popular Uploads","受欢迎的"]
 			,"ctgBrief":["cf","latest most viewed videos","观看次数最多的最新视频"]
 			,"ctgList":[

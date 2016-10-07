@@ -22,7 +22,7 @@
 		<div class="videoRight">
 			<div class="vrInner">
 				<div class="vrTop">
-					<a href="/blogger/<%= wine["ctgId"] %>"><img src="/images/wine/portrait1.png" class="portrait" alt=""></a>
+					<a href="<%- wine["ctgId"]<=1 ? "/blogger/"+wine["ctgId"] : "javascript:;" %>"><img src="/images/video/<%= wine["ctgId"] %>/portrait.png" class="portrait" alt=""></a>
 					<div class="vrtRight">
 						<div class="wCtgName"><a href="/blogger/<%= wine["ctgId"] %>"><%= wine["ctgName"][lgkey] %></a></div>
 						<div class="flwNumb">61,351 <%= langs["followers"][lgkey] %></div>
@@ -30,12 +30,12 @@
 					</div>
 				</div>
 				<ul class="ctgMList mbHide">
-					<% related["list"].forEach(function(rl,k){ %>
+					<% coming["list"].forEach(function(obj,k){ %>
 					<li>
 						<a href="javascript:;">
-							<img src="/images/wine/cImg101.png" alt="">
+							<img src="/images/video/<%= wine["ctgId"] %>/coming/<%= obj["img"] %>" alt="">
 							<p class="cInfos">
-								<span class="cName"><%= rl["title"][lgkey] %></span>
+								<span class="cName"><%= obj["title"][lgkey] %></span>
 								<span class="cView">5,600 <%= langs["views"][lgkey] %></span>
 							</p>
 						</a>
@@ -56,11 +56,11 @@
 					<span class="wTInfo"><%= wine["ctgTitle"][lgkey] %></span>
 					<span class="wvws">474,747 <%= langs["views"][lgkey] %></span>
 				</h1>
-				<div class="wUpload"><%= langs["upload"][lgkey] %>: <%= langs["May"][lgkey] %> 27, 2016</div>
+				<div class="wUpload"><%= langs["upload"][lgkey] %>: <%= wine["uploadTime"][lgkey] %></div>
 			</div>
 			<div class="wOverview">
-				<div class="ovBox"><%= wine["detail"][lgkey] %></div>
-				<a href="javascript:;" class="openBtn"><%= langs["openMore"][lgkey] %></a>
+				<div class="ovBox"><%- wine["detail"][lgkey] %></div>
+				<!-- <a href="javascript:;" class="openBtn"><%= langs["openMore"][lgkey] %></a> -->
 			</div>
 
 			<div class="shareBox clearfix">
@@ -98,16 +98,16 @@
 		<!-- 移动版显示 -->
 		<div class="mobile coming">
 				<div class="blockHead">
-		      <div class="bLeft"><%= related["head"][lgkey] %></div>
+		      <div class="bLeft"><%= coming["title"][lgkey] %></div>
 		      <div class="bRight"></div>
 		    </div>
 		    <ul class="ctgMList">
-					<% related["list"].forEach(function(rl,k){ %>
+					<% coming["list"].forEach(function(obj,k){ %>
 					<li>
 						<a href="javascript:;">
-							<img src="/images/wine/cImg101.png" alt="">
+							<img src="/images/video/<%= wine["ctgId"] %>/coming/<%= obj["img"] %>" alt="">
 							<p class="cInfos">
-								<span class="cName"><%= rl["title"][lgkey] %></span>
+								<span class="cName"><%= obj["title"][lgkey] %></span>
 								<span class="cView">5,600 <%= langs["views"][lgkey] %></span>
 							</p>
 						</a>
@@ -133,7 +133,7 @@
 	    	<ul class=" col-<%= wine["colNumb"]?wine["colNumb"]:3 %>">
   				<% wine["product"].forEach(function(pro,key){ %>
 	    		<li class="p_<%=key%> <%=(key)%wine["colNumb"]<=0?'fRow':'' %>">
-	    			<div class="proImg"><img src="/images/wine/wine<%= pro["id"] %>.jpg" alt=""></div>
+	    			<div class="proImg"><img src="/images/video/<%= wine["ctgId"] %>/featured/<%= pro["img"] %>" alt=""></div>
 	    			<div class="pDtl">
 		    			<a href="javascript:;" class="pTitle"><%=pro["title"][lgkey] %></a>
 		    			<div class="pLike">
@@ -232,7 +232,7 @@
 				<div class="recList">
 					<% otherVideo["list"].forEach(function(obj,k){ %>
 					<div class="recRow">
-						<div class="recImg"><img src="/images/wine/rec1.jpg" alt=""></div>
+						<div class="recImg"><img src="/images/video/<%= wine["ctgId"] %>/other/<%= obj["img"] %>" alt=""></div>
 						<div class="recInfo">
 							<div class="recTitle"><%= obj["title"][lgkey] %></div>
 							<div class="recVews">
@@ -253,7 +253,7 @@
 				<div class="recList">
 					<% uMayLike["list"].forEach(function(obj,k){ %>
 					<div class="recRow">
-						<div class="recImg"><img src="/images/wine/rec1.jpg" alt=""></div>
+						<div class="recImg"><img src="/images/video/<%= wine["ctgId"] %>/umay/<%= obj["img"] %>" alt=""></div>
 						<div class="recInfo">
 							<div class="recTitle"><%= obj["title"][lgkey] %></div>
 							<div class="recVews">

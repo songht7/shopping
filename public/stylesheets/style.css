@@ -52,6 +52,9 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
 .searchBox{overflow: hidden;float: right;padding-right: 20px;}
 	.iptBlock{float: left;margin-right: 15px;}
 	.iptSearch{color: #8b8bac;border: none;outline: none; border-radius: 3px;width:400px;padding: 12px 5px 12px 45px;background: url("../images/seach.png") no-repeat 16px 50% #3B3B52;}
+    ::-moz-placeholder { color: #8b8bac; }
+    ::-webkit-input-placeholder { color:#8b8bac; }
+    :-ms-input-placeholder { color:#8b8bac; }
 	.searchBtn{float: left;display: block; width: 110px;line-height: 40px;height: 40px;background: #686886;border-radius: 3px; text-align: center;color: #fff;font-family: "PTSerif_Italic"}
 
 #Menu {float: right;}
@@ -92,9 +95,9 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
 
 #SlideMenu{padding: 0;height: 0;overflow: hidden;opacity: 0;}
 .sldMBox{border-bottom: 1px solid #2C2C3C}
-#SlideMenu ul{overflow: hidden;margin: 0 auto;width: 300px;}
-#SlideMenu ul li{float: left;padding: 0 15px;}
-#SlideMenu ul li a{color: #303042;font-size: 16px;display: block;padding-bottom: 10px;border-bottom: 3px solid transparent}
+#SlideMenu ul{overflow: hidden;margin: 0 auto;width: 440px;}
+#SlideMenu ul li{float: left;padding: 0 50px;}
+#SlideMenu ul li a{color: #303042;font-size: 16px;display: block;padding:0 5px 4px;border-bottom: 3px solid transparent;line-height: 25px;}
 #SlideMenu ul li a.active{border-color: #2C2C3C}
 
 
@@ -128,15 +131,16 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
 .ctgList li{float: left;width: 308px;margin: 0 0 20px 18px}
 .fRow{clear: both;}
   .ctgLink{display: block;width: 100%;}
+    .ctgLink:hover .ctgTitle{color: #71718f}
     .ctgLink p{line-height: 18px}
     .ctgImgBox{position: relative;display: block;}
-      .ctgImg{display: block;width: 100%;height: 178px;margin-bottom: 10px;}
+      .ctgImg{display: block;width: 100%;/*height: 178px;*/margin-bottom: 10px;}
       .ctgImgBox .vTime{position: absolute;background: rgba(44,44,60,0.6);color: #fff;padding: 1px 3px;font-size: 12px;right: 7px;bottom: 4px;border-radius: 3px;}
     .ctgTitle{font-family:"Helvetica-Bold";line-height: 16px;}
     .ctgOvs{font-size: 12px;color: #797980}
     .view{font-family: "PTSerif_Italic";font-size: 12px;color: #797980}
 .ctgList.col-4 li{width: 226px;}
-.ctgList.col-4 .ctgImg{height: 130px;}
+.ctgList.col-4 .ctgImg{/*height: 130px;*/}
 
 /** video **/
 .floatOrder{width:50px;height:50px;padding:2px;background:#fff;border:solid 1px #3B3B52;overflow:hidden;position:absolute;z-index:9999;}
@@ -177,7 +181,7 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
     .wUpload{font-family: "PTSerif_Italic";font-size: 12px;color: #797980}
   .wOverview{padding: 0 0 25px}
     .ovBox{padding-bottom: 5px;}
-    .openBtn{color: #303042;text-decoration: underline}
+    .openBtn{text-decoration: underline}
 .shareBox{position: relative;background: #D4D4DB;padding: 10px 20px;}
   .shareLeft{float: left;font-size: 12px;}
     .shareLeft span{padding: 0 5px;}
@@ -197,7 +201,8 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
   .proList{padding: 20px 0 0}
   .proList ul{overflow: hidden;margin-left: -16px}
   .proList li{float: left;width: 200px;margin: 0 0 50px 16px}
-  .proImg{background: #fff;text-align: center;}
+  .proImg{background: #fff;text-align: center;width: 100%;}
+  .proImg img{max-width: 100%;}
   .pTitle{display: block;padding: 10px 0;font-family: "Helvetica-Bold";height: 40px}
   .pLike{overflow: hidden;padding-bottom: 20px}
     .pLike .price{float: left;}
@@ -240,7 +245,8 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
     .recImg{float: left;text-align: center;width: 140px;height: 82px;}
     .recImg img{max-width: 100%;max-height: 100%}
     .recInfo{padding-left: 150px;}
-    .recTitle{font-family: "Helvetica-Bold";font-size: 12px;padding:0 0 5px;line-height: 14px}
+    .recTitle{font-family: "Helvetica-Bold";padding:0 0 5px;line-height: 14px;font-size: 12px;}
+    .recPrice p{font-size: 12px;}
     .recVews{font-family: "PTSerif";color: #797980}
   .recMore{display: block;width: 100%;text-align: center;padding: 10px 0;font-family: "PTSerif";}
   .recMore span{background: url("../images/arrow01.png") no-repeat right 50%;padding-right: 15px;}
@@ -340,11 +346,11 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
 .goHome{display: block;width: 80%;margin: 0 auto;text-align: center;color:#71718f}
 
 /** footer  */
-footer{background: #2C2C3C;color: #8383a6;font-family: "PTSerif"}
+footer{background: #2C2C3C;color: #8383a6;font-family: "PTSerif";font-size: 12px}
 .ftRow{border-bottom: 1px solid #3B3B4E;padding: 20px 0;}
 .ftRow:last-child{border-bottom: 0;}
   .selLng{float:left;padding: 6px 0 0;}
-  .lgTip{float: left;padding-right: 10px;}
+  .lgTip{float: left;padding:3px 10px 0 0;}
 
   /**表单**/
   .selBlock{float: left; background:url("../images/select_arrow.png") no-repeat 90% 50%;font-size:14px;width:108px;height:24px;line-height:24px;border:1px solid #7A7A9E;position:relative;border-radius: 3px;}

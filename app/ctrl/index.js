@@ -28,13 +28,13 @@ exports.video = function(getlang,req, res, next) {
   var wine=video.detail[ctgid];
   item["wine"]=wine;
 
-  var related=blg.related;
-  item["related"]=related;
+  var coming=wine.coming;
+  item["coming"]=coming;
 
-  var otherVideo=video.otherVideo;
+  var otherVideo=wine.otherVideo;
   item["otherVideo"]=otherVideo;
 
-  var uMayLike=video.uMayLike;
+  var uMayLike=wine.uMayLike;
   item["uMayLike"]=uMayLike;
 
   	res.render('video',item);
