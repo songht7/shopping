@@ -50,6 +50,8 @@
 	    <div class="orderList">
 				<% cartList.forEach(function(obj,k){ %>
 	    	<div class="oderRow" id="Odr<%=obj.id%>">
+	    		<input type="hidden" value="<%= obj["unit_price"] %>" class="price">
+	    		<input type="hidden" value="1" class="numb">
 	    		<div class="wImg"><img src="/images/video/<%=obj.ctgid%>/featured/<%= obj.img %>" alt=""></div>
 	    		<div class="wInfoBox">
 		    		<div class="wInfo">
@@ -81,7 +83,7 @@
 	    	</div>
 				<% } %>
 	    	<div class="totals">
-	    		<span>Total</span><em>￥<i><%=total%></i></em>
+	    		<span>Total</span><em>￥<i class="setTotal"></i></em>
 	    	</div>
 	    </div>
     </div>
@@ -111,7 +113,7 @@
   	<div class="btnBox">
   		<div class="bbInner">
     		<div class="total mobile">
-    			Total: ￥<span><i><%=total%></i></span>
+    			Total: ￥<span><i class="setTotal"></i></span>
     		</div>
 		<% if(check==""){ var fqr=fqr ? "&fqr=true&ctgid="+getCtgid : "", add=add? "&add=all&ctgid="+getCtgid : "" %>
 				<a href="/cart?ct=check<%=fqr%><%=add%>" class="add2Cart ptBtn"><span>Proceed to Checkout</span></a> 
@@ -123,5 +125,10 @@
 
 	</div>
 </div>
+<script>
+	$(function(){
+		getTotal();
+	});
+</script>
 
 <% include Share/_footer.ejs %>

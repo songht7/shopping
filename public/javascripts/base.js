@@ -61,10 +61,11 @@ $(function(){
         $.post("/removecart", { "ctgid": ctgid, "id": id }, function(data) {
             if (data.result == 1) {
                 $("#CartWarp,.cartConut").html(data.cartNumb);
-                $(".totals").find("i").html(data.total);
-                $(".total.mobile").find("i").html(data.total);
-                $("#"+row).remove();
-            }
+                //$(".totals").find("i").html(data.total);
+                //$(".total.mobile").find("i").html(data.total);
+            }else if(data.result == 2){}
+            $("#"+row).remove();
+            getTotal();
         });
     });
 
@@ -97,6 +98,18 @@ $(function(){
         resize();
     });
 });
+function getTotal(){
+    if($(".oderRow").length){
+        var total=0;
+        $(".oderRow").each(function(i,obj){
+            var price = $(obj).find(".price").val(),numb= $(obj).find(".numb").val();
+            var uPrice=floatMul(price,numb);
+            total=floatAdd(total,uPrice);
+        });
+        $("#CartWarp.cartConut").html($(".oderRow").length);
+        $(".setTotal").html(total);
+    }
+}
 function changeLang(obj){
     var key=obj.val(),
     url="/setlang?key="+key;

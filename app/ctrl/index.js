@@ -109,18 +109,22 @@ exports.removecart = function(getlang,req, res, next) {
 	var ctgid=req.body.ctgid,
 			id=req.body.id;
   var cks=req.cookies;
-  var cart=cks.cart,cartNumb=cks.cartNumb,total=cks.total;
-  cart.forEach(function(obj,key){
-  	if(obj.id==id&&obj.ctgid==ctgid){
-  		cart.splice(key,1);
-  		cartNumb-=obj.numb;
-  		total=funs.floatSub(total,obj.subtotal);
-  	}
-  });
-	res.cookie('cart', cart, {  path: '/' });
-	res.cookie('cartNumb', cartNumb, {  path: '/' });
-	res.cookie('total', total, {  path: '/' });
-	res.json({ "result": '1',"msg":"success","cartNumb":cartNumb,"total":total})
+  var cart=cks.cart,cartNumb=cks.cartNumb?cks.cartNumb:0,total=cks.total?cks.total:0;
+  if(cart){
+	  cart.forEach(function(obj,key){
+	  	if(obj.id==id&&obj.ctgid==ctgid){
+	  		cart.splice(key,1);
+	  		cartNumb-=obj.numb;
+	  		total=funs.floatSub(total,obj.subtotal);
+	  	}
+	  });
+		res.cookie('cart', cart, {  path: '/' });
+		res.cookie('cartNumb', cartNumb, {  path: '/' });
+		res.cookie('total', total, {  path: '/' });
+		res.json({ "result": '1',"msg":"success","cartNumb":cartNumb,"total":total})
+	}else{
+		res.json({ "result": '2',"msg":"success"})
+	}
 }
 
 exports.cart = function(getlang,req, res, next) {
@@ -171,6 +175,7 @@ exports.cart = function(getlang,req, res, next) {
   item["add"]=add;
   item["fqr"]=fqr;
   item["getCtgid"]=getctgid;
+  //console.log(list);
 	res.render('cart',item);
 }
 
