@@ -33,7 +33,7 @@
 		.blogRight .add2Cart,.blogRight .flwBtn{height: 42px;line-height: 42px;width: 150px;max-width: 60%;}
 	.blogRight .recInfo{overflow: hidden;padding-left:10px;}
 	.riLeft{float: left;width: 40%}
-	.blogRight .flwBtn{float: none;max-width: 40%;}
+	.blogRight .flwBtn{float: right;max-width: 40%;}
 
 	/*cart*/
   .cartBlock .bRight,.wCount{width: 55%}
