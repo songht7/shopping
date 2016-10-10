@@ -186,20 +186,20 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
   .wOverview{padding: 0 0 25px}
     .ovBox{padding-bottom: 5px;}
     .openBtn{text-decoration: underline}
-.shareBox{position: relative;background: #D4D4DB;padding: 10px 20px;}
+.shareBox{position: relative;background: #D4D4DB;padding: 10px 13px;line-height: 18px}
   .shareLeft{float: left;font-size: 12px;}
     .shareLeft span{padding: 0 5px;}
   .shareRight{float: right;}
-    .like,.unlike{padding-left: 20px;background: url("../images/like.png") no-repeat 0 50%;margin-right: 20px;background-size:auto 100% }
+    .like,.unlike{padding:2px 0 2px 20px;background: url("../images/like.png") no-repeat 0 50%;margin-right: 20px;background-size:auto 100% }
     .unlike{background-image: url("../images/unlike.png");margin-right: 0}
 .shareMain{position: absolute;top: 100%;left: 0;width: 100%;background:#fff;z-index: 2;display: none}
-  .smInner{padding: 10px;position: relative;}
+  .smInner{padding: 10px 13px;position: relative;}
     .shareArrow{background: url("../images/shareArrow.png") no-repeat 50% 0;width: 20px;height: 10px;position: absolute;top:-5px;left: 135px}
     .shareMain .jiathis_style_32x32 .jiathis_txt{font-size: 14px;margin:0 20px 0 0;}
     .jiathis_style_32x32 .weChatMoment .jtico_weixin{background-image: url("../images/wechat2.png");background-position:0 0;}
     .cpLink{padding: 10px 0;overflow: hidden;clear: both;}
       .cpIpt{width: 75%;background: none;border:1px solid #D4D4DB;border-radius: 3px;padding: 10px 10px;float: left;}
-      .cpBtn{display: block;float: right;width: 20%;background: #686886;color: #fff;border-radius: 3px;text-align: center;line-height: 36px;}
+      .cpBtn{display: block;float: right;width: 20%;background: #686886;color: #fff;border-radius: 3px;text-align: center;line-height: 36px;margin: 2px 0 0}
 .productBox{padding: 50px 0 30px;}
   .addAllBtn{background: #686886;font-family: "PTSerif_Italic";border-radius: 5px;color: #e9e9f0;height: 33px;line-height: 33px;text-align: center;padding: 10px 25px;font-size: 12px;}
   .proList{padding: 20px 0 0}
@@ -231,7 +231,7 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
     .cmtInfos{padding-bottom: 5px;font-size: 12px;}
     .replys{overflow: hidden;font-size: 12px;}
       .rpNumb{font-family: "Helvetica-Bold";padding-right: 20px;float: left;}
-      .cmtLike{float: left;padding-left: 20px;background: url("../images/like.png") no-repeat 0 50%;}
+      .cmtLike{float: left;padding-left: 20px;background: url("../images/like_gray.png") no-repeat 0 50%;background-size: auto 90%}
   .subCmt {padding-bottom: 20px}
   .subCmt .cmtsBlock{padding: 20px 0 20px;margin-bottom: 10px;border-bottom: 1px solid #CFCFD7}
     .subCmt .cmtsBlock .cmtHead{width: 45px;height: 45px;}
@@ -324,7 +324,7 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
     .cartEdit{overflow: hidden;float: right;line-height: 30px;font-size: 12px;}
       .proTotal{font-family: "Helvetica-Bold";text-align: right;}
       .delt,.cartLike{display: block;background: url("../images/delt.png") no-repeat 0 50%;background-size: 20px auto;padding:5px 0 5px 25px;cursor: pointer;text-align: left;line-height: 18px;}
-      .cartLike{background-image: url("../images/like2.png");}
+      .cartLike{background-image: url("../images/like2.png");background-size: 24px auto}
 .wMore{overflow: hidden;padding: 15px 0 0}
   .msg{float: left;overflow: hidden;}
   .msg span{float: left;margin-right: 10px;display: block;line-height: 38px;}

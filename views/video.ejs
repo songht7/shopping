@@ -135,10 +135,12 @@
 	    		<li class="p_<%=key%> <%=(key)%wine["colNumb"]<=0?'fRow':'' %>">
 	    			<div class="proImg"><img src="/images/video/<%= wine["ctgId"] %>/featured/<%= pro["img"] %>" alt=""></div>
 	    			<div class="pDtl">
-		    			<a href="javascript:;" class="pTitle"><%=pro["title"][lgkey] %></a>
-		    			<div class="pLike">
-		    				<span class="price"><%=pro["price"][lgkey] %></span>
-		    				<span class="proLikeBtn"></span>
+	    				<div class="pdTop">
+			    			<a href="javascript:;" class="pTitle"><%=pro["title"][lgkey] %></a>
+			    			<div class="pLike">
+			    				<span class="price"><%=pro["price"][lgkey] %></span>
+			    				<span class="proLikeBtn"></span>
+			    			</div>
 		    			</div>
 		    			<a href="javascript:;" class="add2Cart <%- pro["stock"]<=0?"noStock":"" %>" data-ctgid="<%= wine["ctgId"] %>" data-id="<%= pro["id"] %>" data-price="<%= pro["unit_price"] %>"><span><%- pro["stock"]<=0?langs["noStock"][lgkey]: langs["add2Cart"][lgkey] %></span></a>
 	    			</div>

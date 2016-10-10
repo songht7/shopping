@@ -67,7 +67,7 @@
 			<div class="recBlock">
 				<div class="recInner">
 					<div class="recHead"><%= recmd["title"][lgkey] %></div>
-					<div class="recList">
+					<div class="recList recmd">
 						<% recmd["list"].forEach(function(rc,k){ %>
 						<div class="recRow">
 							<div class="recImg"><img src="/images/blogger/rec/<%= rc["img"] %>" alt=""></div>
@@ -88,7 +88,7 @@
 			<div class="recBlock">
 				<div class="recInner">
 					<div class="recHead"><%= related["title"][lgkey] %></div>
-					<div class="recList">
+					<div class="recList related">
 						<% related["list"].forEach(function(rl,k){ %>
 						<div class="recRow">
 							<div class="recImg uHead"><img src="/images/blogger/user/<%= rl["img"] %>" alt=""></div>

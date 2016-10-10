@@ -55,7 +55,7 @@
 	#Menu li{display: none;}
 	#Menu li.mobile{display: inline-block;}
 	.bLeft{font-size: 2em}
-	.ctgBlock,.homepage .ctgList{padding-bottom: 0}
+	.homepage .ctgBlock,.homepage .ctgList{padding-bottom: 0}
 	.ctgList ul{margin-left: 0;}
 		.ctgList li{float: none;width: 100%;margin: 0 0 20px 0;height: 225px;}
 		.cBlk_0 .ctgList li{height: auto;margin: 0 0 35px 0;}
@@ -108,7 +108,7 @@
 
 	.wUpload{display: none;}
 	.mobile.coming{width: 100%}
-		.coming .cInfos{font-size: 1em}
+		.coming .cInfos{font-size: 1em;width: 55%}
 		.mobile.coming .ctgMList{border-bottom: none;padding: 15px 0;}
 		.mobile.coming .cName,.mobile.coming .cView{color: #303042;font-size: 1.5em;line-height: 1.4em}
 		.mobile.coming .cView{color: #71718F;font-size: 1.4em}
@@ -118,9 +118,10 @@
 		.proList li{float: none;width: 100%;margin: 0 0 20px 0;overflow: hidden;}
 			.proImg{float: left;width: 150px;height: 150px;}
 				.proImg img{max-width: 100%;max-height: 100%;}
-			.pDtl{float: left;padding-left: 10px;}
+			.pDtl{float: left;padding-left: 10px;width: 55%;}
+			.pdTop{height: 112px;}
 			.pTitle{font-size: 1.6em;height: auto;color: #303042;padding-top: 0}
-			.price{font-size: 1.4em;line-height: 1.4em;padding-bottom: 10px}
+			.price{font-size: 1.4em;line-height: 1.4em;padding-bottom: 5px}
 			.pLike .price,.proLikeBtn{float: none;display: block;}
 			.p_3,.p_4,.p_5{display: none;}
 			.proList .add2Cart{width: 70%}
@@ -145,7 +146,7 @@
 		.bFlw{font-size: 1.5em}
 	.userBox .pageMenu li{width: 25%;text-align: center;margin: 0}
 		.bDetail,.openBtn{display: none;}
-		.uMain{float: left;padding:10px 0 0 10px;width: 70%;}
+		.uMain{float: left;padding:10px 0 0 10px;width: 75%;}
 		.pageMenu li a{font-size: 1.4em}
 		.blogLeft .ctgList li {height: auto;}
 			.blogLeft .ctgList li .ctgLink{overflow: hidden;}
@@ -153,10 +154,10 @@
 			.bDtls{float: left;padding-left: 10px;width: 55%;}
 			.bLi_3,.bLi_4,.bLi_5,.bLi_6,.bLi_7,.bLi_8{display: none;}
 		.blogBox .ctgLink p.ctgTitle{font-size: 1.6em;padding-bottom: 5px;}
-		.recBlock .recHead{font-size: 2em;}
+		.recBlock .recHead{font-size: 2em;padding-bottom: 30px}
 		.recBlock .recTitle{font-size: 1.4em;line-height: 1.4em}
 		.recList:last-child{border-bottom: none;}
-		.recList .recRow:nth-last-child(1),.recList .recRow:nth-last-child(2),.recList .recRow:nth-last-child(0){display: none;}
+		.recList.recmd .recRow:nth-last-child(1),.recList.recmd .recRow:nth-last-child(2),.recList.recmd .recRow:nth-last-child(0){display: none;}
 
 	/*cart*/
 	#CartPage{padding: 20px 0}
@@ -167,7 +168,8 @@
 		.adsBlock{width: 100%;height: auto;margin-bottom: 0; display: none;border: none;background: url("../images/mobile/arRight.png") no-repeat 95% 50% #F6F6FC;background-size: auto 35%}
 			.adsBlock.active {display: block;}
 			.adsInner{padding-right: 100px;}
-				.adsTop{border-bottom: none;margin-bottom: 0;font-size: 1.4em}
+				.adsTop{border-bottom: none;margin-bottom: 0;}
+				.adsTop span{font-size: 1.4em}
 				.adsBottm{display: none;}
 				.adsInfo{height: auto;font-size: 1.4em;color: #71718f}
 		.delt,.cartLike{text-indent: -99999px}
@@ -183,7 +185,7 @@
 				.wName{font-size: 1.6em;padding-bottom: 10px;overflow: hidden;}
 				.wName p{width: 60%;float: left;}
 				.wCount{float: left;width: 70%}
-				.wnInfo.cartEdit{width: 38%}
+				.wnInfo.cartEdit{width: 38%;padding: 5px 0 0}
 				.wCount .wTotal,.wCount .proTotal{display: none;}
 				.delt,.cartLike{float: left;margin-left: 18px;width: 25px;padding:5px 0}
 				.mbPrice{display: block;float: right;}
@@ -196,7 +198,7 @@
 	.ckCart .oderRow{margin-bottom: 0;border-bottom: 1px solid #CFCFD7;}
 	#CartPage .payBox .blockHead{display: block;}
 	.payBox{background: #F6F6FC;padding: 15px;}
-	.payType{background-position: right 50%;padding-left: 0}
+	.payType{background-position: right 50%;padding-left: 0;font-size: 1.4em}
 
 	#OrderPage{padding: 80px 0;}
 	.odInfo{font-size: 1.6em}
