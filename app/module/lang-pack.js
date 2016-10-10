@@ -21,7 +21,7 @@ var lang={
 	]
 	,"page_menu":[
 				["/","HOME","首页"]
-				,["video","VIDEOS","视频"]
+				,["/video","VIDEOS","视频"]
 				,["#","PRODUCTS","商品"]
 				,["#","ABOUT","关于"]
 	]

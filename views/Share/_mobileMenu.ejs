@@ -5,41 +5,43 @@
 				<input type="text" value="" class="iptSearch" placeholder="">
 			</div>
 	</div>
-	<ul class="mbMenuList clearfix">
-	 <% menu.forEach(function(m,k){ %>
-		<% if(m[0]!="tp_cart"){%>
-			<li class="k_<%=k%> <%- m['multi'] ? 'multi':'' %> <%- k<3 ? 'bold':'' %>">
-				<% if(m['multi']){%>
-					<a href='<%= m[0] %>' class="mLink hasSub"><%= m['multi'][lgkey] %></a>
-					<div class="mSubBox">
-				    <ul class="mSubMenu">
-				      <% m['sublevel'].forEach(function(sm,key){ %>
-				      <li class="sk_<%=key%>"><a href="<%= sm[0] %>"><span><%= sm[lgkey] %></span></a></li>
-				      <% }) %>
-				    </ul>
-			    </div>
-		 		<% }else{ %>
-					<a href="<%= m[0] %>" class="mLink"><span><%= m[lgkey] %></span></a>
-		 		<% }%>
-			</li>
-	 <% }}) %>
-	</ul>
+	<div class="mbMBox">
+		<ul class="mbMenuList clearfix">
+		 <% menu.forEach(function(m,k){ %>
+			<% if(m[0]!="tp_cart"){%>
+				<li class="k_<%=k%> <%- m['multi'] ? 'multi':'' %> <%- k<3 ? 'bold':'' %>">
+					<% if(m['multi']){%>
+						<a href='<%= m[0] %>' class="mLink hasSub"><%= m['multi'][lgkey] %></a>
+						<div class="mSubBox">
+					    <ul class="mSubMenu">
+					      <% m['sublevel'].forEach(function(sm,key){ %>
+					      <li class="sk_<%=key%>"><a href="<%= sm[0] %>"><span><%= sm[lgkey] %></span></a></li>
+					      <% }) %>
+					    </ul>
+				    </div>
+			 		<% }else{ %>
+						<a href="<%= m[0] %>" class="mLink"><span><%= m[lgkey] %></span></a>
+			 		<% }%>
+				</li>
+		 <% }}) %>
+		</ul>
 
-  <ul class="mbFtMenu">
-   <% footerMenu.forEach(function(m,k){ %>
-   <li>
-   <% if(m['multi']){%>
-    <%= m['multi'][lgkey] %>
-      <ul>
-        <% m['sublevel'].forEach(function(sm,key){ %>
-        <li><a href="<%= sm[0] %>"><%= sm[lgkey] %></a></li>
-        <% }) %>
-      </ul>
-   <% }else{ %>
-    <a href="<%= m[0] %>"><%= m[lgkey] %></a>
-   	<% }%>
-   	</li>
-   	<%}) %>
-   </ul>
+	  <ul class="mbFtMenu">
+	   <% footerMenu.forEach(function(m,k){ %>
+	   <li>
+	   <% if(m['multi']){%>
+	    <%= m['multi'][lgkey] %>
+	      <ul>
+	        <% m['sublevel'].forEach(function(sm,key){ %>
+	        <li><a href="<%= sm[0] %>"><%= sm[lgkey] %></a></li>
+	        <% }) %>
+	      </ul>
+	   <% }else{ %>
+	    <a href="<%= m[0] %>"><%= m[lgkey] %></a>
+	   	<% }%>
+	   	</li>
+	   	<%}) %>
+	   </ul>
+	  </div>
 	</div>
 </div>

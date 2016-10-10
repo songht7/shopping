@@ -139,7 +139,7 @@ function resize(){
     if(mainHeight<mHeight){
         $("#PageMain").css({"min-height":mHeight})
     }
-
+    $(".mbMBox").css({"height":winHeight-150});
 }
 //加    
 function floatAdd(arg1,arg2){    

@@ -46,29 +46,34 @@
 	.mobile{display: inline-block;}
 	.mbHide{display: none;}
 	#MbMenuBtn{display: block;}
-
+	
 	.mobileCart{display: inline-block;background: url("../images/mobile/spCart.png") no-repeat 0 50%;padding-left: 28px;background-size: 20px auto}
 	#MenuBtn{display: none;}
 
 	/*.ctgImg,.ctgList.col-4 .ctgImg{height: 210px}*/
-
+.mbMBox{overflow-y: auto;}
 	#Menu li{display: none;}
 	#Menu li.mobile{display: inline-block;}
-	.bLeft{font-size: 2.4em}
+	.bLeft{font-size: 2em}
+	.ctgBlock,.homepage .ctgList{padding-bottom: 0}
 	.ctgList ul{margin-left: 0;}
-		.ctgList li{float: none;width: 100%;margin-left: 0;height: 225px;}
-		.cBlk_0 .ctgList li{height: auto;}
+		.ctgList li{float: none;width: 100%;margin: 0 0 20px 0;height: 225px;}
+		.cBlk_0 .ctgList li{height: auto;margin: 0 0 35px 0;}
 		.ctgList.col-4 ul{margin-left: -4%;overflow: hidden;}
 		.cBlk_0 .ctgList ul li.li_5{display: none;}
 		.ctgList.col-4 li{float: left;width: 46%;margin-left: 4%}
 		/*.ctgList.col-4 li .ctgImg{height: 130px;}*/
 		.cBlk_3 .li_4,.cBlk_3 .li_5,.cBlk_3 .li_6,.cBlk_3 .li_7{display: none;}
 		.ctgMore{display: none;}
-		.ctgLink p{font-size:1.4em;line-height: 1.4em}
+		.ctgImg{margin-bottom: 15px}
+		.ctgLink p{font-size:1.5em;line-height: 1.4em}
+		.ctgLink p.ctgOvs,.ctgLink p.view{font-size: 1.4em;}
 	.liMore{width: 100%;overflow: hidden;}
+	.homepage .liMore{display: none;}
 		.mBtn{width: 48%;display: block;height: 30px;background: url("../images/mobile/btnLeft.png") no-repeat 50% 50% #D9D9DF;float: left;background-size: auto 40%;text-indent: -99999px;}
 		.liNext{background-image: url("../images/mobile/btnRight.png");float: right;}
 
+	.portrait,.uHead{width: 65px;height:65px;}
 	/*video*/
 	#VideoBox{padding: 0}
 	#VideoBox .inner{width: 100%}
@@ -80,32 +85,41 @@
 			.addHd{font-size: 1.4em;padding-bottom: 0}
 			.addOvs{font-size: 1.2em}
 	.videoRight{height: auto;background: #E9E9F0;}
-		.vrtRight{overflow: hidden;position: relative;padding-left: 10px;}
+		.vrtRight{overflow: hidden;position: relative;padding:10px 0 0 10px;}
 		.vrTop{margin-bottom: 0;width: 100%;border-bottom:1px dotted #2C2C3C;}
 		.wCtgName, .flwNumb{color: #303042;width: 70%;float: left;}
-		.wCtgName{font-size: 2em;line-height: 1.6em}
+		.wCtgName{font-size: 1.6em;line-height: 1.6em}
 		.wCtgName a{color: #303042}
 		.flwNumb{font-size: 1.4em;}
 		.ctgMList.mbHide{display: none;}
 		.ovBox{font-size: 1.4em}
-		.videoRight .flwBtn{position: absolute;top: 10px;right: 0}
-	h1.wTitle .wTInfo{font-size: 2em;line-height: 1.4em; float: none;display: block;}
-	h1.wTitle .wvws{float: none;display: block;font-size: 1.4em}
-
-	.shareMain .jiathis_style_32x32 .jiathis_txt{width: 35%;margin-right: 0}
-	.cpIpt{width: 60%}
+		.videoRight .flwBtn{position: absolute;top: 15px;right: 0}
+	.wTop{padding-bottom: 5px}
+		h1.wTitle{font-size: 1em}
+		h1.wTitle .wTInfo{font-size: 2em;line-height: 1.4em; float: none;display: block;}
+		h1.wTitle .wvws{float: none;display: block;font-size: 1.4em}
+	.wOverview{padding: 0 0 10px}
+	.productBox{padding: 25px 0}
+	
+	.shareBox{margin:0 0 20px;}
+	.shareMain .jiathis_style_32x32 .jiathis_txt{width: 35%;margin: 0 0 10px 0}
+	.cpIpt{width: 60%;font-size: 1.6em}
+	.cpBtn{width: 30%}
 
 	.wUpload{display: none;}
 	.mobile.coming{width: 100%}
+		.coming .cInfos{font-size: 1em}
 		.mobile.coming .ctgMList{border-bottom: none;padding: 15px 0;}
-		.mobile.coming .cName,.mobile.coming .cView{color: #303042;font-size: 1.2em;line-height: 1.4em}
-		.mobile.coming .cView{color: #71718F}
+		.mobile.coming .cName,.mobile.coming .cView{color: #303042;font-size: 1.5em;line-height: 1.4em}
+		.mobile.coming .cView{color: #71718F;font-size: 1.4em}
+		.ctgMList li a img{width: 150px;}
+		.cInfos{float: left;padding-left: 10px;}
 	.proList ul{margin-left: 0;}
 		.proList li{float: none;width: 100%;margin: 0 0 20px 0;overflow: hidden;}
-			.proImg{float: left;width: 30%;height: 150px;}
-				.proImg img{max-width: 100%;height: 100%;}
-			.pDtl{float: left;padding-left: 10px;width: 65%}
-			.pTitle{font-size: 1.6em;height: auto;color: #303042}
+			.proImg{float: left;width: 150px;height: 150px;}
+				.proImg img{max-width: 100%;max-height: 100%;}
+			.pDtl{float: left;padding-left: 10px;}
+			.pTitle{font-size: 1.6em;height: auto;color: #303042;padding-top: 0}
 			.price{font-size: 1.4em;line-height: 1.4em;padding-bottom: 10px}
 			.pLike .price,.proLikeBtn{float: none;display: block;}
 			.p_3,.p_4,.p_5{display: none;}
@@ -115,35 +129,54 @@
 	.paging{width: 100%}
 	.paging img{width: 100%}
 
-	#featuredGallery .container{height: 320px;}
-  #featuredGallery .wrapper{width:calc(100%*5);height: 320px}
+	#featuredGallery{margin-bottom:15px;}
+	#featuredGallery .container{height: 230px;}
+  #featuredGallery .wrapper{width:calc(100%*5);height: 230px}
   #featuredGallery .galleryItem{width: 100%}
+  .navGallery>.arrowRight,.navGallery>.arrowLeft{top: 0}
+  .navGallery>.arrowLeft{left: 0}
+  .navGallery>.arrowRight{right: 0}
 
 	/*blogger*/
 	.blogBox{padding:15px 0;}
+	.pageImgs{height: 110px;background-size: cover;}
+	.userBlock{padding: 20px 0 30px;}
+		.bTitle{font-size: 2em}
+		.bFlw{font-size: 1.5em}
 	.userBox .pageMenu li{width: 25%;text-align: center;margin: 0}
-		.bDetail{display: none;}
-		.uHead{width: 80px;height: 80px;}
-		.uMain{float: left;padding-left: 10px;width: 70%;}
+		.bDetail,.openBtn{display: none;}
+		.uMain{float: left;padding:10px 0 0 10px;width: 70%;}
+		.pageMenu li a{font-size: 1.4em}
 		.blogLeft .ctgList li {height: auto;}
 			.blogLeft .ctgList li .ctgLink{overflow: hidden;}
-			.blogLeft .ctgList li .ctgImg{float: left;width: 40%;}
+			.blogLeft .ctgList li .ctgImg{float: left;width: 40%;margin-bottom:0;}
 			.bDtls{float: left;padding-left: 10px;width: 55%;}
 			.bLi_3,.bLi_4,.bLi_5,.bLi_6,.bLi_7,.bLi_8{display: none;}
 		.blogBox .ctgLink p.ctgTitle{font-size: 1.6em;padding-bottom: 5px;}
 		.recBlock .recHead{font-size: 2em;}
-		.recBlock .recTitle{font-size: 1.4em;}
+		.recBlock .recTitle{font-size: 1.4em;line-height: 1.4em}
+		.recList:last-child{border-bottom: none;}
+		.recList .recRow:nth-last-child(1),.recList .recRow:nth-last-child(2),.recList .recRow:nth-last-child(0){display: none;}
 
 	/*cart*/
 	#CartPage{padding: 20px 0}
-	.cartBlock{padding-bottom: 20px;}
+	#CartPage .inner{width: 100%;}
+	.cartBlock{padding-bottom: 10px;}
 		.cartCk{padding-bottom: 20px;}
-		.adsBlock{width: 100%;height: auto}
-		.adsInfo{height: auto;padding-bottom: 20px;}
+		.adsList{padding-top: 0}
+		.adsBlock{width: 100%;height: auto;margin-bottom: 0; display: none;border: none;background: url("../images/mobile/arRight.png") no-repeat 95% 50% #F6F6FC;background-size: auto 35%}
+			.adsBlock.active {display: block;}
+			.adsInner{padding-right: 100px;}
+				.adsTop{border-bottom: none;margin-bottom: 0;font-size: 1.4em}
+				.adsBottm{display: none;}
+				.adsInfo{height: auto;font-size: 1.4em;color: #71718f}
 		.delt,.cartLike{text-indent: -99999px}
-		.addAds{width: 100%;height: 50px;background-size: auto 100%;background-position: right 50%;}
+		.addAds{display: none;}
+		.cartCk{font-size: 2em;padding: 0 20px 20px}
 		.cartBlock .bRight{display: none;}
-		.orderList{padding-bottom: 60px;}
+		#CartPage .blockHead{display: none;}
+		.orderList{padding:0;border-bottom:none;}
+			.oderRow{border-bottom: none;margin-bottom: 10px;background: #F6F6FC;padding:10px 15px;}
 			.oderRow .wOvs{display: none;}
 			.wInfoBox{}
 			.wInfo{overflow: hidden;width: 68%;padding-bottom: 8px;}
@@ -152,19 +185,41 @@
 				.wCount{float: left;width: 70%}
 				.wnInfo.cartEdit{width: 38%}
 				.wCount .wTotal,.wCount .proTotal{display: none;}
-				.delt,.cartLike{float: left;margin-left: 15px;width: 25px;padding:5px 0}
+				.delt,.cartLike{float: left;margin-left: 18px;width: 25px;padding:5px 0}
 				.mbPrice{display: block;float: right;}
-	.wMore,.payBox .blockHead{display: none;}
+	.wMore{display: none;}
 	.btnBox{background: #41415B;position: fixed;bottom: 0;left: 0;width: 100%;z-index: 5;padding:0;}
 	.bbInner{padding: 10px;overflow: hidden;}
-	.bbInner .total.mobile{font-family: "Helvetica-Bold";font-size: 1.8em;line-height: 2em;color: #fff}
+	.bbInner .total.mobile{font-family: "Helvetica-Bold";font-size: 1.8em;line-height: 38px;color: #fff}
+
+	.ckCart .wInfo{padding-bottom: 0}
+	.ckCart .oderRow{margin-bottom: 0;border-bottom: 1px solid #CFCFD7;}
+	#CartPage .payBox .blockHead{display: block;}
+	.payBox{background: #F6F6FC;padding: 15px;}
+	.payType{background-position: right 50%;padding-left: 0}
 
 	#OrderPage{padding: 80px 0;}
 	.odInfo{font-size: 1.6em}
 	.thx{font-size: 3em}
 	.ckBtn,.goHome{font-size: 1.4em;}
+	.orderResult{background-size: 45% auto;padding-top:110px;}
 
 	.ftRow{padding: 10px 0}
   .lgTip,#Copyright,.ftMenu,#FtLogo{display: none;}
-  .mobile.copyright{text-align: right;float: right;}
+  .mobile.copyright{text-align: right;float: right;line-height: 32px;}
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+.videoRight .flwBtn{width: 80px;}
+.ctgMList li a img,.proImg{width: 35%;height: auto;}
+.coming .cInfos,.pDtl{width: 60%}
+.pLike{padding-bottom: 15px;overflow: hidden;}
+.pLike .price{float: left;}
+.pLike .proLikeBtn{float: right;}
+.proList .add2Cart{height: 35px;line-height: 35px}
+
+	.wName p{width: 50%}
+.wInfo,.wCount{width: 60%}
+.delt, .cartLike{margin-left:5px;}
+.btnBox .ptBtn{width: 150px}
 }

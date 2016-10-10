@@ -155,7 +155,7 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
       .addOvs{font-size: 12px;line-height: 14px;}
     .iframe{width: 665px;height: 405px;}
   .videoRight{width: 295px;height: 405px; background: #2C2C3C;float: right;}
-    .vrInner{padding: 15px 20px 0}
+    .vrInner{padding: 15px 15px 0}
     .vrTop{padding: 10px 0 15px;border-bottom: 1px solid #4A4A59;margin-bottom: 15px;overflow: hidden;}
       .portrait{width: 75px;height: 75px;border-radius: 50%;float: left;}
       .vrtRight{padding-left: 90px;}
@@ -318,7 +318,7 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
     .wnInfo{width: 25%;float: left;text-align: center;line-height: 40px;font-size: 14px;}
   .ckCart .wnInfo{width: 50%;text-align: right;}
     .wQuan{width: 100px;background: url("../images/cart_quan.png") no-repeat 50% 50%;text-indent: -99999px;background-size: 100% auto}
-    .ckCart .wQuan{background:none;text-indent:0}
+    .ckCart .wQuan{background:none;text-indent:0;text-align: left;height: 24px;line-height: 24px;}
     .cartEdit{overflow: hidden;float: right;line-height: 30px;font-size: 12px;}
       .proTotal{font-family: "Helvetica-Bold";text-align: right;}
       .delt,.cartLike{display: block;background: url("../images/delt.png") no-repeat 0 50%;background-size: 20px auto;padding:5px 0 5px 25px;cursor: pointer;text-align: left;line-height: 18px;}
@@ -337,9 +337,9 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
   .btnBox .ptBtn{width: 200px;float: right;}
   .payList li{padding: 5px 0}
     .payType{display: block;background: url("../images/radio_un.png") no-repeat 0 50%;padding
-    :5px 0 5px 35px;}
+    :5px 0 5px 35px;background-size: auto 80%}
     .payType.active{background-image: url("../images/radio.png");}
-    .alipay span,.wechat span{background: url("../images/pay1.png") no-repeat 0 50%;padding: 5px 0 5px 35px}
+    .alipay span,.wechat span{background: url("../images/pay1.png") no-repeat 0 50%;padding: 5px 0 5px 35px;background-size: auto 80%}
     .wechat span{background-image: url("../images/pay2.png")}
 
 #OrderPage{padding: 140px 0 200px;}
