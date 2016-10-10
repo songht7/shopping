@@ -47,7 +47,7 @@
 	.mbHide{display: none;}
 	#MbMenuBtn{display: block;}
 	
-	.mobileCart{display: inline-block;background: url("../images/mobile/spCart.png") no-repeat 0 50%;padding-left: 28px;background-size: 20px auto}
+	.mobileCart{display: inline-block;background: url("../images/mobile/spCart.png") no-repeat 0 50%;padding-left: 32px;background-size: 25px auto}
 	#MenuBtn{display: none;}
 
 	/*.ctgImg,.ctgList.col-4 .ctgImg{height: 210px}*/

@@ -44,7 +44,9 @@ input[type=submit], input[type=button], button {cursor:pointer}
 header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 100%;top:0;left: 0}
 #LeftMenu{float: left;width: 50px;height: 40px;position: relative;}
 	#MenuBtn,#MbMenuBtn{display: block;text-indent: -999999px;background: url("../images/menu.png") no-repeat 50% 15px;width:100%;height: 100%; }
-	#MenuBtn.active,#MbMenuBtn.active{background-position:50% -71px }
+	#MenuBtn.active{background-position:50% -71px }
+  #MbMenuBtn{background:url("../images/mobile/nav_normal@2x.png") no-repeat 50% 50%;background-size: 40% auto }
+  #MbMenuBtn.active{background-image:url("../images/mobile/nav_press@2x.png")}
 #Logo{background: url("../images/logo.png") no-repeat 50% 50%;display: block;float: left;margin-right: 65px;width: 126px;height: 38px;text-indent: -999999px;background-size: auto 100%}
 
 .hdRight{float: right;padding-right: 10px;}
@@ -188,7 +190,7 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
   .shareLeft{float: left;font-size: 12px;}
     .shareLeft span{padding: 0 5px;}
   .shareRight{float: right;}
-    .like,.unlike{padding-left: 20px;background: url("../images/like.png") no-repeat 0 50%;margin-right: 20px}
+    .like,.unlike{padding-left: 20px;background: url("../images/like.png") no-repeat 0 50%;margin-right: 20px;background-size:auto 100% }
     .unlike{background-image: url("../images/unlike.png");margin-right: 0}
 .shareMain{position: absolute;top: 100%;left: 0;width: 100%;background:#fff;z-index: 2;display: none}
   .smInner{padding: 10px;position: relative;}
@@ -208,7 +210,7 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
   .pTitle{display: block;padding: 10px 0;font-family: "Helvetica-Bold";height: 40px}
   .pLike{overflow: hidden;padding-bottom: 20px}
     .pLike .price{float: left;}
-    .proLikeBtn{float: right;background: url("../images/like2.png") no-repeat;width: 22px;height: 19px;cursor: pointer;}
+    .proLikeBtn{float: right;background: url("../images/like2.png") no-repeat;width: 22px;height: 19px;cursor: pointer;background-size: auto 100%}
     .proLikeBtn:hover{background-image:url("../images/like3.png")}
     .add2Cart{display: block;width: 100%;height: 38px;line-height: 38px;text-align: center;font-family: "PTSerif_Italic";font-size: 12px;background: #799D4D;border-radius: 3px;color: #fff}
     .add2Cart.noStock{background: #A9A9AE}
@@ -343,7 +345,7 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
     .wechat span{background-image: url("../images/pay2.png")}
 
 #OrderPage{padding: 140px 0 200px;}
-.orderResult{width: 250px;background: url("../images/access.png") no-repeat 50% 0;padding-top: 150px;margin: 0 auto;color:#71718f}
+.orderResult{width: 250px;background: url("../images/access.png") no-repeat 50% 0;padding-top: 150px;margin: 0 auto;color:#71718f;background-size: 60% auto}
 .odInfo{font-size: 16px;text-align: center;}
 .thx{font-family: "PTSerif_Italic";font-size: 40px;line-height: 40px;padding: 10px 0 20px;text-align: center;}
 .ckBtn{font-family: "PTSerif_Italic";display: block;width: 80%;margin: 0 auto;background: #71718f;color: #fff;text-align: center;line-height: 38px;border-radius: 3px;margin-bottom: 20px;}
