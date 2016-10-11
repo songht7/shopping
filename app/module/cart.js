@@ -13,10 +13,10 @@ var cart={
 				,"isDefault":true
 			}
 			,{
-				"uname":["","Vivian Chang","Vivian Chang"]
-				,"phone":["","13918961892","13918961892"]
+				"uname":["","Sherlock","Sherlock"]
+				,"phone":["","13928768901","13928768901"]
 				,"address":[""
-					,"Suite 202, Building 4, No 990 Changping Road, Shanghai,China"
+					,"Suite 221, Building 2, No 999 Yanping Road, Shanghai,China"
 					,"中国，上海，常平路990号，4号楼，202套房"]
 				,"isDefault":false
 			}

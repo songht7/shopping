@@ -127,8 +127,8 @@
 			.proList .add2Cart{width: 70%}
 		.txtArea{width: 80%}
 		.txtArea textarea{width: 90%;height: 90%;padding: 0;margin: 2% 0 0 2%}
-	.paging{width: 100%}
-	.paging img{width: 100%}
+	.paging{width: 100%;text-align: center;}
+	.paging img{width: 80%}
 
 	#featuredGallery{margin-bottom:15px;}
 	#featuredGallery .container{height: 230px;}

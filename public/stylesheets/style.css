@@ -239,6 +239,7 @@ header{background: #2C2C3C;padding: 10px 0;position: fixed;z-index: 999;width: 1
 .moreReply{font-size: 12px;}
 
 .paging{padding: 20px 0 10px}
+.paging img {width: 60%}
 
 .detailRight{float: right;width: 295px;}
   .recBlock{background: #fff;margin-bottom: 30px;}

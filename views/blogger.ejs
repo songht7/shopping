@@ -76,7 +76,7 @@
 								<div class="recPrice">
 									<p><%= rc["price"][lgkey] %></p>
 								</div>
-								<a href="javascript" class="add2Cart <%- rc["stock"]<=0?"noStock":"" %>" data-ctgid="<%= rc["id"] %>" data-id="<%= rc["id"] %>"><span><%- rc["stock"]<=0?langs["soldOut"][lgkey]: langs["add2Cart"][lgkey] %></span></a>
+								<a href="javascript:;" class="add2Cart <%- rc["stock"]<=0?"noStock":"" %>" data-ctgid="<%= rc["id"] %>" data-id="<%= rc["id"] %>"><span><%- rc["stock"]<=0?langs["soldOut"][lgkey]: langs["add2Cart"][lgkey] %></span></a>
 							</div>
 						</div>
 						<% }) %>
@@ -99,7 +99,7 @@
 										<p>5,999<%= langs["followers"][lgkey] %></p>
 									</div>
 								</div>
-								<a href="javascript" class="flwBtn <%= k==1?"isFlwed":"" %>"><span><%= langs["follow"][lgkey] %></span></a>
+								<a href="javascript:;" class="flwBtn <%= k==1?"isFlwed":"" %>"><span><%= langs["follow"][lgkey] %></span></a>
 							</div>
 						</div>
 						<% }) %>
