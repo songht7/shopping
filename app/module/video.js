@@ -5,7 +5,7 @@ var detail={
 	"1":{
 				"colNumb":3,
 				"ctgId":1
-				,"videoLink":"//embed.wirewax.com/8039580/"
+				,"videoLink":"//embed.wirewax.com/8041774/"
 				,"ctgName":["","The Wine Show","The Wine Show"]
 				,"ctgTitle":["","Matthew Rhys Suckers Joe!","Matthew Rhys 戏弄 Joe!"]
 				,"uploadTime":["","May 27,2016","2016年5月27日"]
