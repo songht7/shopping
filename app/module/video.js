@@ -707,7 +707,7 @@ var detail={
 						,"img":"2.1@2x.jpg"
 						,"title":["","The Sweater Blazer | initial","毛呢西装外套 | initial"]
 						,"ovs":["","An extraordinary knit blazer for ordinary life. It has clean construction with a center back seam and overlock stitching detail…","为平凡的生活带来不平凡的毛呢西装外套。简洁的款式..."]
-						,"price":["","￥ 5,600","￥ 5,600"]
+						,"price":["","￥ 5,600.00","￥ 5,600.00"]
 						,"unit_price":5600.00
 						,"stock":1000
 						,"like":100
