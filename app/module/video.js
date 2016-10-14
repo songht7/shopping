@@ -693,19 +693,22 @@ var detail={
 	,"6":{
 				"colNumb":3,
 				"ctgId":6
-				,"videoLink":"//embed.wirewax.com/8039580/"
-				,"ctgName":["","The Wine Show","红酒展"]
-				,"ctgTitle":["","Matthew Rhys Suckers Joe!6","Matthew Rhys吸盘，乔！"]
-				,"detail":["","Spero nancisceris anulum facere quod lignum sit amet. Auree aere ostendo addere potes, si vis relinquere lignum simplex retinent. Triforce feci ex Legenda Zelda quia satis expedito…","斯佩罗nancisceris anulum facere quod苏木坐特。auree艾利ostendo addere波特斯，Si vis relinquere木材单retinent。三联佛慈前Legenda泽尔达全能满足expedito"]
+				,"videoLink":"//embed.wirewax.com/8041376/"
+				,"ctgName":["","initial","initial"]
+				,"ctgTitle":["","Five senses of taste","五感之尝"]
+				,"uploadTime":["","May 27,2016","2016年5月27日"]
+				,"detail":["","Founded in 2000, the initial concept is not limited to the customer’s closet; it extends to the pursuit of exquisite style and fashion in all aspects of life. THE UNUSUAL EXPERIENCE begins upon entering the store…"
+							,"复合式品牌initial于2000年创立，initial理念不只走进顾客的衣柜，还深入生活各层面，追求极至的品味时装与品味生活。与顾客一同从视觉、听觉、嗅觉、味觉和触觉展开一场「非寻常体验」。"]
 				,"proTitle":["","Featured in Video","视频"]
 				,"product":[
 					{
 						"id":601
 						,"ctgid":6
-						,"title":["","Wine saver | Vacu Vin","葡萄酒节| Vacu Vin"]
-						,"ovs":["","The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
-						,"price":["","￥ 127.00","￥ 127.00"]
-						,"unit_price":127.00
+						,"img":"2.1@2x.jpg"
+						,"title":["","The Sweater Blazer | initial","毛呢西装外套 | initial"]
+						,"ovs":["","An extraordinary knit blazer for ordinary life. It has clean construction with a center back seam and overlock stitching detail…","为平凡的生活带来不平凡的毛呢西装外套。简洁的款式..."]
+						,"price":["","￥ 5,600","￥ 5,600"]
+						,"unit_price":5600.00
 						,"stock":1000
 						,"like":100
 						,"unlike":10
@@ -713,59 +716,100 @@ var detail={
 					,{
 						"id":602
 						,"ctgid":6
-						,"title":["","Akashi-Tai Honjozo Genshu Sake","明石泰honjozo根树的缘故"]
-						,"ovs":["","The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
-						,"price":["","￥ 127.00","￥ 127.00"]
-						,"unit_price":127.00
-						,"stock":0
+						,"img":"2.2@2x.jpg"
+						,"title":["","The Slim Jeans | initial","修身牛仔裤 | initial"]
+						,"ovs":["","Slim fit with a slightly longer rise for a less conservative look. It features two front slant pockets, two back single welt pockets…","修身小脚裤型，今年流行的款式。 它有两个前斜袋，两个嵌线后插袋....."]
+						,"price":["","￥ 1,200.00","￥ 1,200.00"]
+						,"unit_price":1200.00
+						,"stock":10
 						,"like":100
 						,"unlike":10
 					}
 					,{
 						"id":603
 						,"ctgid":6
-						,"title":["","Altano Douro 2013","altano斗罗2013"]
-						,"ovs":["","The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
-						,"price":["","￥ 127.00","￥ 127.00"]
-						,"unit_price":127.00
-						,"stock":1000
-						,"like":100
-						,"unlike":10
-					}
-					,{
-						"id":604
-						,"ctgid":6
-						,"title":["","Altano Douro 2013","altano斗罗2013"]
-						,"ovs":["","The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
-						,"price":["","￥ 127.00","￥ 127.00"]
-						,"unit_price":127.00
-						,"stock":1000
-						,"like":100
-						,"unlike":10
-					}
-					,{
-						"id":605
-						,"ctgid":6
-						,"title":["","Altano Douro 2013","altano斗罗2013"]
-						,"ovs":["","The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
-						,"price":["","￥ 127.00","￥ 127.00"]
-						,"unit_price":127.00
-						,"stock":1000
-						,"like":100
-						,"unlike":10
-					}
-					,{
-						"id":606
-						,"ctgid":6
-						,"title":["","Altano Douro 2013","altano斗罗2013"]
-						,"ovs":["","The Wine Server allows perfect, non-drip pouring every time! The Wine Server catches...","葡萄酒服务器允许完美的，非滴灌每一次！葡萄酒服务器捕获…"]
-						,"price":["","￥ 127.00","￥ 127.00"]
-						,"unit_price":127.00
+						,"img":"2.3@2x.jpg"
+						,"title":["","Leather Chelsea boots | initial","切尔西皮靴 | initial"]
+						,"ovs":["","These Chelsea boots are made from smooth polished leather and contrast elasticated inserts…","这款切尔西皮靴由光滑的抛光皮革制成，拼接弹性布使穿着更容易…"]
+						,"price":["","￥ 2,450.00","￥ 2,450.00"]
+						,"unit_price":2450.00
 						,"stock":1000
 						,"like":100
 						,"unlike":10
 					}
 				]
+				,"coming":{
+					"title":["","Coming up next...","即将播出..."]
+					,"list":[
+						{
+							"id":1//blog id
+							,"uid":1
+							,"title":["","Catalogue | Fall & Winter 2016","目录 | 秋季&冬季 2016"]
+							,"img":"1.1@2x.jpg"
+							,"flwNumb":"74,578"
+						}
+						,{
+							"id":2
+							,"uid":2
+							,"title":["","Catalogue | Spring & Summer 2016","目录 | 春季&夏季 2016"]
+							,"img":"1.2@2x.jpg"
+							,"flwNumb":"1,382"
+						}
+						,{
+							"id":3
+							,"uid":3
+							,"title":["","Catalogue | Fall & Winter 2015","目录 | 秋季&冬季 2016"]
+							,"img":"1.3@2x.jpg"
+							,"flwNumb":"6,155"
+						}
+					]
+				}
+				,"otherVideo":{
+					"title":["","Other Videos from This Blogger","博主的其他视频"]
+					,"list":[
+						{
+							"id":2
+							,"ctgId":5
+							,"title":["","initial SS16 Menswear Style","initial SS16 男装搭配"]
+							,"img":"3.1.jpg"
+						}
+						,{
+							"id":3
+							,"ctgId":5
+							,"title":["","initial SS16 Womenswear Style","initial SS16 女装搭配"]
+							,"img":"3.2.jpg"
+						}
+						,{
+							"id":4
+							,"ctgId":5
+							,"title":["","Cocktail Dress Collection","鸡尾酒礼服合集"]
+							,"img":"3.3.jpg"
+						}
+					]
+				}
+				,"uMayLike":{
+					"title":["","You may also like","你或许也喜欢"]
+					,"list":[
+						{
+							"id":5
+							,"ctgId":3
+							,"title":["","My secrets to an easy topknot / bun updo","我如何穿出时尚感的秘密"]
+							,"img":"4.1.jpg"
+						}
+						,{
+							"id":6
+							,"ctgId":3
+							,"title":["","Planner Supplies & Stationery Haul","这才是文具达人的必备装备"]
+							,"img":"4.2.jpg"
+						}
+						,{
+							"id":7
+							,"ctgId":3
+							,"title":["","Top 10 electric skateboards to buy in 2016","2016 十大最值得购买的电动滑板"]
+							,"img":"4.3.jpg"
+						}
+					]
+				}
 		}
 
 	}

@@ -19,7 +19,7 @@ exports.index = function(getlang,req, res, next) {
 
 exports.video = function(getlang,req, res, next) {
 	var ctgid=req.params.id;
-	if(ctgid>5){
+	if(ctgid>6){
 		return res.redirect('/');
 	}
 	

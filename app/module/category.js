@@ -45,9 +45,9 @@ var category={
 				},
 				{
 					"id":106,
-					"ctgid":11,
+					"ctgid":6,
 					"img":"ctg106.jpg",
-					"ctgTitle":["pname","Five senses of smell","五感之闻"],
+					"ctgTitle":["pname","Five senses of taste","五感之尝"],
 					"ctgOvs":["oname","initial","initial"]
 				}
 			]
